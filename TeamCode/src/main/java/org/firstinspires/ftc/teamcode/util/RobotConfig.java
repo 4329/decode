@@ -10,4 +10,6 @@ public class RobotConfig {
     public static int ICON_SIZE = 10;
     public static int ORIGIN_X = 0;
     public static int ORIGIN_Y = 0;
+
+    public static double DASHBOARD_SPIN = 0;
 }

@@ -11,6 +11,9 @@ public enum SpindexPos {
     private double value;
     SpindexPos(double v){
         this.value = v;
+    }
 
+    public double getValue() {
+        return this.value;
     }
 }
