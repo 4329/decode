@@ -12,6 +12,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
@@ -25,6 +26,7 @@ public class Teleop extends CommandOpMode {
     private TelemetryUpdateSubsystem telemetryUpdateSubsystem;
     private ImuSubsystem imuSubsystem;
     private SpindexerSubsystem spindexerSubsystem;
+    private IntakeSubsystem intakeSubsystem;
 
     @Override
     public void initialize() {
@@ -36,6 +38,7 @@ public class Teleop extends CommandOpMode {
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap);
+        intakeSubsystem = new IntakeSubsystem(hardwareMap);
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
@@ -51,7 +54,8 @@ public class Teleop extends CommandOpMode {
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));
 
         driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
-
+        operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
+        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
         mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
         register(telemetryUpdateSubsystem, imuSubsystem);
     }

@@ -11,14 +11,10 @@ import org.firstinspires.ftc.teamcode.util.SpindexPos;
 public class SpindexerSubsystem extends SubsystemBase {
     private Servo storage;
     public SpindexerSubsystem(HardwareMap hardwareMap) {
-        this.storage = hardwareMap.get(Servo.class,"indexer");
+        this.storage = hardwareMap.get(Servo.class, "indexer");
     }
 
-    public void spinTo(SpindexPos position) {
-        storage.setPosition(position.getValue());
-    }
+        public void spinTo(SpindexPos position) {storage.setPosition(position.getValue()); }
 
-    public void spin() {
-        storage.setPosition(DASHBOARD_SPIN);
-    }
+        public void spin() {storage.setPosition(DASHBOARD_SPIN); }
 }
