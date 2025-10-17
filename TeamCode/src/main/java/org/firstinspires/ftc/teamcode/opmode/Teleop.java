@@ -37,7 +37,7 @@ public class Teleop extends CommandOpMode {
         mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
-        spindexerSubsystem = new SpindexerSubsystem(hardwareMap);
+        spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
         intakeSubsystem = new IntakeSubsystem(hardwareMap);
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(

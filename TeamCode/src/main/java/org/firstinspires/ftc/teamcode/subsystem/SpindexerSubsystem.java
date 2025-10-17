@@ -6,15 +6,21 @@ import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 
+import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.util.SpindexPos;
 
 public class SpindexerSubsystem extends SubsystemBase {
     private Servo storage;
-    public SpindexerSubsystem(HardwareMap hardwareMap) {
+    private Telemetry telemetry;
+    public SpindexerSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.storage = hardwareMap.get(Servo.class, "indexer");
+        this.telemetry=telemetry;
     }
 
         public void spinTo(SpindexPos position) {storage.setPosition(position.getValue()); }
 
-        public void spin() {storage.setPosition(DASHBOARD_SPIN); }
+        public void spin() {
+            storage.setPosition(DASHBOARD_SPIN);
+            telemetry.addData("spindex",DASHBOARD_SPIN);
+    }
 }
