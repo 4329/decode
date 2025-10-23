@@ -1,7 +1,8 @@
 package org.firstinspires.ftc.teamcode.subsystem;
 
+import android.util.Log;
+
 import com.arcrobotics.ftclib.command.SubsystemBase;
-import com.arcrobotics.ftclib.util.Timing;
 import com.qualcomm.hardware.limelightvision.LLResult;
 import com.qualcomm.hardware.limelightvision.LLStatus;
 import com.qualcomm.hardware.limelightvision.Limelight3A;
@@ -12,7 +13,6 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
 
 public class LimeLightSubsystem extends SubsystemBase {
-    private final HardwareMap hardwareMap;
     private final Telemetry telemetry;
     private final Limelight3A limelight;
     private double tubroXylophone;
@@ -22,7 +22,6 @@ public class LimeLightSubsystem extends SubsystemBase {
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
     public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
-        this.hardwareMap = hardwareMap;
         this.telemetry = telemetry;
         limelight = hardwareMap.get(Limelight3A.class, "limelight");
         emit();
@@ -48,9 +47,21 @@ public class LimeLightSubsystem extends SubsystemBase {
         else {
             targetVisible = false;
         }
+        Log.i("LL-botpose", botpose + "");
+        Log.i("LL-vis", targetVisible + "");
+        Log.i("LL-tx", tubroXylophone + "");
         telemetry.addData("tx", result.getTx());
         telemetry.addData("Botpose", botpose.toString());
         telemetry.addData("targetVisible", targetVisible);
+
+        /*
+        if (botpose != null) {
+            TelemetryPacket packet = new TelemetryPacket();
+            packet.fieldOverlay().setStroke("#3F51B5");
+            Drawing.drawRobot(packet.fieldOverlay(), pose);
+            FtcDashboard.getInstance().sendTelemetryPacket(packet);
+        }
+         */
     }
 
     public double getTimeSinceTag() {

@@ -31,15 +31,15 @@ public class MecanumDpadCommand extends CommandBase {
         telemetry.addData("speedBooost", speedBooost.getAsBoolean());
         if (speedBooost.getAsBoolean()) {
             if (Math.abs(forward) > 0) {
-                mecanumDriveSubsystem.drive( forward, 0, 0);
+                mecanumDriveSubsystem.drive( 0,  forward, 0);
             } else {
-                mecanumDriveSubsystem.drive( 0, 0, strafe);
+                mecanumDriveSubsystem.drive( strafe, 0, 0);
             }
         } else {
             if (Math.abs(forward) > 0) {
-                mecanumDriveSubsystem.drive( forward / REGULAR_DRIVE_DIVISOR, 0, 0);
+                mecanumDriveSubsystem.drive(0, forward / REGULAR_DRIVE_DIVISOR, 0);
             } else {
-                mecanumDriveSubsystem.drive( 0, 0, strafe / REGULAR_DRIVE_DIVISOR);
+                mecanumDriveSubsystem.drive( strafe / REGULAR_DRIVE_DIVISOR, 0, 0);
             }
         }
     }
