@@ -14,6 +14,7 @@ public class LineStuffUpCommand extends CommandBase {
     public LineStuffUpCommand(LimeLightSubsystem limeLightSubsystem, MecanumDriveSubsystem mecanumDriveSubsystem) {
         this.limeLightSubsystem = limeLightSubsystem;
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
+        addRequirements(limeLightSubsystem, mecanumDriveSubsystem);
     }
 
     @Override
@@ -23,11 +24,22 @@ public class LineStuffUpCommand extends CommandBase {
 
     @Override
     public void execute() {
-        double Tx = limeLightSubsystem.getTubroXylophone();
-      if(Math.abs(Tx)>tolerance){
-          mecanumDriveSubsystem.drive( 0,0,Tx<0 ? .1:-.1);
+        if(limeLightSubsystem. isTargetVisible()){
+            double Tx = limeLightSubsystem.getTubroXylophone();
+            if(Math.abs(Tx)>tolerance){
+                mecanumDriveSubsystem.drive( 0,0,Tx<0 ? .1:-.1);
+            }  else{
+                mecanumDriveSubsystem.stop();
+
+            }
+        }
+        else{
+            mecanumDriveSubsystem.stop();
+
+        }
+
       }
-    }
+
 
     @Override
     public void end(boolean interrupted) {
@@ -36,6 +48,8 @@ public class LineStuffUpCommand extends CommandBase {
 
     @Override
     public boolean isFinished() {
-        return super.isFinished();
+        boolean isLinedUp = Math.abs(limeLightSubsystem.getTubroXylophone())<= tolerance;
+        boolean cantSeeTag = !limeLightSubsystem.isTargetVisible()&& limeLightSubsystem.getTimeSinceTag()>150;
+        return isLinedUp || cantSeeTag;
     }
 }

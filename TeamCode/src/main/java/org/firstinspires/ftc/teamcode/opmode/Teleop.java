@@ -9,10 +9,12 @@ import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
+import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
@@ -27,6 +29,7 @@ public class Teleop extends CommandOpMode {
     private ImuSubsystem imuSubsystem;
     private SpindexerSubsystem spindexerSubsystem;
     private IntakeSubsystem intakeSubsystem;
+    private LimeLightSubsystem limeLightSubsystem;
 
     @Override
     public void initialize() {
@@ -39,6 +42,7 @@ public class Teleop extends CommandOpMode {
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
         intakeSubsystem = new IntakeSubsystem(hardwareMap);
+        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry);
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
@@ -52,11 +56,12 @@ public class Teleop extends CommandOpMode {
         driver.getGamepadButton(GamepadKeys.Button.DPAD_DOWN).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),1, 0, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_UP).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));
-
         driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
+        driver.getGamepadButton(GamepadKeys.Button.LEFT_STICK_BUTTON).whenPressed(new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem));
+
         operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
         mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
-        register(telemetryUpdateSubsystem, imuSubsystem);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem);
     }
 }
