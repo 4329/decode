@@ -12,4 +12,5 @@ public class RobotConfig {
     public static int ORIGIN_Y = 0;
 
     public static double DASHBOARD_SPIN = 0;
+    public static int SHOOTER_RPM = 1000;
 }
