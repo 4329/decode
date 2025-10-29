@@ -51,7 +51,7 @@ public class LimeLightSubsystem extends SubsystemBase {
         Log.i("LL-vis", targetVisible + "");
         Log.i("LL-tx", tubroXylophone + "");
         telemetry.addData("tx", result.getTx());
-        telemetry.addData("Botpose", botpose.toString());
+        telemetry.addData("Botpose", (botpose != null) ? botpose.toString() : "blech");
         telemetry.addData("targetVisible", targetVisible);
 
         /*

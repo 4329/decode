@@ -27,7 +27,7 @@ public class LineStuffUpCommand extends CommandBase {
         if(limeLightSubsystem. isTargetVisible()){
             double Tx = limeLightSubsystem.getTubroXylophone();
             if(Math.abs(Tx)>tolerance){
-                mecanumDriveSubsystem.drive( 0,0,Tx<0 ? .1:-.1);
+                mecanumDriveSubsystem.drive( 0,0,Tx<0 ? .2:-.2);
             }  else{
                 mecanumDriveSubsystem.stop();
 
