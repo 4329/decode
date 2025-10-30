@@ -24,9 +24,9 @@ public class LimeLightSubsystem extends SubsystemBase {
     public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
         limelight = hardwareMap.get(Limelight3A.class, "limelight");
-        emit();
+        init();
     }
-    private void emit(){
+    private void init(){
         limelight.pipelineSwitch(0);
         limelight.start();
         timeSinceTag.reset();

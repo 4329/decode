@@ -17,7 +17,7 @@ public class MecanumDpadCommand extends CommandBase {
     private Telemetry telemetry;
 
     public MecanumDpadCommand(MecanumDriveSubsystem mecanumDriveSubsystem, BooleanSupplier speedBooost,
-                              int forward, int strafe, Telemetry telemetry) {
+                              int strafe, int forward, Telemetry telemetry) {
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
         this.speedBooost = speedBooost;
         this.forward = forward;
