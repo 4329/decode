@@ -46,5 +46,6 @@ public class ShootSubsystem extends SubsystemBase {
         if (running) {
             shooterMotor.set(SHOOTER_PERCENT);
         }
+        telemetry.addData("speedy", shooterMotor.encoder.getCorrectedVelocity());
     }
 }
