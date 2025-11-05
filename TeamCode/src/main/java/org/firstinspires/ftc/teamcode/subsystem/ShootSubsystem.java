@@ -9,18 +9,19 @@ import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_PERCENT;
 
 import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.arcrobotics.ftclib.hardware.motors.Motor;
+import com.arcrobotics.ftclib.hardware.motors.MotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 
 public class ShootSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
-    private Motor shooterMotor;
+    private MotorEx shooterMotor;
     private boolean running = false;
 
     public ShootSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
-        shooterMotor = new Motor(hardwareMap, "shooterMotor");
+        shooterMotor = new MotorEx(hardwareMap, "shooterMotor");
         setUp();
 
     }
@@ -46,6 +47,6 @@ public class ShootSubsystem extends SubsystemBase {
         if (running) {
             shooterMotor.set(SHOOTER_PERCENT);
         }
-        telemetry.addData("speedy", shooterMotor.encoder.getCorrectedVelocity());
+        telemetry.addData("speedy", shooterMotor.getVelocity());
     }
 }

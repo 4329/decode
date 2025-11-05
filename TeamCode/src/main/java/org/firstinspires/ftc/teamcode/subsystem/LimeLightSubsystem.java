@@ -27,7 +27,7 @@ public class LimeLightSubsystem extends SubsystemBase {
         init();
     }
     private void init(){
-        limelight.pipelineSwitch(0);
+
         limelight.start();
         timeSinceTag.reset();
     }
