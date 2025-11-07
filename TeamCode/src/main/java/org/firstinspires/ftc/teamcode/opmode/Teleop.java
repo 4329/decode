@@ -13,6 +13,7 @@ import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
 import org.firstinspires.ftc.teamcode.command.ShootCommand;
+import org.firstinspires.ftc.teamcode.command.SpindexerIntakeCommand;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
@@ -67,6 +68,8 @@ public class Teleop extends CommandOpMode {
         //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         //operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
         operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(new ShootCommand(shootSubsystem));
+      //  operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new SpindexerIntakeCommand(spindexderSubsystem,-1));
+     //   operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new SpindexerIntakeCommand(spindexderSubsystem,1));
         //mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
         register(telemetryUpdateSubsystem);//, imuSubsystem, limeLightSubsystem);
     }
