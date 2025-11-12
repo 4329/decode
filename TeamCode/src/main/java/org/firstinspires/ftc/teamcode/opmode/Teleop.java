@@ -21,9 +21,9 @@ import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ShootSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
+import org.firstinspires.ftc.teamcode.util.Alliance;
 
-@TeleOp(name = "Teleop", group = "1")
-public class Teleop extends CommandOpMode {
+public abstract class Teleop extends CommandOpMode {
     // FtcDashboard dashboard = FtcDashboard.getInstance();
 
     private GamepadEx driver, operator;
@@ -46,7 +46,7 @@ public class Teleop extends CommandOpMode {
         //imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
       //  spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
       //  intakeSubsystem = new IntakeSubsystem(hardwareMap);
-       // limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry);
+       // limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance();
           shootSubsystem = new ShootSubsystem(hardwareMap, telemetry);
 //
 //        MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
@@ -73,4 +73,5 @@ public class Teleop extends CommandOpMode {
         //mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
         register(telemetryUpdateSubsystem);//, imuSubsystem, limeLightSubsystem);
     }
+    public abstract Alliance getAlliance();
 }

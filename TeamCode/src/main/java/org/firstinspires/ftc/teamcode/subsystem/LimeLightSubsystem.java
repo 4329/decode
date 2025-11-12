@@ -11,23 +11,27 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
+import org.firstinspires.ftc.teamcode.util.Alliance;
 
 public class LimeLightSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
     private final Limelight3A limelight;
+    private final Alliance alliance;
     private double tubroXylophone;
     private Pose3D botpose;
 
     private boolean targetVisible = false;
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
-    public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
+    public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
         this.telemetry = telemetry;
         limelight = hardwareMap.get(Limelight3A.class, "limelight");
+        this.alliance = alliance;
         init();
     }
     private void init(){
 
+        limelight.pipelineSwitch(alliance.pipeline);
         limelight.start();
         timeSinceTag.reset();
     }
