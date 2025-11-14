@@ -12,6 +12,7 @@ import android.util.Log;
 import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.arcrobotics.ftclib.hardware.motors.Motor;
 import com.arcrobotics.ftclib.hardware.motors.MotorEx;
+import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
@@ -19,26 +20,30 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 public class ShootSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
     private MotorEx shooterMotor;
+    private MotorEx shootorMotor;
+    private MotorGroup groupOfGoop;
     private boolean running = false;
 
     public ShootSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
         shooterMotor = new MotorEx(hardwareMap, "shooterMotor");
+        shootorMotor = new MotorEx(hardwareMap, "shootorMotor");
+        groupOfGoop = new MotorGroup(shooterMotor, shootorMotor);
         setUp();
 
     }
 
     private void setUp() {
-        shooterMotor.setInverted(true);
-        shooterMotor.setZeroPowerBehavior(Motor.ZeroPowerBehavior.FLOAT);
-        shooterMotor.setRunMode(Motor.RunMode.VelocityControl);
-        shooterMotor.setVeloCoefficients(SHOOTER_P, SHOOTER_I, SHOOTER_D);
-        shooterMotor.setFeedforwardCoefficients(SHOOTER_FF_S, SHOOTER_FF_V);
+        groupOfGoop.setInverted(true);
+        groupOfGoop.setZeroPowerBehavior(Motor.ZeroPowerBehavior.FLOAT);
+        groupOfGoop.setRunMode(Motor.RunMode.VelocityControl);
+        groupOfGoop.setVeloCoefficients(SHOOTER_P, SHOOTER_I, SHOOTER_D);
+        groupOfGoop.setFeedforwardCoefficients(SHOOTER_FF_S, SHOOTER_FF_V);
     }
 
     public void stop() {
         running = false;
-        shooterMotor.stopMotor();
+        groupOfGoop.stopMotor();
     }
 
     public void shoot() {
@@ -48,10 +53,10 @@ public class ShootSubsystem extends SubsystemBase {
     @Override
     public void periodic() {
         if (running) {
-            shooterMotor.set(SHOOTER_PERCENT);
+            groupOfGoop.set(SHOOTER_PERCENT);
 
-            Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_PERCENT, shooterMotor.ACHIEVABLE_MAX_TICKS_PER_SECOND, shooterMotor.getCorrectedVelocity(), shooterMotor.getAcceleration()));
+            Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getCorrectedVelocity(), shooterMotor.getAcceleration()));
         }
-        telemetry.addData("speedy", shooterMotor.getVelocity());
+        telemetry.addData("speedy", groupOfGoop.getCorrectedVelocity());
     }
 }
