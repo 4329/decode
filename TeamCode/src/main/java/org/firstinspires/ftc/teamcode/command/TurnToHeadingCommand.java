@@ -42,7 +42,7 @@ public class TurnToHeadingCommand extends CommandBase {
         double output = frcPid.calculate(heading);
         output = Range.clip(output,-.7,.7);
 
-        drive.drive(0, -output, 0);
+        drive.drive(0, 0, -output);
 
         Log.i("turnCommand", "desired angle, heading, output " + "(" + DesiredAngle + ", " + heading + ", " + output + ")");
     }

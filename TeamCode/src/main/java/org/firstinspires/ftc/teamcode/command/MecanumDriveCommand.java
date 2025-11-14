@@ -17,10 +17,10 @@ public class MecanumDriveCommand extends CommandBase {
     private Supplier<Boolean> speedBoost;
     private Supplier<Boolean> slowMode;
 
-    public MecanumDriveCommand(MecanumDriveSubsystem mecanumDriveSubsystem, Supplier<Double> forwardDrive, Supplier<Double> strafeDrive, Supplier<Double> turnDrive, Supplier<Boolean> speedBoost, Supplier<Boolean> slowMode) {
+    public MecanumDriveCommand(MecanumDriveSubsystem mecanumDriveSubsystem, Supplier<Double> strafeDrive, Supplier<Double> forwardDrive, Supplier<Double> turnDrive, Supplier<Boolean> speedBoost, Supplier<Boolean> slowMode) {
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
-        this.forwardDrive = forwardDrive;
         this.strafeDrive = strafeDrive;
+        this.forwardDrive = forwardDrive;
         this.turnDrive = turnDrive;
         this.speedBoost = speedBoost;
         this.slowMode = slowMode;

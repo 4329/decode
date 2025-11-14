@@ -1,0 +1,86 @@
+package org.firstinspires.ftc.teamcode.subsystem;
+
+import android.util.Log;
+
+import com.arcrobotics.ftclib.command.SubsystemBase;
+import com.qualcomm.hardware.limelightvision.LLResult;
+import com.qualcomm.hardware.limelightvision.LLStatus;
+import com.qualcomm.hardware.limelightvision.Limelight3A;
+import com.qualcomm.robotcore.hardware.HardwareMap;
+import com.qualcomm.robotcore.util.ElapsedTime;
+
+import org.firstinspires.ftc.robotcore.external.Telemetry;
+import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
+import org.firstinspires.ftc.teamcode.util.Alliance;
+
+public class LimeLightSubsystem extends SubsystemBase {
+    private final Telemetry telemetry;
+    private final Limelight3A limelight;
+    private final Alliance alliance;
+    private double tubroXylophone;
+    private Pose3D botpose;
+
+    private boolean targetVisible = false;
+
+    private ElapsedTime timeSinceTag = new ElapsedTime();
+    public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
+        this.telemetry = telemetry;
+        limelight = hardwareMap.get(Limelight3A.class, "limelight");
+        this.alliance = alliance;
+        init();
+    }
+    private void init(){
+
+        limelight.pipelineSwitch(alliance.pipeline);
+        limelight.start();
+        timeSinceTag.reset();
+    }
+
+    @Override
+    public void periodic() {
+        LLStatus status = limelight.getStatus();
+        telemetry.addData("LL", "Temp: %.1fC, CPU: %.1f%%, FPS: %d",
+                status.getTemp(), status.getCpu(), (int) status.getFps());
+        LLResult result = limelight.getLatestResult();
+        if (result.isValid()) {
+             tubroXylophone = result.getTx();
+             botpose = result.getBotpose();
+             targetVisible = true;
+             timeSinceTag.reset();
+        }
+        else {
+            targetVisible = false;
+        }
+        Log.i("LL-botpose", botpose + "");
+        Log.i("LL-vis", targetVisible + "");
+        Log.i("LL-tx", tubroXylophone + "");
+        telemetry.addData("tx", result.getTx());
+        telemetry.addData("Botpose", (botpose != null) ? botpose.toString() : "blech");
+        telemetry.addData("targetVisible", targetVisible);
+
+        /*
+        if (botpose != null) {
+            TelemetryPacket packet = new TelemetryPacket();
+            packet.fieldOverlay().setStroke("#3F51B5");
+            Drawing.drawRobot(packet.fieldOverlay(), pose);
+            FtcDashboard.getInstance().sendTelemetryPacket(packet);
+        }
+         */
+    }
+
+    public double getTimeSinceTag() {
+        return timeSinceTag.milliseconds();
+    }
+
+    public boolean isTargetVisible() {
+        return targetVisible;
+    }
+
+    public Pose3D getBotpose() {
+        return botpose;
+    }
+
+    public double getTubroXylophone() {
+        return tubroXylophone;
+    }
+}

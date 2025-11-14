@@ -79,13 +79,13 @@ public class EncoderDriveCommand extends CommandBase {
         if (turn != 0 || imuSubsystem == null) {
             // If turn non-zero or imuSubsystem is null, then do regular drive command
             Log.i(getName(), String.format("execute: No IMU with turn = ", turn));
-            drive.drive(forward, turn, strafe);
+            drive.drive(strafe, forward, turn);
         } else {
             // turn is zero, so use PID to keep robot pointing in initial heading
             double currentHeading = imuSubsystem.getHeading();
             double output = pid.calculate(currentHeading);
             output = Range.clip(output, -.25, .25);
-            drive.drive(forward, -output, strafe);
+            drive.drive(strafe, forward, -output);
             Log.i(getName(),
                     String.format("execute: with PID output %.2f for initial heading %.2f and current heading %.2f",
                             -output,
