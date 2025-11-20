@@ -22,6 +22,7 @@ import org.firstinspires.ftc.teamcode.subsystem.ShootSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
+import org.firstinspires.ftc.teamcode.util.LoggingUtil;
 
 public abstract class Teleop extends CommandOpMode {
     // FtcDashboard dashboard = FtcDashboard.getInstance();
@@ -38,6 +39,7 @@ public abstract class Teleop extends CommandOpMode {
     @Override
     public void initialize() {
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
+        LoggingUtil.enableCommandLogging();
 
         driver = new GamepadEx(gamepad1);
         operator = new GamepadEx(gamepad2);
@@ -47,7 +49,7 @@ public abstract class Teleop extends CommandOpMode {
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
         intakeSubsystem = new IntakeSubsystem(hardwareMap);
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
-          shootSubsystem = new ShootSubsystem(hardwareMap, telemetry);
+        shootSubsystem = new ShootSubsystem(hardwareMap, telemetry);
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,

@@ -17,6 +17,8 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 
+import java.util.List;
+
 public class ShootSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
     private MotorEx shooterMotor;
@@ -55,8 +57,10 @@ public class ShootSubsystem extends SubsystemBase {
         if (running) {
             groupOfGoop.set(SHOOTER_PERCENT);
 
-            Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getCorrectedVelocity(), shooterMotor.getAcceleration()));
+            Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getVelocity(), shooterMotor.getAcceleration()));
         }
-        telemetry.addData("speedy", groupOfGoop.getCorrectedVelocity());
+        List<Double> velocities = groupOfGoop.getVelocities();
+        telemetry.addData("speedy", velocities.get(0));
+        telemetry.addData("notspeedy", velocities.get(1));
     }
 }
