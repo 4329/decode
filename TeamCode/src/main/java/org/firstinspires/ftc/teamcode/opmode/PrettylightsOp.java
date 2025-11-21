@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.NormalizedRGBA;
 import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
 
 @TeleOp
-public class PrettylightOp extends LinearOpMode {
+public class PrettylightsOp extends LinearOpMode {
     private NormalizedColorSensor test_color;
 
     @Override

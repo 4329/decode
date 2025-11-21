@@ -20,6 +20,6 @@ public class RobotConfig {
     public static double SHOOTER_FF_V = 0.47;
     public static double PUSHY_UP = 0.76;
     public static double PUSHY_DOWN = 0;
-
+    public static double SHOOTER_GOAL = 1700;
 
 }

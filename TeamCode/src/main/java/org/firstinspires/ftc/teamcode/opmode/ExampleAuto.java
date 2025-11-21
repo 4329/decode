@@ -10,8 +10,13 @@ import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.PushyMcPushermanSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
+import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
 
 @Autonomous(name = "ExampleAuto", group = "2")
@@ -20,6 +25,10 @@ public class ExampleAuto extends CommandOpMode {
     private TelemetryUpdateSubsystem telemetryUpdateSubsystem;
     private ImuSubsystem imuSubsystem;
     private TurnToHeadingCommand turnToHeadingCommand;
+    private LimeLightSubsystem limeLightSubsystem;
+    private SpindexerSubsystem spindexerSubsystem;
+    private ShooterSubsystem shooterSubsystem;
+    private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
 
     @Override
     public void initialize() {
@@ -31,7 +40,11 @@ public class ExampleAuto extends CommandOpMode {
         mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
-        AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry);
+        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE);
+        spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
+        shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
+        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+        AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem);
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
             factory.exampleCommand()

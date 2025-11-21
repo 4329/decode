@@ -19,14 +19,14 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 
 import java.util.List;
 
-public class ShootSubsystem extends SubsystemBase {
+public class ShooterSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
     private MotorEx shooterMotor;
     private MotorEx shootorMotor;
     private MotorGroup groupOfGoop;
     private boolean running = false;
 
-    public ShootSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
+    public ShooterSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
         shooterMotor = new MotorEx(hardwareMap, "shooterMotor");
         shootorMotor = new MotorEx(hardwareMap, "shootorMotor");
@@ -62,5 +62,8 @@ public class ShootSubsystem extends SubsystemBase {
         List<Double> velocities = groupOfGoop.getVelocities();
         telemetry.addData("speedy", velocities.get(0));
         telemetry.addData("notspeedy", velocities.get(1));
+    }
+    public double getVelocity(){
+        return groupOfGoop.getVelocity();
     }
 }

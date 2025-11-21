@@ -2,13 +2,13 @@ package org.firstinspires.ftc.teamcode.opmode;
 
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
-import com.arcrobotics.ftclib.command.Command;
 import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.command.InstantCommand;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.HardwareMap;
 
+import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
@@ -18,7 +18,8 @@ import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
-import org.firstinspires.ftc.teamcode.subsystem.ShootSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.PushyMcPushermanSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
@@ -34,7 +35,9 @@ public abstract class Teleop extends CommandOpMode {
     private SpindexerSubsystem spindexerSubsystem;
     private IntakeSubsystem intakeSubsystem;
     private LimeLightSubsystem limeLightSubsystem;
-    private ShootSubsystem shootSubsystem;
+    private ShooterSubsystem shooterSubsystem;
+    private AutoCommandFactory autoCommandFactory;
+    private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
 
     @Override
     public void initialize() {
@@ -49,7 +52,9 @@ public abstract class Teleop extends CommandOpMode {
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
         intakeSubsystem = new IntakeSubsystem(hardwareMap);
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
-        shootSubsystem = new ShootSubsystem(hardwareMap, telemetry);
+          shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
+          pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem);
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
@@ -69,7 +74,7 @@ public abstract class Teleop extends CommandOpMode {
 
         operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
-        operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(new ShootCommand(shootSubsystem));
+        operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease());
         operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new SpindexerIntakeCommand(spindexerSubsystem,-1));
         operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new SpindexerIntakeCommand(spindexerSubsystem,1));
         mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
