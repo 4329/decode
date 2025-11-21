@@ -20,7 +20,7 @@ import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
 
 @Autonomous(name = "ExampleAuto", group = "2")
-public class ExampleAuto extends CommandOpMode {
+public class ColorAdo extends CommandOpMode {
     private MecanumDriveSubsystem mecanumDriveSubsystem;
     private TelemetryUpdateSubsystem telemetryUpdateSubsystem;
     private ImuSubsystem imuSubsystem;
@@ -32,7 +32,7 @@ public class ExampleAuto extends CommandOpMode {
 
     @Override
     public void initialize() {
-        telemetry.speak("running " + getClass().getSimpleName());
+        telemetry.speak("running" + getClass().getSimpleName());
         LoggingUtil.enableCommandLogging();
 
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
