@@ -6,26 +6,30 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
+import org.firstinspires.ftc.robotcore.internal.system.Deadline;
+
+import java.util.concurrent.TimeUnit;
+
 @Autonomous(name="Motor test")
 public class MotorTest extends LinearOpMode {
     private DcMotorEx motory;
-
+    private Deadline testDuration = new Deadline(5, TimeUnit.SECONDS);
     @Override
     public void runOpMode() throws InterruptedException {
         motory = hardwareMap.get(DcMotorEx.class, "motorTest");
         motory.setDirection(DcMotorSimple.Direction.FORWARD);
-        motory.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        motory.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         int startingPos = motory.getCurrentPosition();
 
-        int timesThroughLoop = 100;
-        int loopCount = 0;
-
         waitForStart();
+        testDuration.reset();
+
         boolean velocityBueno = false;
         boolean positionBueno = false;
 
-        while(opModeIsActive() && loopCount < timesThroughLoop) {
+        while(opModeIsActive() && !testDuration.hasExpired()) {
+            motory.setVelocity(500);
             int curPos = motory.getCurrentPosition();
             double velocity = motory.getVelocity();
             if (velocity > 0 && !velocityBueno) {
@@ -39,7 +43,6 @@ public class MotorTest extends LinearOpMode {
             telemetry.addData("starting pos", startingPos);
             telemetry.addData("current pos", curPos);
             telemetry.update();
-            loopCount++;
         }
 
         motory.setVelocity(0);
@@ -49,5 +52,9 @@ public class MotorTest extends LinearOpMode {
         telemetry.addData("velocity all good?", velocityBueno);
         telemetry.speak(velocityBueno && positionBueno ? "super duper" : "motor is broke");
         telemetry.update();
+        testDuration.reset();
+        while (!testDuration.hasExpired()) {
+            telemetry.update();
+        }
     }
 }
