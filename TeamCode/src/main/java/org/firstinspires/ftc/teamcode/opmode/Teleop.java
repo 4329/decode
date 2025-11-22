@@ -16,6 +16,7 @@ import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
 import org.firstinspires.ftc.teamcode.command.ShootCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerIntakeCommand;
 import org.firstinspires.ftc.teamcode.command.UnInstantCommand;
+import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
@@ -40,6 +41,7 @@ public abstract class Teleop extends CommandOpMode {
     private ShooterSubsystem shooterSubsystem;
     private AutoCommandFactory autoCommandFactory;
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
+    private BlinkinSubsystem blinkinSubsystem;
 
     @Override
     public void initialize() {
@@ -56,6 +58,7 @@ public abstract class Teleop extends CommandOpMode {
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
           pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
         autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem);
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
@@ -80,7 +83,7 @@ public abstract class Teleop extends CommandOpMode {
         operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new SpindexerIntakeCommand(spindexerSubsystem,-1));
         operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new SpindexerIntakeCommand(spindexerSubsystem,1));
         mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, blinkinSubsystem);
     }
     public abstract Alliance getAlliance();
 }
