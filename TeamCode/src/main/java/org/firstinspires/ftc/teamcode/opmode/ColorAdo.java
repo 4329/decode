@@ -4,11 +4,16 @@ import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
+import com.arcrobotics.ftclib.command.WaitCommand;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
+import org.firstinspires.ftc.teamcode.command.ShootCommand;
+import org.firstinspires.ftc.teamcode.command.SpindexerShootCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
+import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
@@ -20,7 +25,7 @@ import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
 
 @Autonomous(name = "ExampleAuto", group = "2")
-public class ColorAdo extends CommandOpMode {
+public abstract class ColorAdo extends CommandOpMode {
     private MecanumDriveSubsystem mecanumDriveSubsystem;
     private TelemetryUpdateSubsystem telemetryUpdateSubsystem;
     private ImuSubsystem imuSubsystem;
@@ -29,6 +34,7 @@ public class ColorAdo extends CommandOpMode {
     private SpindexerSubsystem spindexerSubsystem;
     private ShooterSubsystem shooterSubsystem;
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
+    private BlinkinSubsystem BlinkyguySubsystem;
 
     @Override
     public void initialize() {
@@ -40,17 +46,32 @@ public class ColorAdo extends CommandOpMode {
         mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
-        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE);
+        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
         shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
         pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
-        AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem);
+        BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
+        AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
-            factory.exampleCommand()
+                new SpindexerShootCommand(spindexerSubsystem, 1),
+    //            factory.strafeToYourLou(),
+                factory.scoreThingsPlease(),
+                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new WaitCommand(1000),
+                factory.scoreThingsPlease(),
+                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new WaitCommand(1000),
+                factory.scoreThingsPlease(),
+                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new WaitCommand(1000),
+                factory.strafeAwayFromYourLou()
+
         );
 
         register(telemetryUpdateSubsystem, imuSubsystem);
         schedule(autoCommandGroup);
     }
+    public abstract Alliance getAlliance();
+
 }

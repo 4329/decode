@@ -29,7 +29,6 @@ public class SpindexerShootCommand extends CommandBase {
         } else if (spindexerSubsystem.getPosition() == SpindexPos.SHOOT_THREE) {
             curIDX = 2;
         }
-        NextIDX = curIDX + direction;
         if (NextIDX < 0) {
             NextIDX = 2;
         } else if (NextIDX > 2) {

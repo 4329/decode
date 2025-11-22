@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode.command;
 
+import android.renderscript.AllocationAdapter;
+
 import com.arcrobotics.ftclib.command.Command;
 import com.arcrobotics.ftclib.command.ParallelDeadlineGroup;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
@@ -12,6 +14,7 @@ import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.PushyMcPushermanSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
+import org.firstinspires.ftc.teamcode.util.Alliance;
 
 public class AutoCommandFactory {
     private final MecanumDriveSubsystem mecanumDriveSubsystem;
@@ -21,8 +24,9 @@ public class AutoCommandFactory {
     private final PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private final ShooterSubsystem shooterSubsystem;
     private final SpindexerSubsystem spindexerSubsystem;
+    private final Alliance alliance;
 
-    public AutoCommandFactory(MecanumDriveSubsystem mecanumDriveSubsystem, ImuSubsystem imuSubsystem, Telemetry telemetry, LimeLightSubsystem limeLightSubsystem, PushyMcPushermanSubsystem pushyMcPushermanSubsystem, ShooterSubsystem shooterSubsystem, SpindexerSubsystem spindexerSubsystem) {
+    public AutoCommandFactory(MecanumDriveSubsystem mecanumDriveSubsystem, ImuSubsystem imuSubsystem, Telemetry telemetry, LimeLightSubsystem limeLightSubsystem, PushyMcPushermanSubsystem pushyMcPushermanSubsystem, ShooterSubsystem shooterSubsystem, SpindexerSubsystem spindexerSubsystem, Alliance alliance) {
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
         this.imuSubsystem = imuSubsystem;
         this.telemetry = telemetry;
@@ -30,6 +34,7 @@ public class AutoCommandFactory {
         this.pushyMcPushermanSubsystem = pushyMcPushermanSubsystem;
         this.shooterSubsystem = shooterSubsystem;
         this.spindexerSubsystem = spindexerSubsystem;
+        this.alliance = alliance;
     }
 
     public Command exampleCommand() {
@@ -78,5 +83,14 @@ public class AutoCommandFactory {
                 //and thank you
         ),
                 new ShootCommand(shooterSubsystem));
+    }
+
+    public Command strafeToYourLou() {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, .3*alliance.value, 26);
+
+    }
+    public Command strafeAwayFromYourLou() {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, -.3*alliance.value, 26);
+
     }
 }

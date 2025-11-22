@@ -43,6 +43,7 @@ public abstract class Teleop extends CommandOpMode {
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem blinkinSubsystem;
 
+
     @Override
     public void initialize() {
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
@@ -59,7 +60,7 @@ public abstract class Teleop extends CommandOpMode {
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
           pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
           blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
-        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem);
+        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
