@@ -2,24 +2,24 @@ package org.firstinspires.ftc.teamcode.command;
 
 import com.arcrobotics.ftclib.command.CommandBase;
 
-import org.firstinspires.ftc.teamcode.subsystem.ShootSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 
 public class ShootCommand extends CommandBase {
-    private final ShootSubsystem shootSubsystem;
+    private final ShooterSubsystem shooterSubsystem;
 
-    public ShootCommand(ShootSubsystem shootSubsystem) {
-        this.shootSubsystem = shootSubsystem;
-    addRequirements(shootSubsystem);
+    public ShootCommand(ShooterSubsystem shooterSubsystem) {
+        this.shooterSubsystem = shooterSubsystem;
+    addRequirements(shooterSubsystem);
     }
 
     @Override
     public void execute() {
-        shootSubsystem.shoot();
+        shooterSubsystem.shoot();
     }
 
     @Override
     public void end(boolean interrupted) {
-        shootSubsystem.stop();
+        shooterSubsystem.stop();
     }
 
     @Override
