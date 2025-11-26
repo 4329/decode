@@ -21,5 +21,8 @@ public class RobotConfig {
     public static double PUSHY_UP = 0.11;
     public static double PUSHY_DOWN = 0.85;
     public static double SHOOTER_GOAL = 1700;
-
+    public static double CLOSE_LEFT = 1;
+    public static double CLOSE_RIGHT = 0;
+    public static double OPEN_LEFT = .5;
+    public static double OPEN_RIGHT = .5;
 }

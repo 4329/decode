@@ -50,7 +50,7 @@ public class MotorTest extends LinearOpMode {
         telemetry.addData("runnin", "nope");
         telemetry.addData("position all good?", positionBueno);
         telemetry.addData("velocity all good?", velocityBueno);
-        telemetry.speak(velocityBueno && positionBueno ? "super duper" : "motor is broke");
+        telemetry.speak(velocityBueno && positionBueno ? "super duper" : "motor is broken");
         telemetry.update();
         testDuration.reset();
         while (!testDuration.hasExpired()) {
