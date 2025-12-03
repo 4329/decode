@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 
 import org.firstinspires.ftc.teamcode.util.Alliance;
 
-@Autonomous(name = "Blue autodaddy")
+@Autonomous(name = "Blue AutoTest")
 public class BlueAdo extends ColorAdo {
     @Override
     public Alliance getAlliance() {
