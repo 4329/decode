@@ -76,7 +76,7 @@ public class Testop extends CommandOpMode {
 //        operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease());
 //        operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerShootCommand(spindexerSubsystem,-1));
 //        operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerShootCommand(spindexerSubsystem,1));
-        operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(()-> pushyMcPushermanSubsystem.up());
-        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(()-> pushyMcPushermanSubsystem.down());
+        operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(()-> pushyMcPushermanSubsystem.down());
+        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(()-> pushyMcPushermanSubsystem.up());
     }
 }

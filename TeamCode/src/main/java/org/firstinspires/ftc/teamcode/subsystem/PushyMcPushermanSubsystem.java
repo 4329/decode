@@ -11,6 +11,7 @@ public class PushyMcPushermanSubsystem extends SubsystemBase {
     private Servo push;
     public PushyMcPushermanSubsystem(HardwareMap hardwareMap) {
         this.push = hardwareMap.get(Servo.class, "push");
+        down();
     }
     public void up(){
         push.setPosition(PUSHY_UP);
