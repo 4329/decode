@@ -6,14 +6,11 @@ import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
-import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
 import org.firstinspires.ftc.teamcode.command.ResetSpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerModeeCommand;
-import org.firstinspires.ftc.teamcode.command.SpindexerShootCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;

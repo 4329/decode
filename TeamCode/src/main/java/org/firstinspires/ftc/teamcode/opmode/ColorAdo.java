@@ -6,12 +6,10 @@ import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.command.WaitCommand;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
-import org.firstinspires.ftc.teamcode.command.ShootCommand;
-import org.firstinspires.ftc.teamcode.command.SpindexerShootCommand;
+import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
@@ -54,16 +52,16 @@ public abstract class ColorAdo extends CommandOpMode {
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
-                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new SpindexerCommand(spindexerSubsystem, 1),
     //            factory.strafeToYourLou(),
                 factory.scoreThingsPlease(),
-                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
                 factory.scoreThingsPlease(),
-                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
                 factory.scoreThingsPlease(),
-                new SpindexerShootCommand(spindexerSubsystem, 1),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
                 factory.strafeAwayFromYourLou()
 
