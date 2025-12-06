@@ -17,10 +17,10 @@ public class BlinkinSubsystem extends SubsystemBase {
         this.blinky = hardwareMap.get(RevBlinkinLedDriver.class, "blinky");
         this.telemetry = telemetry;
         this.alliance = alliance;
-        init();
+        AllianceColor();
     }
 
-    private void init() {
+    private void AllianceColor() {
         if(alliance.equals(Alliance.BLUE)){
             currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_OCEAN_PALETTE;
         }
@@ -31,12 +31,17 @@ public class BlinkinSubsystem extends SubsystemBase {
     }
 
     public void changeMode(SpindexerMode newMode) {
-        if (newMode.equals(SpindexerMode.SHOOT)) {
+        if (newMode.equals(SpindexerMode.UNKNOWN)) {
+            AllianceColor();
+        }
+
+        else if (newMode.equals(SpindexerMode.SHOOT)) {
             currentPattern = RevBlinkinLedDriver.BlinkinPattern.LARSON_SCANNER_GRAY;
         }
         else {
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP1_BREATH_SLOW;
+            currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP1_LIGHT_CHASE;
         }
+
         blinky.setPattern(currentPattern);
 
     }

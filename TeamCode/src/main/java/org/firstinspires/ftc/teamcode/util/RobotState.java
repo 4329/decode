@@ -1,7 +1,7 @@
 package org.firstinspires.ftc.teamcode.util;
 
 public class RobotState {
-private SpindexerMode spindexerModes;
+private SpindexerMode spindexerModes = SpindexerMode.UNKNOWN;
 
     public SpindexerMode getSpindexerModes() {
         return spindexerModes;
