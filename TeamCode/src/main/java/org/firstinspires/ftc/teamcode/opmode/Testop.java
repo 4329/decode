@@ -59,7 +59,7 @@ public class Testop extends CommandOpMode {
 //        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE);
 //          shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
  //         pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
-          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, Alliance.BLUE);
+          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, Alliance.RED);
 //        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
         MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
