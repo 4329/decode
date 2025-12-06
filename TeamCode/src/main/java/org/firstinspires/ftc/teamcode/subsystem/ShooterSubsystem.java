@@ -16,6 +16,7 @@ import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
+import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class ShooterSubsystem extends SubsystemBase {
     private MotorEx shootorMotor;
     private MotorGroup groupOfGoop;
     private boolean running = false;
+    private SpindexerMode currentMode;
 
     public ShooterSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
@@ -65,5 +67,9 @@ public class ShooterSubsystem extends SubsystemBase {
     }
     public double getVelocity(){
         return groupOfGoop.getVelocity();
+    }
+
+    public void changeMode(SpindexerMode newMode) {
+        this.currentMode = newMode;
     }
 }

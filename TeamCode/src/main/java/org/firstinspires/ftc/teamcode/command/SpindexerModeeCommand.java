@@ -39,5 +39,6 @@ public class SpindexerModeeCommand extends CommandBase {
         robotState.setSpindexerModes(newMode);
     blinkinSubsystem.changeMode(newMode);
     spindexerSubsystem.changeMode(newMode);
+    shooterSubsystem.changeMode(newMode);
     }
 }
