@@ -3,20 +3,14 @@ package org.firstinspires.ftc.teamcode.opmode;
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
-import com.arcrobotics.ftclib.command.InstantCommand;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
-import com.qualcomm.robotcore.hardware.Gamepad;
-import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
-import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
-import org.firstinspires.ftc.teamcode.command.ShootCommand;
-import org.firstinspires.ftc.teamcode.command.SpindexerIntakeCommand;
-import org.firstinspires.ftc.teamcode.command.SpindexerShootCommand;
-import org.firstinspires.ftc.teamcode.command.UnInstantCommand;
+import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
+import org.firstinspires.ftc.teamcode.command.SpindexerModeeCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
@@ -28,6 +22,7 @@ import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
+import org.firstinspires.ftc.teamcode.util.RobotState;
 
 public abstract class Teleop extends CommandOpMode {
     // FtcDashboard dashboard = FtcDashboard.getInstance();
@@ -43,6 +38,7 @@ public abstract class Teleop extends CommandOpMode {
     private AutoCommandFactory autoCommandFactory;
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem blinkinSubsystem;
+    private RobotState robotState = new RobotState();
 
 
     @Override
@@ -63,10 +59,10 @@ public abstract class Teleop extends CommandOpMode {
           blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
         autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
-        MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
+        MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
             () -> driver.getLeftX(),
-            () -> -driver.getLeftY(),
+            () -> driver.getLeftY(),
             () -> driver.getRightX(),
             () -> driver.getButton(GamepadKeys.Button.LEFT_BUMPER),
             () -> driver.getButton(GamepadKeys.Button.A)
@@ -81,9 +77,10 @@ public abstract class Teleop extends CommandOpMode {
         //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         //operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
         operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease());
-        operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerShootCommand(spindexerSubsystem,-1));
-        operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerShootCommand(spindexerSubsystem,1));
-        mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
+        operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
+        operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
+        operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
+        mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
         register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, blinkinSubsystem);
     }
     public abstract Alliance getAlliance();

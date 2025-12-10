@@ -29,7 +29,7 @@ public class MotorTest extends LinearOpMode {
         boolean positionBueno = false;
 
         while(opModeIsActive() && !testDuration.hasExpired()) {
-            motory.setVelocity(500);
+            motory.setVelocity(-500);
             int curPos = motory.getCurrentPosition();
             double velocity = motory.getVelocity();
             if (velocity > 0 && !velocityBueno) {

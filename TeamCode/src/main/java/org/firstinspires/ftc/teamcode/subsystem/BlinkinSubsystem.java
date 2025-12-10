@@ -6,6 +6,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.util.Alliance;
+import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
 public class BlinkinSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
@@ -13,13 +14,13 @@ public class BlinkinSubsystem extends SubsystemBase {
     private RevBlinkinLedDriver blinky;
     private RevBlinkinLedDriver.BlinkinPattern currentPattern;
     public BlinkinSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
-        this.blinky = hardwareMap.get(RevBlinkinLedDriver.class, "blinkin");
+        this.blinky = hardwareMap.get(RevBlinkinLedDriver.class, "blinky");
         this.telemetry = telemetry;
         this.alliance = alliance;
-        init();
+        AllianceColor();
     }
 
-    private void init() {
+    private void AllianceColor() {
         if(alliance.equals(Alliance.BLUE)){
             currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_OCEAN_PALETTE;
         }
@@ -27,5 +28,21 @@ public class BlinkinSubsystem extends SubsystemBase {
             currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_LAVA_PALETTE;
         }
         blinky.setPattern(currentPattern);
+    }
+
+    public void changeMode(SpindexerMode newMode) {
+        if (newMode.equals(SpindexerMode.UNKNOWN)) {
+            AllianceColor();
+        }
+
+        else if (newMode.equals(SpindexerMode.SHOOT)) {
+            currentPattern = RevBlinkinLedDriver.BlinkinPattern.LARSON_SCANNER_GRAY;
+        }
+        else {
+            currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP1_LIGHT_CHASE;
+        }
+
+        blinky.setPattern(currentPattern);
+
     }
 }
