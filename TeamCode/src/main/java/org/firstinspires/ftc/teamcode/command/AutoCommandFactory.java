@@ -46,11 +46,11 @@ public class AutoCommandFactory {
     }
 
     private Command backUp(double inches, double heading) {
-        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0.35, 0, 0, inches);
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, -0.35, 0, 0, inches);
     }
 
-    private Command forward(double inches, double heading) {
-        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, -0.35, 0, 0, inches);
+    public Command forward(double inches, double heading) {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0.35, 0, 0, inches);
     }
 
     private Command slowForward(double inches, double heading) {
@@ -90,7 +90,7 @@ public class AutoCommandFactory {
 
     }
     public Command strafeAwayFromYourLou() {
-        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, -.3*alliance.value, 26);
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, -.3*alliance.value, 40);
 
     }
 }
