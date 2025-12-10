@@ -59,10 +59,10 @@ public abstract class Teleop extends CommandOpMode {
           blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
         autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
-        MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
+        MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
             () -> driver.getLeftX(),
-            () -> -driver.getLeftY(),
+            () -> driver.getLeftY(),
             () -> driver.getRightX(),
             () -> driver.getButton(GamepadKeys.Button.LEFT_BUMPER),
             () -> driver.getButton(GamepadKeys.Button.A)
@@ -80,7 +80,7 @@ public abstract class Teleop extends CommandOpMode {
         operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
         operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
         operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
-        mecanumDriveSubsystem.setDefaultCommand(driveMecanumCommand);
+        mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
         register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, blinkinSubsystem);
     }
     public abstract Alliance getAlliance();

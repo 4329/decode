@@ -60,10 +60,10 @@ public class Testop extends CommandOpMode {
  //         blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, Alliance.RED);
 //        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
-        MecanumDriveCommand driveMecanumCommand = new MecanumDriveCommand(
+        MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
             () -> driver.getLeftX(),
-            () -> -driver.getLeftY(),
+            () -> driver.getLeftY(),
             () -> driver.getRightX(),
             () -> driver.getButton(GamepadKeys.Button.LEFT_BUMPER),
             () -> driver.getButton(GamepadKeys.Button.A)
@@ -72,6 +72,7 @@ public class Testop extends CommandOpMode {
         driver.getGamepadButton(GamepadKeys.Button.DPAD_DOWN).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_UP).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, 1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
+        mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
 
 //                driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
 
