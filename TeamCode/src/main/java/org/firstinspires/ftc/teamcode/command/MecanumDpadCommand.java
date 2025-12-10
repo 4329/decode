@@ -27,6 +27,11 @@ public class MecanumDpadCommand extends CommandBase {
     }
 
     @Override
+    public void end(boolean interrupted) {
+        mecanumDriveSubsystem.stop();
+    }
+
+    @Override
     public void execute() {
         telemetry.addData("speedBooost", speedBooost.getAsBoolean());
         if (speedBooost.getAsBoolean()) {
