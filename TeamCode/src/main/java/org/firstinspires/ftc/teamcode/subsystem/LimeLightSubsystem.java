@@ -54,6 +54,7 @@ public class LimeLightSubsystem extends SubsystemBase {
              turboXylophone = result.getTx();
              turboYogurt = result.getTy();
              botpose = result.getBotpose();
+             result.getFiducialResults().get(0).getFiducialId();
              targetVisible = true;
              timeSinceTag.reset();
         }
@@ -107,5 +108,14 @@ public class LimeLightSubsystem extends SubsystemBase {
         else {
             return RobotConfig.SHOOTER_CLOSE_GOAL;
         }
+    }
+
+    public void pipelineObelisk() {
+        limelight.pipelineSwitch(0);
+
+    }
+
+    public void pipelineAlliance() {
+        limelight.pipelineSwitch(alliance.pipeline);
     }
 }
