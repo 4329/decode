@@ -46,23 +46,23 @@ public abstract class ColorAdo extends CommandOpMode {
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
-      //  spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
-        //shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
-        //pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+        spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
+        shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
+        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
         BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
-            //    new SpindexerCommand(spindexerSubsystem, 1),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 factory.forward(6,0),
-                new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-              //  new SpindexerCommand(spindexerSubsystem, 1),
+                factory.scoreThingsPlease(),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-                new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-               // new SpindexerCommand(spindexerSubsystem, 1),
+                factory.scoreThingsPlease(),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-             //   factory.scoreThingsPlease(),
-               // new SpindexerCommand(spindexerSubsystem, 1),
+                factory.scoreThingsPlease(),
+                new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
                 factory.strafeAwayFromYourLou()
         );
