@@ -9,6 +9,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
+import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
@@ -54,10 +55,10 @@ public abstract class ColorAdo extends CommandOpMode {
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
             //    new SpindexerCommand(spindexerSubsystem, 1),
                 factory.forward(6,0),
-                //factory.scoreThingsPlease(),
+                new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
               //  new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-             //   factory.scoreThingsPlease(),
+                new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
                // new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
              //   factory.scoreThingsPlease(),
