@@ -18,7 +18,7 @@ public class RobotConfig {
     public static double SHOOTER_PERCENT = 5.5;
     public static double SHOOTER_FF_S = 0.92;
     public static double SHOOTER_FF_V = 0.47;
-    public static double PUSHY_UP = 0.11;
+    public static double PUSHY_UP = 0.35;
     public static double PUSHY_DOWN = 0.85;
     public static double SHOOTER_GOAL = 1700;
 
