@@ -24,7 +24,7 @@ public class LimeLightSubsystem extends SubsystemBase {
     private double turboXylophone;
     private double turboYogurt;
     private Pose3D botpose;
-
+    private int tagID = -123;
     private boolean targetVisible = false;
     private final double DIVIDING_POINT = 13.2;
 
@@ -54,12 +54,15 @@ public class LimeLightSubsystem extends SubsystemBase {
              turboXylophone = result.getTx();
              turboYogurt = result.getTy();
              botpose = result.getBotpose();
-             result.getFiducialResults().get(0).getFiducialId();
+             if (result.getFiducialResults() != null && !result.getFiducialResults().isEmpty()){
+                 tagID = result.getFiducialResults().get(0).getFiducialId();
+             }
              targetVisible = true;
              timeSinceTag.reset();
         }
         else {
             targetVisible = false;
+            tagID = -123;
         }
         tagInSightChanger.accept(targetVisible);
         Log.i("LL-botpose", botpose + "");
@@ -69,7 +72,8 @@ public class LimeLightSubsystem extends SubsystemBase {
         telemetry.addData("tx", result.getTx());
         telemetry.addData("ty", result.getTy());
         telemetry.addData("Botpose", (botpose != null) ? botpose.toString() : "blech");
-        telemetry.addData("targetVisible", targetVisible);
+        telemetry.addData("TargetVisible", targetVisible);
+        telemetry.addData("Tag", tagID);
 
         /*
         if (botpose != null) {
@@ -117,5 +121,9 @@ public class LimeLightSubsystem extends SubsystemBase {
 
     public void pipelineAlliance() {
         limelight.pipelineSwitch(alliance.pipeline);
+    }
+
+    public int getTagID() {
+        return tagID;
     }
 }

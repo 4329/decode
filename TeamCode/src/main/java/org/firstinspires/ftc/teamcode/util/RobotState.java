@@ -11,4 +11,7 @@ private SpindexerMode spindexerModes = SpindexerMode.UNKNOWN;
         this.spindexerModes = spindexerModes;
     }
 
+    public void wehadID(int tag) {
+
+    }
 }
