@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.opmode;
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
+import com.arcrobotics.ftclib.command.InstantCommand;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
@@ -50,9 +51,9 @@ public class Testop extends CommandOpMode {
         driver = new GamepadEx(gamepad1);
         operator = new GamepadEx(gamepad2);
 //        mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
-//        telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
+        telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
 //        imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
-//        spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
+        spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
 //        intakeSubsystem = new IntakeSubsystem(hardwareMap);
 //        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE);
 //        shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
@@ -74,7 +75,7 @@ public class Testop extends CommandOpMode {
 //        driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
 //        mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
 
-//                driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
+                driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
 
 //        operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease());
 //        operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerShootCommand(spindexerSubsystem,-1));
