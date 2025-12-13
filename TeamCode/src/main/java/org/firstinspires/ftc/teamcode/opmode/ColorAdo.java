@@ -10,6 +10,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
 import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
+import org.firstinspires.ftc.teamcode.command.ObeliskCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
@@ -22,6 +23,7 @@ import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
+import org.firstinspires.ftc.teamcode.util.RobotState;
 
 public abstract class ColorAdo extends CommandOpMode {
     private MecanumDriveSubsystem mecanumDriveSubsystem;
@@ -33,6 +35,7 @@ public abstract class ColorAdo extends CommandOpMode {
     private ShooterSubsystem shooterSubsystem;
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem BlinkyguySubsystem;
+    private RobotState robotState = new RobotState();
 
     @Override
     public void initialize() {
@@ -58,7 +61,7 @@ public abstract class ColorAdo extends CommandOpMode {
                 factory.rMove(10,5)
         );
 
-        register(telemetryUpdateSubsystem, imuSubsystem);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, BlinkyguySubsystem);
         schedule(autoCommandGroup);
     }
     public abstract Alliance getAlliance();

@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode.command;
 
+import android.util.Log;
+
 import com.arcrobotics.ftclib.command.CommandBase;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
@@ -24,6 +26,7 @@ public class ObeliskCommand extends CommandBase{
     @Override
     public void initialize() {
     limeLightSubsystem.pipelineObelisk();
+    tagAttempt = 0;
 
     }
 
@@ -49,6 +52,7 @@ public class ObeliskCommand extends CommandBase{
         tag = limeLightSubsystem.getTagID();
         if (tag > 0) {
             robotState.wehadID(tag);
+            Log.i ("oby", "tag "+tag);
         }
         else {
             tagAttempt ++;

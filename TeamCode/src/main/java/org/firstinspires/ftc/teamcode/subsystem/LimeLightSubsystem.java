@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.qualcomm.hardware.limelightvision.LLResult;
+import com.qualcomm.hardware.limelightvision.LLResultTypes;
 import com.qualcomm.hardware.limelightvision.LLStatus;
 import com.qualcomm.hardware.limelightvision.Limelight3A;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -56,6 +57,9 @@ public class LimeLightSubsystem extends SubsystemBase {
              botpose = result.getBotpose();
              if (result.getFiducialResults() != null && !result.getFiducialResults().isEmpty()){
                  tagID = result.getFiducialResults().get(0).getFiducialId();
+                for (LLResultTypes.FiducialResult fr: result.getFiducialResults()){
+                    Log.i ("tagID", "FrenchDoggies " +fr.getFiducialId());
+                }
              }
              targetVisible = true;
              timeSinceTag.reset();
