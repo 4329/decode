@@ -54,7 +54,7 @@ public abstract class ColorAdo extends CommandOpMode {
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
                 new SpindexerCommand(spindexerSubsystem, 1),
-                factory.forward(6,0),
+                factory.rMove(6,0),
                 factory.scoreThingsPlease(),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
@@ -64,7 +64,7 @@ public abstract class ColorAdo extends CommandOpMode {
                 factory.scoreThingsPlease(),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-                factory.strafeAwayFromYourLou()
+                factory.moveAwayFromYourLou()
         );
 
         register(telemetryUpdateSubsystem, imuSubsystem);

@@ -65,7 +65,7 @@ public class AutoCommandFactory {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, -.7, inches);
     }
 
-    private Command rMove(double inches, double heading) {
+    public Command rMove(double inches, double heading) {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, .21, inches);
     }
 
@@ -86,11 +86,11 @@ public class AutoCommandFactory {
     }
 
     public Command strafeToYourLou() {
-        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, .3*alliance.value, 26);
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, .3, 26);
 
     }
-    public Command strafeAwayFromYourLou() {
-        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, -.3*alliance.value, 40);
+    public Command moveAwayFromYourLou() {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, .3*alliance.value, 0,0 , 40);
 
     }
 }
