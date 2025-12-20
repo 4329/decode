@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.opmode;
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
+import com.arcrobotics.ftclib.command.InstantCommand;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 
@@ -32,7 +33,7 @@ public abstract class Teleop extends CommandOpMode {
     private TelemetryUpdateSubsystem telemetryUpdateSubsystem;
     private ImuSubsystem imuSubsystem;
     private SpindexerSubsystem spindexerSubsystem;
-    private IntakeSubsystem intakeSubsystem;
+ //   private IntakeSubsystem intakeSubsystem;
     private LimeLightSubsystem limeLightSubsystem;
     private ShooterSubsystem shooterSubsystem;
     private AutoCommandFactory autoCommandFactory;
@@ -52,11 +53,11 @@ public abstract class Teleop extends CommandOpMode {
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
-        intakeSubsystem = new IntakeSubsystem(hardwareMap);
+       // intakeSubsystem = new IntakeSubsystem(hardwareMap);
+        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
-          pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
-          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
+     //    blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
         autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
         MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
@@ -72,16 +73,18 @@ public abstract class Teleop extends CommandOpMode {
         driver.getGamepadButton(GamepadKeys.Button.DPAD_UP).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, 1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
 
-//        driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
+//        operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
 
         //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         //operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
         operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease());
+//        operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(() -> pushyMcPushermanSubsystem.up()));
+//        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand(() -> pushyMcPushermanSubsystem.down()));
         operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
         operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
         operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
         mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, blinkinSubsystem);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem/*, blinkinSubsystem*/);
     }
     public abstract Alliance getAlliance();
 }

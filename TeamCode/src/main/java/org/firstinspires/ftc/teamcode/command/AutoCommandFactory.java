@@ -74,12 +74,13 @@ public class AutoCommandFactory {
     }
 
     public Command scoreThingsPlease() {
-        return new ParallelDeadlineGroup(new SequentialCommandGroup(
-                new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-                new ReadyShootCommand(shooterSubsystem, telemetry),
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                new WaitCommand(500),
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.down())
+        return new ParallelDeadlineGroup(
+                    new SequentialCommandGroup(
+                        new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+                        new ReadyShootCommand(shooterSubsystem, telemetry),
+                        new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                        new WaitCommand(500),
+                        new UnInstantCommand(() -> pushyMcPushermanSubsystem.down())
                 //and thank you
         ),
                 new ShootCommand(shooterSubsystem));
@@ -87,6 +88,10 @@ public class AutoCommandFactory {
 
     public Command strafeToYourLou() {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, .3, 26);
+
+    }
+    public Command getOutThingo() {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0.3, 0, 0, 10);
 
     }
     public Command moveAwayFromYourLou() {

@@ -16,6 +16,7 @@ import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
+import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
 import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
 import java.util.List;
@@ -38,7 +39,6 @@ public class ShooterSubsystem extends SubsystemBase {
     }
 
     private void setUp() {
-        groupOfGoop.setInverted(true);
         groupOfGoop.setZeroPowerBehavior(Motor.ZeroPowerBehavior.FLOAT);
         groupOfGoop.setRunMode(Motor.RunMode.VelocityControl);
         groupOfGoop.setVeloCoefficients(SHOOTER_P, SHOOTER_I, SHOOTER_D);
@@ -58,7 +58,7 @@ public class ShooterSubsystem extends SubsystemBase {
     public void periodic() {
         if (running) {
             groupOfGoop.set(SHOOTER_PERCENT);
-
+            Log.i("amps", String.format("%f, %f", shooterMotor.motorEx.getCurrent(CurrentUnit.AMPS), shootorMotor.motorEx.getCurrent(CurrentUnit.AMPS)));
             Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getVelocity(), shooterMotor.getAcceleration()));
         }
         List<Double> velocities = groupOfGoop.getVelocities();

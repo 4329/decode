@@ -49,22 +49,22 @@ public abstract class ColorAdo extends CommandOpMode {
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
         shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
         pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
-        BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
+        //BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 factory.rMove(6,0),
-                factory.scoreThingsPlease(),
+                factory.scoreThingsPlease().withTimeout(5000),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-                factory.scoreThingsPlease(),
+                factory.scoreThingsPlease().withTimeout(5000),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-                factory.scoreThingsPlease(),
+                factory.scoreThingsPlease().withTimeout(5000),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 new WaitCommand(1000),
-                factory.moveAwayFromYourLou()
+                factory.getOutThingo()
         );
 
         register(telemetryUpdateSubsystem, imuSubsystem);

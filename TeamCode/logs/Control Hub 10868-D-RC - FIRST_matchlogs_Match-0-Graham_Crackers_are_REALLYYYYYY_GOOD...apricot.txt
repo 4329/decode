@@ -1,0 +1,48 @@
+--------- beginning of main
+12-20 11:02:36.595  2990  3096 V Robocol : received command: CMD_SET_MATCH_NUMBER(12472) 0
+12-20 11:02:36.598  2990  3096 V Robocol : received command: CMD_INIT_OP_MODE(12473) Graham Crackers are REALLYYYYYY GOOD...apricot
+12-20 11:02:36.642  2990  3432 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 11:02:36.647  2990  3386 I RobotCore: Attempting to switch to OpMode Graham Crackers are REALLYYYYYY GOOD...apricot
+12-20 11:02:36.651  2990  3386 I RobotCore: ******************** START - OPMODE Graham Crackers are REALLYYYYYY GOOD...apricot ********************
+12-20 11:02:36.858  2990  3386 D HardwareMap: Clearing which device instances have been retrieved
+12-20 11:02:36.861  2990  3438 V RobotCore: thread: 'OpModeThread' starting...
+12-20 11:02:36.892  2990  3110 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(2676), attempt: 0
+12-20 11:02:37.356  2990  3096 V Robocol : received command: CMD_RUN_OP_MODE(12490) Graham Crackers are REALLYYYYYY GOOD...apricot
+12-20 11:02:37.374  2990  3110 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(2686), attempt: 0
+12-20 11:02:37.675  2990  3438 I command : init-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:37.680  2990  3438 I command : execute-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:37.680  2990  3438 I command : end(false)-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:37.700  2990  3047 E RobotCore: java.net.SocketException: Socket closed
+12-20 11:02:37.701  2990  3047 E RobotCore: 	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:120)
+12-20 11:02:37.701  2990  3047 E RobotCore: 	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+12-20 11:02:37.702  2990  3047 E RobotCore: 	at fi.iki.elonen.NanoWSD$WebSocketFrame.write(NanoWSD.java:702)
+12-20 11:02:37.702  2990  3047 E RobotCore: 	at fi.iki.elonen.NanoWSD$WebSocket.sendFrame(NanoWSD.java:273)
+12-20 11:02:37.703  2990  3047 E RobotCore: 	at fi.iki.elonen.NanoWSD$WebSocket.send(NanoWSD.java:268)
+12-20 11:02:37.704  2990  3047 E RobotCore: 	at com.acmerobotics.dashboard.FtcDashboard$DashWebSocket.send(FtcDashboard.java:763)
+12-20 11:02:37.704  2990  3047 E RobotCore: 	at com.acmerobotics.dashboard.DashboardCore.lambda$sendAll$4(DashboardCore.java:273)
+12-20 11:02:37.705  2990  3047 E RobotCore: 	at com.acmerobotics.dashboard.DashboardCore$$ExternalSyntheticLambda6.apply(D8$$SyntheticClass:0)
+12-20 11:02:37.705  2990  3047 E RobotCore: 	at com.acmerobotics.dashboard.Mutex.with(Mutex.java:25)
+12-20 11:02:37.705  2990  3047 E RobotCore: 	at com.acmerobotics.dashboard.DashboardCore.sendAll(DashboardCore.java:271)
+12-20 11:02:37.706  2990  3047 E RobotCore: 	at com.acmerobotics.dashboard.DashboardCore$TelemetryUpdateRunnable.run(DashboardCore.java:85)
+12-20 11:02:37.706  2990  3047 E RobotCore: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+12-20 11:02:37.707  2990  3047 E RobotCore: 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+12-20 11:02:37.708  2990  3047 E RobotCore: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+12-20 11:02:37.708  2990  3047 E RobotCore: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+12-20 11:02:37.708  2990  3047 E RobotCore: 	at java.lang.Thread.run(Thread.java:761)
+12-20 11:02:38.996  2990  3438 I command : init-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:39.004  2990  3438 I command : execute-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:39.005  2990  3438 I command : end(false)-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:40.279  2990  3438 I command : init-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:40.284  2990  3438 I command : execute-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:40.284  2990  3438 I command : end(false)-[SpindexerCommand] *** org.firstinspires.ftc.teamcode.command.SpindexerCommand@80b0b1
+12-20 11:02:42.754  2990  3096 V Robocol : received command: CMD_INIT_OP_MODE(12636) $Stop$Robot$
+12-20 11:02:42.772  2990  3438 D RobotCore: User runOpModeMethod exited
+12-20 11:02:42.773  2990  3438 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 11:02:42.777  2990  3386 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+12-20 11:02:42.779  2990  3386 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-Graham_Crackers_are_REALLYYYYYY_GOOD...apricot.txt ********************
+12-20 11:02:42.784  2990  3386 D HardwareMap: Clearing which device instances have been retrieved
+12-20 11:02:42.784  2990  3449 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-Graham_Crackers_are_REALLYYYYYY_GOOD...apricot.txt
+12-20 11:02:42.784  2990  3449 I RobotCore: logging command line: exec logcat -d -T '12-20 11:2:36.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-Graham_Crackers_are_REALLYYYYYY_GOOD...apricot.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+12-20 11:02:42.787  2990  3451 V RobotCore: thread: 'OpModeThread' starting...
+12-20 11:02:42.813  2990  3110 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(2859), attempt: 0
+12-20 11:02:42.814  2990  3110 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(2860), attempt: 0

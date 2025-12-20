@@ -1,0 +1,24 @@
+--------- beginning of main
+12-20 13:27:34.761   996  1158 V Robocol : received command: CMD_SET_MATCH_NUMBER(15090) 13
+12-20 13:27:34.763   996  1158 V Robocol : received command: CMD_INIT_OP_MODE(15091) BlueTeleop
+12-20 13:27:34.802   996  1258 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 13:27:34.806   996  1174 I RobotCore: Attempting to switch to OpMode BlueTeleop
+12-20 13:27:34.812   996  1174 I RobotCore: ******************** START - OPMODE BlueTeleop ********************
+12-20 13:27:35.056   996  1174 D HardwareMap: Clearing which device instances have been retrieved
+12-20 13:27:35.059   996  1260 V RobotCore: thread: 'OpModeThread' starting...
+12-20 13:27:35.066   996  1187 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(5185), attempt: 0
+12-20 13:27:35.109   996  1260 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+12-20 13:27:35.130   996  1260 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-20 13:29:45.477   996  1158 V Robocol : received command: CMD_INIT_OP_MODE(16348) $Stop$Robot$
+12-20 13:29:45.495   996  1260 D RobotCore: User runOpModeMethod exited
+12-20 13:29:45.495   996  1260 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 13:29:45.501   996  1174 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+12-20 13:29:45.504   996  1174 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-13-BlueTeleop.txt ********************
+12-20 13:29:45.512   996  1275 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-13-BlueTeleop.txt
+12-20 13:29:45.513   996  1275 I RobotCore: logging command line: exec logcat -d -T '12-20 13:27:34.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-13-BlueTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+12-20 13:29:45.513   996  1174 D HardwareMap: Clearing which device instances have been retrieved
+12-20 13:29:45.516   996  1277 V RobotCore: thread: 'OpModeThread' starting...
+12-20 13:29:45.535  1276  1276 I sh      : type=1400 audit(0.0:116): avc: denied { read } for name="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+12-20 13:29:45.535  1276  1276 I sh      : type=1400 audit(0.0:117): avc: denied { open } for path="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+12-20 13:29:45.546   996  1187 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(6439), attempt: 0
+12-20 13:29:45.547   996  1187 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(6440), attempt: 0

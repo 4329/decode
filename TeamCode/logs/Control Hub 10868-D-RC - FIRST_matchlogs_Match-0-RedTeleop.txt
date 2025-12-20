@@ -1,0 +1,1779 @@
+--------- beginning of main
+12-20 13:43:03.000   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.007   999  1250 I LL-botpose: null
+12-20 13:43:03.007   999  1250 I LL-vis  : false
+12-20 13:43:03.007   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.024   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.035   999  1250 I LL-botpose: null
+12-20 13:43:03.035   999  1250 I LL-vis  : false
+12-20 13:43:03.035   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.045   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.051   999  1250 I LL-botpose: null
+12-20 13:43:03.051   999  1250 I LL-vis  : false
+12-20 13:43:03.051   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.070   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.080   999  1250 I LL-botpose: null
+12-20 13:43:03.080   999  1250 I LL-vis  : false
+12-20 13:43:03.080   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.094   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.100   999  1250 I LL-botpose: null
+12-20 13:43:03.100   999  1250 I LL-vis  : false
+12-20 13:43:03.100   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.109   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.115   999  1250 I LL-botpose: null
+12-20 13:43:03.115   999  1250 I LL-vis  : false
+12-20 13:43:03.115   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.123   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.130   999  1250 I LL-botpose: null
+12-20 13:43:03.130   999  1250 I LL-vis  : false
+12-20 13:43:03.130   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.149   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.159   999  1250 I LL-botpose: null
+12-20 13:43:03.159   999  1250 I LL-vis  : false
+12-20 13:43:03.159   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.166   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.174   999  1250 I LL-botpose: null
+12-20 13:43:03.174   999  1250 I LL-vis  : false
+12-20 13:43:03.174   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.182   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.191   999  1250 I LL-botpose: null
+12-20 13:43:03.191   999  1250 I LL-vis  : false
+12-20 13:43:03.191   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.201   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.209   999  1250 I LL-botpose: null
+12-20 13:43:03.209   999  1250 I LL-vis  : false
+12-20 13:43:03.209   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.218   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.225   999  1250 I LL-botpose: null
+12-20 13:43:03.225   999  1250 I LL-vis  : false
+12-20 13:43:03.225   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.233   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.240   999  1250 I LL-botpose: null
+12-20 13:43:03.240   999  1250 I LL-vis  : false
+12-20 13:43:03.240   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.249   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.255   999  1250 I LL-botpose: null
+12-20 13:43:03.255   999  1250 I LL-vis  : false
+12-20 13:43:03.255   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.264   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.274   999  1250 I LL-botpose: null
+12-20 13:43:03.274   999  1250 I LL-vis  : false
+12-20 13:43:03.274   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.284   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.292   999  1250 I LL-botpose: null
+12-20 13:43:03.292   999  1250 I LL-vis  : false
+12-20 13:43:03.292   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.301   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.309   999  1250 I LL-botpose: null
+12-20 13:43:03.309   999  1250 I LL-vis  : false
+12-20 13:43:03.309   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.316   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.324   999  1250 I LL-botpose: null
+12-20 13:43:03.324   999  1250 I LL-vis  : false
+12-20 13:43:03.324   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.331   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.339   999  1250 I LL-botpose: null
+12-20 13:43:03.339   999  1250 I LL-vis  : false
+12-20 13:43:03.339   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.347   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.353   999  1250 I LL-botpose: null
+12-20 13:43:03.353   999  1250 I LL-vis  : false
+12-20 13:43:03.353   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.360   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.366   999  1250 I LL-botpose: null
+12-20 13:43:03.366   999  1250 I LL-vis  : false
+12-20 13:43:03.366   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.372   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.380   999  1250 I LL-botpose: null
+12-20 13:43:03.380   999  1250 I LL-vis  : false
+12-20 13:43:03.380   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.387   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.394   999  1250 I LL-botpose: null
+12-20 13:43:03.394   999  1250 I LL-vis  : false
+12-20 13:43:03.394   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.401   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.408   999  1250 I LL-botpose: null
+12-20 13:43:03.409   999  1250 I LL-vis  : false
+12-20 13:43:03.409   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.418   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.426   999  1250 I LL-botpose: null
+12-20 13:43:03.426   999  1250 I LL-vis  : false
+12-20 13:43:03.426   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.430   999  1250 W RobotCore: Control Hub is currently unresponsive.
+12-20 13:43:03.436   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.444   999  1250 I LL-botpose: null
+12-20 13:43:03.444   999  1250 I LL-vis  : false
+12-20 13:43:03.444   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.451   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.458   999  1250 I LL-botpose: null
+12-20 13:43:03.458   999  1250 I LL-vis  : false
+12-20 13:43:03.458   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.466   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.472   999  1250 I LL-botpose: null
+12-20 13:43:03.472   999  1250 I LL-vis  : false
+12-20 13:43:03.472   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.481   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.488   999  1250 I LL-botpose: null
+12-20 13:43:03.488   999  1250 I LL-vis  : false
+12-20 13:43:03.488   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.498   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.505   999  1250 I LL-botpose: null
+12-20 13:43:03.505   999  1250 I LL-vis  : false
+12-20 13:43:03.505   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.513   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.520   999  1250 I LL-botpose: null
+12-20 13:43:03.520   999  1250 I LL-vis  : false
+12-20 13:43:03.520   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.531   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.541   999  1250 I LL-botpose: null
+12-20 13:43:03.541   999  1250 I LL-vis  : false
+12-20 13:43:03.541   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.549   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.559   999  1250 I LL-botpose: null
+12-20 13:43:03.559   999  1250 I LL-vis  : false
+12-20 13:43:03.559   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.566   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.571   999  1250 I LL-botpose: null
+12-20 13:43:03.571   999  1250 I LL-vis  : false
+12-20 13:43:03.572   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.580   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.587   999  1250 I LL-botpose: null
+12-20 13:43:03.587   999  1250 I LL-vis  : false
+12-20 13:43:03.587   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.596   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.607   999  1250 I LL-botpose: null
+12-20 13:43:03.607   999  1250 I LL-vis  : false
+12-20 13:43:03.607   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.616   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.622   999  1250 I LL-botpose: null
+12-20 13:43:03.622   999  1250 I LL-vis  : false
+12-20 13:43:03.622   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.632   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.639   999  1163 V Robocol : received command: CMD_INIT_OP_MODE(10836) $Stop$Robot$
+12-20 13:43:03.649   999  1250 I LL-botpose: null
+12-20 13:43:03.649   999  1250 I LL-vis  : false
+12-20 13:43:03.649   999  1250 I LL-tx   : 0.0
+12-20 13:43:03.653   999  1250 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@20947ed
+12-20 13:43:03.654   999  1250 D RobotCore: User runOpModeMethod exited
+12-20 13:43:03.654   999  1250 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 13:43:03.655   999  1190 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+12-20 13:43:03.657   999  1190 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt ********************
+12-20 13:43:03.666   999  1190 I RobotCore: Pruning old match logs: deleting Match-8-Graham_Crackers_are_REALLYYYYYY_GOOD...apricot.txt
+12-20 13:43:03.669   999  1190 D HardwareMap: Clearing which device instances have been retrieved
+12-20 13:43:03.670   999  1440 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt
+12-20 13:43:03.670   999  1440 I RobotCore: logging command line: exec logcat -d -T '12-20 13:42:44.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+12-20 13:43:03.675   999  1443 V RobotCore: thread: 'OpModeThread' starting...
+12-20 13:43:03.682   999  1167 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1344), attempt: 0
+12-20 13:43:03.683   999  1167 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(1345), attempt: 0
+12-20 13:43:03.678  1441  1441 I sh      : type=1400 audit(0.0:149): avc: denied { read } for name="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+12-20 13:43:03.678  1441  1441 I sh      : type=1400 audit(0.0:150): avc: denied { open } for path="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+12-20 13:43:03.958   999  1163 V Robocol : received command: CMD_SET_MATCH_NUMBER(10854) 0
+12-20 13:43:03.962   999  1163 V Robocol : received command: CMD_INIT_OP_MODE(10855) RedTeleop
+12-20 13:43:03.975   999  1443 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 13:43:03.980   999  1190 I RobotCore: Attempting to switch to OpMode RedTeleop
+12-20 13:43:03.983   999  1190 I RobotCore: ******************** START - OPMODE RedTeleop ********************
+12-20 13:43:04.001   999  1440 I RobotCore: Done running exec logcat -d -T '12-20 13:42:44.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+12-20 13:43:04.001   999  1440 I RobotCore: exiting match logcat for /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt
+12-20 13:43:04.085   999  1190 D HardwareMap: Clearing which device instances have been retrieved
+12-20 13:43:04.088   999  1449 V RobotCore: thread: 'OpModeThread' starting...
+12-20 13:43:04.103   999  1449 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+12-20 13:43:04.111   999  1449 E LynxI2cDeviceSynch: placeholder: readTimestamped
+12-20 13:43:04.115   999  1190 D RobotCore: system telemetry: key=$System$Warning$ msg="Expansion Hub 2, Servo Hub 3, Control Hub not currently responding to commands."
+12-20 13:43:04.121   999  1170 D SoundPlayer: playing volume=0.000000 samp=4|ms=2509
+12-20 13:43:04.121   999  1167 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1379), attempt: 0
+12-20 13:43:04.160   999  1167 V Robocol : sending CMD_PLAY_SOUND(1381), attempt: 0
+12-20 13:43:04.959   999  1163 V Robocol : received command: CMD_RUN_OP_MODE(10880) RedTeleop
+12-20 13:43:04.963   999  1164 W RobotCore: Servo Hub 3 is currently unresponsive.
+12-20 13:43:04.966   999  1164 W RobotCore: Expansion Hub 2 is currently unresponsive.
+12-20 13:43:04.976   999  1190 D RobotCore: system telemetry: key=$System$Warning$ msg="Expansion Hub 2, Servo Hub 3, Control Hub not currently responding to commands.
+12-20 13:43:04.976   999  1190 D RobotCore: 
+12-20 13:43:04.976   999  1190 D RobotCore: Error communicating with I2C device(s) 'navx'. Check your wiring and configuration."
+12-20 13:43:04.982   999  1449 I LL-botpose: null
+12-20 13:43:04.982   999  1449 I LL-vis  : false
+12-20 13:43:04.982   999  1449 I LL-tx   : 0.0
+12-20 13:43:04.987   999  1449 I command : init-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.000   999  1449 I LL-botpose: null
+12-20 13:43:05.000   999  1449 I LL-vis  : false
+12-20 13:43:05.001   999  1167 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(1395), attempt: 0
+12-20 13:43:05.002   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.022   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.031   999  1449 I LL-botpose: null
+12-20 13:43:05.031   999  1449 I LL-vis  : false
+12-20 13:43:05.031   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.041   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.049   999  1449 I LL-botpose: null
+12-20 13:43:05.049   999  1449 I LL-vis  : false
+12-20 13:43:05.049   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.056   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.067   999  1449 I LL-botpose: null
+12-20 13:43:05.067   999  1449 I LL-vis  : false
+12-20 13:43:05.067   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.078   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.088   999  1449 I LL-botpose: null
+12-20 13:43:05.088   999  1449 I LL-vis  : false
+12-20 13:43:05.088   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.095   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.103   999  1449 I LL-botpose: null
+12-20 13:43:05.103   999  1449 I LL-vis  : false
+12-20 13:43:05.103   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.113   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.122   999  1449 I LL-botpose: null
+12-20 13:43:05.122   999  1449 I LL-vis  : false
+12-20 13:43:05.122   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.130   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.139   999  1449 I LL-botpose: null
+12-20 13:43:05.139   999  1449 I LL-vis  : false
+12-20 13:43:05.139   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.149   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.156   999  1449 I LL-botpose: null
+12-20 13:43:05.156   999  1449 I LL-vis  : false
+12-20 13:43:05.156   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.163   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.170   999  1449 I LL-botpose: null
+12-20 13:43:05.170   999  1449 I LL-vis  : false
+12-20 13:43:05.170   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.180   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.190   999  1449 I LL-botpose: null
+12-20 13:43:05.190   999  1449 I LL-vis  : false
+12-20 13:43:05.190   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.199   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.206   999  1449 I LL-botpose: null
+12-20 13:43:05.206   999  1449 I LL-vis  : false
+12-20 13:43:05.206   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.214   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.222   999  1449 I LL-botpose: null
+12-20 13:43:05.222   999  1449 I LL-vis  : false
+12-20 13:43:05.222   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.234   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.248   999  1449 I LL-botpose: null
+12-20 13:43:05.248   999  1449 I LL-vis  : false
+12-20 13:43:05.248   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.258   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.266   999  1449 I LL-botpose: null
+12-20 13:43:05.266   999  1449 I LL-vis  : false
+12-20 13:43:05.266   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.274   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.281   999  1449 I LL-botpose: null
+12-20 13:43:05.281   999  1449 I LL-vis  : false
+12-20 13:43:05.281   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.289   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.295   999  1449 I LL-botpose: null
+12-20 13:43:05.295   999  1449 I LL-vis  : false
+12-20 13:43:05.295   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.303   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.311   999  1449 I LL-botpose: null
+12-20 13:43:05.311   999  1449 I LL-vis  : false
+12-20 13:43:05.311   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.320   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.328   999  1449 I LL-botpose: null
+12-20 13:43:05.328   999  1449 I LL-vis  : false
+12-20 13:43:05.328   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.338   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.345   999  1449 I LL-botpose: null
+12-20 13:43:05.345   999  1449 I LL-vis  : false
+12-20 13:43:05.345   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.352   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.361   999  1449 I LL-botpose: null
+12-20 13:43:05.361   999  1449 I LL-vis  : false
+12-20 13:43:05.361   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.372   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.381   999  1449 I LL-botpose: null
+12-20 13:43:05.381   999  1449 I LL-vis  : false
+12-20 13:43:05.381   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.389   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.396   999  1449 I LL-botpose: null
+12-20 13:43:05.396   999  1449 I LL-vis  : false
+12-20 13:43:05.396   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.406   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.413   999  1449 I LL-botpose: null
+12-20 13:43:05.413   999  1449 I LL-vis  : false
+12-20 13:43:05.413   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.421   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.428   999  1449 I LL-botpose: null
+12-20 13:43:05.428   999  1449 I LL-vis  : false
+12-20 13:43:05.428   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.434   999  1449 W RobotCore: Control Hub is currently unresponsive.
+12-20 13:43:05.438   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.446   999  1449 I LL-botpose: null
+12-20 13:43:05.447   999  1449 I LL-vis  : false
+12-20 13:43:05.447   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.453   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.460   999  1449 I LL-botpose: null
+12-20 13:43:05.460   999  1449 I LL-vis  : false
+12-20 13:43:05.460   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.468   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.475   999  1449 I LL-botpose: null
+12-20 13:43:05.475   999  1449 I LL-vis  : false
+12-20 13:43:05.475   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.482   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.487   999  1449 I LL-botpose: null
+12-20 13:43:05.488   999  1449 I LL-vis  : false
+12-20 13:43:05.488   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.493   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.502   999  1449 I LL-botpose: null
+12-20 13:43:05.503   999  1449 I LL-vis  : false
+12-20 13:43:05.503   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.511   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.518   999  1449 I LL-botpose: null
+12-20 13:43:05.519   999  1449 I LL-vis  : false
+12-20 13:43:05.519   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.539   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.548   999  1449 I LL-botpose: null
+12-20 13:43:05.548   999  1449 I LL-vis  : false
+12-20 13:43:05.548   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.557   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.564   999  1449 I LL-botpose: null
+12-20 13:43:05.564   999  1449 I LL-vis  : false
+12-20 13:43:05.564   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.572   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.579   999  1449 I LL-botpose: null
+12-20 13:43:05.580   999  1449 I LL-vis  : false
+12-20 13:43:05.580   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.587   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.596   999  1449 I LL-botpose: null
+12-20 13:43:05.599   999  1449 I LL-vis  : false
+12-20 13:43:05.599   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.607   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.615   999  1449 I LL-botpose: null
+12-20 13:43:05.615   999  1449 I LL-vis  : false
+12-20 13:43:05.615   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.622   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.632   999  1449 I LL-botpose: null
+12-20 13:43:05.632   999  1449 I LL-vis  : false
+12-20 13:43:05.632   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.641   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.648   999  1449 I LL-botpose: null
+12-20 13:43:05.648   999  1449 I LL-vis  : false
+12-20 13:43:05.648   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.654   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.660   999  1449 I LL-botpose: null
+12-20 13:43:05.660   999  1449 I LL-vis  : false
+12-20 13:43:05.660   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.668   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.675   999  1449 I LL-botpose: null
+12-20 13:43:05.675   999  1449 I LL-vis  : false
+12-20 13:43:05.675   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.682   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.689   999  1449 I LL-botpose: null
+12-20 13:43:05.689   999  1449 I LL-vis  : false
+12-20 13:43:05.689   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.696   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.702   999  1449 I LL-botpose: null
+12-20 13:43:05.702   999  1449 I LL-vis  : false
+12-20 13:43:05.702   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.709   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.716   999  1449 I LL-botpose: null
+12-20 13:43:05.716   999  1449 I LL-vis  : false
+12-20 13:43:05.716   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.722   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.729   999  1449 I LL-botpose: null
+12-20 13:43:05.729   999  1449 I LL-vis  : false
+12-20 13:43:05.729   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.739   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.745   999  1449 I LL-botpose: null
+12-20 13:43:05.745   999  1449 I LL-vis  : false
+12-20 13:43:05.745   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.752   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.765   999  1449 I LL-botpose: null
+12-20 13:43:05.765   999  1449 I LL-vis  : false
+12-20 13:43:05.765   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.773   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.780   999  1449 I LL-botpose: null
+12-20 13:43:05.780   999  1449 I LL-vis  : false
+12-20 13:43:05.780   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.789   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.795   999  1449 I LL-botpose: null
+12-20 13:43:05.795   999  1449 I LL-vis  : false
+12-20 13:43:05.795   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.801   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.810   999  1449 I LL-botpose: null
+12-20 13:43:05.810   999  1449 I LL-vis  : false
+12-20 13:43:05.810   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.819   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.830   999  1449 I LL-botpose: null
+12-20 13:43:05.830   999  1449 I LL-vis  : false
+12-20 13:43:05.830   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.837   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.846   999  1449 I LL-botpose: null
+12-20 13:43:05.846   999  1449 I LL-vis  : false
+12-20 13:43:05.846   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.855   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.862   999  1449 I LL-botpose: null
+12-20 13:43:05.862   999  1449 I LL-vis  : false
+12-20 13:43:05.862   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.870   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.878   999  1449 I LL-botpose: null
+12-20 13:43:05.878   999  1449 I LL-vis  : false
+12-20 13:43:05.878   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.885   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.893   999  1449 I LL-botpose: null
+12-20 13:43:05.893   999  1449 I LL-vis  : false
+12-20 13:43:05.893   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.899   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.908   999  1449 I LL-botpose: null
+12-20 13:43:05.908   999  1449 I LL-vis  : false
+12-20 13:43:05.908   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.915   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.922   999  1449 I LL-botpose: null
+12-20 13:43:05.922   999  1449 I LL-vis  : false
+12-20 13:43:05.922   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.931   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.938   999  1449 I LL-botpose: null
+12-20 13:43:05.938   999  1449 I LL-vis  : false
+12-20 13:43:05.938   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.946   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.952   999  1449 I LL-botpose: null
+12-20 13:43:05.952   999  1449 I LL-vis  : false
+12-20 13:43:05.952   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.961   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.970   999  1449 I LL-botpose: null
+12-20 13:43:05.971   999  1449 I LL-vis  : false
+12-20 13:43:05.971   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.977   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.983   999  1449 I LL-botpose: null
+12-20 13:43:05.983   999  1449 I LL-vis  : false
+12-20 13:43:05.983   999  1449 I LL-tx   : 0.0
+12-20 13:43:05.990   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:05.997   999  1449 I LL-botpose: null
+12-20 13:43:05.997   999  1449 I LL-vis  : false
+12-20 13:43:05.998   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.005   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.011   999  1449 I LL-botpose: null
+12-20 13:43:06.011   999  1449 I LL-vis  : false
+12-20 13:43:06.011   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.019   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.027   999  1449 I LL-botpose: null
+12-20 13:43:06.028   999  1449 I LL-vis  : false
+12-20 13:43:06.028   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.043   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.049   999  1449 I LL-botpose: null
+12-20 13:43:06.049   999  1449 I LL-vis  : false
+12-20 13:43:06.049   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.056   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.063   999  1449 I LL-botpose: null
+12-20 13:43:06.063   999  1449 I LL-vis  : false
+12-20 13:43:06.063   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.070   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.079   999  1449 I LL-botpose: null
+12-20 13:43:06.079   999  1449 I LL-vis  : false
+12-20 13:43:06.079   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.087   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.093   999  1449 I LL-botpose: null
+12-20 13:43:06.093   999  1449 I LL-vis  : false
+12-20 13:43:06.093   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.102   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.110   999  1449 I LL-botpose: null
+12-20 13:43:06.110   999  1449 I LL-vis  : false
+12-20 13:43:06.110   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.119   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.125   999  1449 I LL-botpose: null
+12-20 13:43:06.125   999  1449 I LL-vis  : false
+12-20 13:43:06.126   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.134   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.142   999  1449 I LL-botpose: null
+12-20 13:43:06.142   999  1449 I LL-vis  : false
+12-20 13:43:06.143   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.151   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.156   999  1449 I LL-botpose: null
+12-20 13:43:06.156   999  1449 I LL-vis  : false
+12-20 13:43:06.157   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.163   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.169   999  1449 I LL-botpose: null
+12-20 13:43:06.169   999  1449 I LL-vis  : false
+12-20 13:43:06.169   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.179   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.187   999  1449 I LL-botpose: null
+12-20 13:43:06.187   999  1449 I LL-vis  : false
+12-20 13:43:06.187   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.197   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.205   999  1449 I LL-botpose: null
+12-20 13:43:06.205   999  1449 I LL-vis  : false
+12-20 13:43:06.205   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.217   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.225   999  1449 I LL-botpose: null
+12-20 13:43:06.226   999  1449 I LL-vis  : false
+12-20 13:43:06.226   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.237   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.248   999  1449 I LL-botpose: null
+12-20 13:43:06.248   999  1449 I LL-vis  : false
+12-20 13:43:06.248   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.256   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.266   999  1449 I LL-botpose: null
+12-20 13:43:06.266   999  1449 I LL-vis  : false
+12-20 13:43:06.266   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.272   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.281   999  1449 I LL-botpose: null
+12-20 13:43:06.282   999  1449 I LL-vis  : false
+12-20 13:43:06.282   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.291   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.300   999  1449 I LL-botpose: null
+12-20 13:43:06.301   999  1449 I LL-vis  : false
+12-20 13:43:06.301   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.309   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.315   999  1449 I LL-botpose: null
+12-20 13:43:06.315   999  1449 I LL-vis  : false
+12-20 13:43:06.315   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.323   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.331   999  1449 I LL-botpose: null
+12-20 13:43:06.331   999  1449 I LL-vis  : false
+12-20 13:43:06.331   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.340   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.346   999  1449 I LL-botpose: null
+12-20 13:43:06.346   999  1449 I LL-vis  : false
+12-20 13:43:06.346   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.351   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.359   999  1449 I LL-botpose: null
+12-20 13:43:06.359   999  1449 I LL-vis  : false
+12-20 13:43:06.359   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.367   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.377   999  1449 I LL-botpose: null
+12-20 13:43:06.377   999  1449 I LL-vis  : false
+12-20 13:43:06.377   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.385   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.393   999  1449 I LL-botpose: null
+12-20 13:43:06.393   999  1449 I LL-vis  : false
+12-20 13:43:06.393   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.403   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.410   999  1449 I LL-botpose: null
+12-20 13:43:06.410   999  1449 I LL-vis  : false
+12-20 13:43:06.410   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.418   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.423   999  1449 I LL-botpose: null
+12-20 13:43:06.424   999  1449 I LL-vis  : false
+12-20 13:43:06.424   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.431   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.438   999  1449 I LL-botpose: null
+12-20 13:43:06.439   999  1449 I LL-vis  : false
+12-20 13:43:06.439   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.445   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.451   999  1449 I LL-botpose: null
+12-20 13:43:06.451   999  1449 I LL-vis  : false
+12-20 13:43:06.451   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.461   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.467   999  1449 I LL-botpose: null
+12-20 13:43:06.468   999  1449 I LL-vis  : false
+12-20 13:43:06.468   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.479   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.487   999  1449 I LL-botpose: null
+12-20 13:43:06.488   999  1449 I LL-vis  : false
+12-20 13:43:06.488   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.497   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.505   999  1449 I LL-botpose: null
+12-20 13:43:06.505   999  1449 I LL-vis  : false
+12-20 13:43:06.505   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.511   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.518   999  1449 I LL-botpose: null
+12-20 13:43:06.519   999  1449 I LL-vis  : false
+12-20 13:43:06.519   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.526   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.535   999  1449 I LL-botpose: null
+12-20 13:43:06.535   999  1449 I LL-vis  : false
+12-20 13:43:06.535   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.548   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.556   999  1449 I LL-botpose: null
+12-20 13:43:06.556   999  1449 I LL-vis  : false
+12-20 13:43:06.556   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.567   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.576   999  1449 I LL-botpose: null
+12-20 13:43:06.576   999  1449 I LL-vis  : false
+12-20 13:43:06.576   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.586   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.593   999  1449 I LL-botpose: null
+12-20 13:43:06.593   999  1449 I LL-vis  : false
+12-20 13:43:06.593   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.602   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.611   999  1449 I LL-botpose: null
+12-20 13:43:06.611   999  1449 I LL-vis  : false
+12-20 13:43:06.611   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.620   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.628   999  1210 D SoundPlayer: playing volume=0.000000 samp=4|ms=2509
+12-20 13:43:06.629   999  1449 I LL-botpose: null
+12-20 13:43:06.629   999  1449 I LL-vis  : false
+12-20 13:43:06.629   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.638   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.640   999  1167 V Robocol : sending CMD_PLAY_SOUND(1427), attempt: 0
+12-20 13:43:06.647   999  1449 I LL-botpose: null
+12-20 13:43:06.647   999  1449 I LL-vis  : false
+12-20 13:43:06.647   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.655   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.662   999  1449 I LL-botpose: null
+12-20 13:43:06.662   999  1449 I LL-vis  : false
+12-20 13:43:06.662   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.669   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.677   999  1449 I LL-botpose: null
+12-20 13:43:06.677   999  1449 I LL-vis  : false
+12-20 13:43:06.678   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.687   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.696   999  1449 I LL-botpose: null
+12-20 13:43:06.696   999  1449 I LL-vis  : false
+12-20 13:43:06.696   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.702   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.709   999  1449 I LL-botpose: null
+12-20 13:43:06.709   999  1449 I LL-vis  : false
+12-20 13:43:06.709   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.720   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.726   999  1449 I LL-botpose: null
+12-20 13:43:06.726   999  1449 I LL-vis  : false
+12-20 13:43:06.726   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.732   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.738   999  1449 I LL-botpose: null
+12-20 13:43:06.738   999  1449 I LL-vis  : false
+12-20 13:43:06.738   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.747   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.757   999  1449 I LL-botpose: null
+12-20 13:43:06.757   999  1449 I LL-vis  : false
+12-20 13:43:06.757   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.765   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.771   999  1449 I LL-botpose: null
+12-20 13:43:06.771   999  1449 I LL-vis  : false
+12-20 13:43:06.771   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.781   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.790   999  1449 I LL-botpose: null
+12-20 13:43:06.790   999  1449 I LL-vis  : false
+12-20 13:43:06.790   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.800   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.808   999  1449 I LL-botpose: null
+12-20 13:43:06.808   999  1449 I LL-vis  : false
+12-20 13:43:06.808   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.816   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.822   999  1449 I LL-botpose: null
+12-20 13:43:06.822   999  1449 I LL-vis  : false
+12-20 13:43:06.822   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.831   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.839   999  1449 I LL-botpose: null
+12-20 13:43:06.839   999  1449 I LL-vis  : false
+12-20 13:43:06.839   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.846   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.852   999  1449 I LL-botpose: null
+12-20 13:43:06.852   999  1449 I LL-vis  : false
+12-20 13:43:06.852   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.861   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.868   999  1449 I LL-botpose: null
+12-20 13:43:06.868   999  1449 I LL-vis  : false
+12-20 13:43:06.868   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.876   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.884   999  1449 I LL-botpose: null
+12-20 13:43:06.884   999  1449 I LL-vis  : false
+12-20 13:43:06.884   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.894   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.901   999  1449 I LL-botpose: null
+12-20 13:43:06.901   999  1449 I LL-vis  : false
+12-20 13:43:06.901   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.909   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.919   999  1449 I LL-botpose: null
+12-20 13:43:06.919   999  1449 I LL-vis  : false
+12-20 13:43:06.919   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.927   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.933   999  1449 I LL-botpose: null
+12-20 13:43:06.933   999  1449 I LL-vis  : false
+12-20 13:43:06.933   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.941   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.948   999  1449 I LL-botpose: null
+12-20 13:43:06.948   999  1449 I LL-vis  : false
+12-20 13:43:06.948   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.959   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.968   999  1449 I LL-botpose: null
+12-20 13:43:06.968   999  1449 I LL-vis  : false
+12-20 13:43:06.968   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.969   999  1449 W RobotCore: Expansion Hub 2 is currently unresponsive.
+12-20 13:43:06.978   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:06.987   999  1449 I LL-botpose: null
+12-20 13:43:06.987   999  1449 I LL-vis  : false
+12-20 13:43:06.987   999  1449 I LL-tx   : 0.0
+12-20 13:43:06.998   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.007   999  1449 I LL-botpose: null
+12-20 13:43:07.007   999  1449 I LL-vis  : false
+12-20 13:43:07.007   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.016   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.023   999  1449 I LL-botpose: null
+12-20 13:43:07.023   999  1449 I LL-vis  : false
+12-20 13:43:07.023   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.030   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.040   999  1449 I LL-botpose: null
+12-20 13:43:07.040   999  1449 I LL-vis  : false
+12-20 13:43:07.040   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.054   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.063   999  1449 I LL-botpose: null
+12-20 13:43:07.063   999  1449 I LL-vis  : false
+12-20 13:43:07.063   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.075   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.081   999  1449 I LL-botpose: null
+12-20 13:43:07.081   999  1449 I LL-vis  : false
+12-20 13:43:07.081   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.089   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.095   999  1449 I LL-botpose: null
+12-20 13:43:07.095   999  1449 I LL-vis  : false
+12-20 13:43:07.095   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.103   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.110   999  1449 I LL-botpose: null
+12-20 13:43:07.110   999  1449 I LL-vis  : false
+12-20 13:43:07.110   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.117   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.124   999  1449 I LL-botpose: null
+12-20 13:43:07.125   999  1449 I LL-vis  : false
+12-20 13:43:07.125   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.132   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.139   999  1449 I LL-botpose: null
+12-20 13:43:07.139   999  1449 I LL-vis  : false
+12-20 13:43:07.139   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.150   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.159   999  1449 I LL-botpose: null
+12-20 13:43:07.159   999  1449 I LL-vis  : false
+12-20 13:43:07.159   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.170   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.180   999  1449 I LL-botpose: null
+12-20 13:43:07.180   999  1449 I LL-vis  : false
+12-20 13:43:07.180   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.189   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.199   999  1449 I LL-botpose: null
+12-20 13:43:07.199   999  1449 I LL-vis  : false
+12-20 13:43:07.199   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.208   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.218   999  1449 I LL-botpose: null
+12-20 13:43:07.219   999  1449 I LL-vis  : false
+12-20 13:43:07.219   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.228   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.239   999  1449 I LL-botpose: null
+12-20 13:43:07.239   999  1449 I LL-vis  : false
+12-20 13:43:07.239   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.251   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.260   999  1449 I LL-botpose: null
+12-20 13:43:07.260   999  1449 I LL-vis  : false
+12-20 13:43:07.260   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.269   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.275   999  1449 I LL-botpose: null
+12-20 13:43:07.275   999  1449 I LL-vis  : false
+12-20 13:43:07.275   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.282   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.288   999  1449 I LL-botpose: null
+12-20 13:43:07.288   999  1449 I LL-vis  : false
+12-20 13:43:07.288   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.302   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.308   999  1449 I LL-botpose: null
+12-20 13:43:07.308   999  1449 I LL-vis  : false
+12-20 13:43:07.308   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.316   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.326   999  1449 I LL-botpose: null
+12-20 13:43:07.326   999  1449 I LL-vis  : false
+12-20 13:43:07.326   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.342   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.349   999  1449 I LL-botpose: null
+12-20 13:43:07.349   999  1449 I LL-vis  : false
+12-20 13:43:07.349   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.357   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.363   999  1449 I LL-botpose: null
+12-20 13:43:07.363   999  1449 I LL-vis  : false
+12-20 13:43:07.363   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.385   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.396   999  1449 I LL-botpose: null
+12-20 13:43:07.396   999  1449 I LL-vis  : false
+12-20 13:43:07.397   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.406   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.414   999  1449 I LL-botpose: null
+12-20 13:43:07.414   999  1449 I LL-vis  : false
+12-20 13:43:07.414   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.421   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.428   999  1449 I LL-botpose: null
+12-20 13:43:07.428   999  1449 I LL-vis  : false
+12-20 13:43:07.428   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.437   999  1449 W RobotCore: Control Hub is currently unresponsive.
+12-20 13:43:07.439   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.448   999  1449 I LL-botpose: null
+12-20 13:43:07.448   999  1449 I LL-vis  : false
+12-20 13:43:07.448   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.459   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.466   999  1449 I LL-botpose: null
+12-20 13:43:07.466   999  1449 I LL-vis  : false
+12-20 13:43:07.466   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.473   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.481   999  1449 I LL-botpose: null
+12-20 13:43:07.481   999  1449 I LL-vis  : false
+12-20 13:43:07.481   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.489   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.497   999  1449 I LL-botpose: null
+12-20 13:43:07.497   999  1449 I LL-vis  : false
+12-20 13:43:07.497   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.507   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.516   999  1449 I LL-botpose: null
+12-20 13:43:07.516   999  1449 I LL-vis  : false
+12-20 13:43:07.516   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.537   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.545   999  1449 I LL-botpose: null
+12-20 13:43:07.545   999  1449 I LL-vis  : false
+12-20 13:43:07.545   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.551   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.557   999  1449 I LL-botpose: null
+12-20 13:43:07.557   999  1449 I LL-vis  : false
+12-20 13:43:07.558   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.570   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.575   999  1449 I LL-botpose: null
+12-20 13:43:07.575   999  1449 I LL-vis  : false
+12-20 13:43:07.575   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.581   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.589   999  1449 I LL-botpose: null
+12-20 13:43:07.589   999  1449 I LL-vis  : false
+12-20 13:43:07.589   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.599   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.606   999  1449 I LL-botpose: null
+12-20 13:43:07.606   999  1449 I LL-vis  : false
+12-20 13:43:07.606   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.620   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.628   999  1449 I LL-botpose: null
+12-20 13:43:07.628   999  1449 I LL-vis  : false
+12-20 13:43:07.628   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.638   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.645   999  1449 I LL-botpose: null
+12-20 13:43:07.645   999  1449 I LL-vis  : false
+12-20 13:43:07.645   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.655   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.661   999  1449 I LL-botpose: null
+12-20 13:43:07.662   999  1449 I LL-vis  : false
+12-20 13:43:07.662   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.671   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.678   999  1449 I LL-botpose: null
+12-20 13:43:07.678   999  1449 I LL-vis  : false
+12-20 13:43:07.678   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.687   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.696   999  1449 I LL-botpose: null
+12-20 13:43:07.696   999  1449 I LL-vis  : false
+12-20 13:43:07.696   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.706   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.706   999  1187 W RobotCore: Servo Hub 3 is currently unresponsive.
+12-20 13:43:07.714   999  1449 I LL-botpose: null
+12-20 13:43:07.714   999  1449 I LL-vis  : false
+12-20 13:43:07.714   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.721   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.728   999  1449 I LL-botpose: null
+12-20 13:43:07.728   999  1449 I LL-vis  : false
+12-20 13:43:07.728   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.736   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.742   999  1449 I LL-botpose: null
+12-20 13:43:07.742   999  1449 I LL-vis  : false
+12-20 13:43:07.742   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.751   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.759   999  1449 I LL-botpose: null
+12-20 13:43:07.759   999  1449 I LL-vis  : false
+12-20 13:43:07.759   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.766   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.773   999  1449 I LL-botpose: null
+12-20 13:43:07.773   999  1449 I LL-vis  : false
+12-20 13:43:07.776   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.786   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.796   999  1449 I LL-botpose: null
+12-20 13:43:07.796   999  1449 I LL-vis  : false
+12-20 13:43:07.796   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.802   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.809   999  1449 I LL-botpose: null
+12-20 13:43:07.809   999  1449 I LL-vis  : false
+12-20 13:43:07.809   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.818   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.827   999  1449 I LL-botpose: null
+12-20 13:43:07.827   999  1449 I LL-vis  : false
+12-20 13:43:07.827   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.835   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.845   999  1449 I LL-botpose: null
+12-20 13:43:07.845   999  1449 I LL-vis  : false
+12-20 13:43:07.845   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.852   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.859   999  1449 I LL-botpose: null
+12-20 13:43:07.859   999  1449 I LL-vis  : false
+12-20 13:43:07.859   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.867   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.874   999  1449 I LL-botpose: null
+12-20 13:43:07.874   999  1449 I LL-vis  : false
+12-20 13:43:07.874   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.881   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.890   999  1449 I LL-botpose: null
+12-20 13:43:07.890   999  1449 I LL-vis  : false
+12-20 13:43:07.890   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.900   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.905   999  1449 I LL-botpose: null
+12-20 13:43:07.906   999  1449 I LL-vis  : false
+12-20 13:43:07.906   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.915   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.924   999  1449 I LL-botpose: null
+12-20 13:43:07.924   999  1449 I LL-vis  : false
+12-20 13:43:07.924   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.932   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.938   999  1449 I LL-botpose: null
+12-20 13:43:07.938   999  1449 I LL-vis  : false
+12-20 13:43:07.938   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.948   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.954   999  1449 I LL-botpose: null
+12-20 13:43:07.954   999  1449 I LL-vis  : false
+12-20 13:43:07.954   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.964   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.973   999  1449 I LL-botpose: null
+12-20 13:43:07.974   999  1449 I LL-vis  : false
+12-20 13:43:07.974   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.981   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:07.990   999  1449 I LL-botpose: null
+12-20 13:43:07.990   999  1449 I LL-vis  : false
+12-20 13:43:07.990   999  1449 I LL-tx   : 0.0
+12-20 13:43:07.999   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.006   999  1449 I LL-botpose: null
+12-20 13:43:08.006   999  1449 I LL-vis  : false
+12-20 13:43:08.006   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.012   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.018   999  1449 I LL-botpose: null
+12-20 13:43:08.018   999  1449 I LL-vis  : false
+12-20 13:43:08.018   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.026   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.036   999  1449 I LL-botpose: null
+12-20 13:43:08.036   999  1449 I LL-vis  : false
+12-20 13:43:08.036   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.044   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.050   999  1449 I LL-botpose: null
+12-20 13:43:08.050   999  1449 I LL-vis  : false
+12-20 13:43:08.050   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.067   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.073   999  1449 I LL-botpose: null
+12-20 13:43:08.073   999  1449 I LL-vis  : false
+12-20 13:43:08.073   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.080   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.087   999  1449 I LL-botpose: null
+12-20 13:43:08.087   999  1449 I LL-vis  : false
+12-20 13:43:08.087   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.093   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.102   999  1449 I LL-botpose: null
+12-20 13:43:08.102   999  1449 I LL-vis  : false
+12-20 13:43:08.102   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.109   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.118   999  1449 I LL-botpose: null
+12-20 13:43:08.118   999  1449 I LL-vis  : false
+12-20 13:43:08.118   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.126   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.132   999  1449 I LL-botpose: null
+12-20 13:43:08.132   999  1449 I LL-vis  : false
+12-20 13:43:08.132   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.140   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.150   999  1449 I LL-botpose: null
+12-20 13:43:08.150   999  1449 I LL-vis  : false
+12-20 13:43:08.150   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.159   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.171   999  1449 I LL-botpose: null
+12-20 13:43:08.171   999  1449 I LL-vis  : false
+12-20 13:43:08.171   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.188   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.199   999  1449 I LL-botpose: null
+12-20 13:43:08.199   999  1449 I LL-vis  : false
+12-20 13:43:08.199   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.209   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.219   999  1449 I LL-botpose: null
+12-20 13:43:08.219   999  1449 I LL-vis  : false
+12-20 13:43:08.219   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.228   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.235   999  1449 I LL-botpose: null
+12-20 13:43:08.235   999  1449 I LL-vis  : false
+12-20 13:43:08.235   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.243   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.250   999  1449 I LL-botpose: null
+12-20 13:43:08.250   999  1449 I LL-vis  : false
+12-20 13:43:08.250   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.260   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.268   999  1449 I LL-botpose: null
+12-20 13:43:08.268   999  1449 I LL-vis  : false
+12-20 13:43:08.268   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.276   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.283   999  1449 I LL-botpose: null
+12-20 13:43:08.283   999  1449 I LL-vis  : false
+12-20 13:43:08.283   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.290   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.296   999  1449 I LL-botpose: null
+12-20 13:43:08.297   999  1449 I LL-vis  : false
+12-20 13:43:08.297   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.304   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.310   999  1449 I LL-botpose: null
+12-20 13:43:08.310   999  1449 I LL-vis  : false
+12-20 13:43:08.310   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.319   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.325   999  1449 I LL-botpose: null
+12-20 13:43:08.325   999  1449 I LL-vis  : false
+12-20 13:43:08.325   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.331   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.338   999  1449 I LL-botpose: null
+12-20 13:43:08.339   999  1449 I LL-vis  : false
+12-20 13:43:08.339   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.347   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.356   999  1449 I LL-botpose: null
+12-20 13:43:08.356   999  1449 I LL-vis  : false
+12-20 13:43:08.356   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.363   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.370   999  1449 I LL-botpose: null
+12-20 13:43:08.370   999  1449 I LL-vis  : false
+12-20 13:43:08.370   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.380   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.388   999  1449 I LL-botpose: null
+12-20 13:43:08.388   999  1449 I LL-vis  : false
+12-20 13:43:08.388   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.398   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.406   999  1449 I LL-botpose: null
+12-20 13:43:08.407   999  1449 I LL-vis  : false
+12-20 13:43:08.407   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.416   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.423   999  1449 I LL-botpose: null
+12-20 13:43:08.423   999  1449 I LL-vis  : false
+12-20 13:43:08.423   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.432   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.439   999  1449 I LL-botpose: null
+12-20 13:43:08.440   999  1449 I LL-vis  : false
+12-20 13:43:08.440   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.447   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.454   999  1449 I LL-botpose: null
+12-20 13:43:08.454   999  1449 I LL-vis  : false
+12-20 13:43:08.454   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.460   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.466   999  1449 I LL-botpose: null
+12-20 13:43:08.466   999  1449 I LL-vis  : false
+12-20 13:43:08.466   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.474   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.483   999  1449 I LL-botpose: null
+12-20 13:43:08.483   999  1449 I LL-vis  : false
+12-20 13:43:08.483   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.491   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.498   999  1449 I LL-botpose: null
+12-20 13:43:08.498   999  1449 I LL-vis  : false
+12-20 13:43:08.498   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.506   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.512   999  1449 I LL-botpose: null
+12-20 13:43:08.512   999  1449 I LL-vis  : false
+12-20 13:43:08.512   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.519   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.526   999  1449 I LL-botpose: null
+12-20 13:43:08.526   999  1449 I LL-vis  : false
+12-20 13:43:08.526   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.537   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.544   999  1449 I LL-botpose: null
+12-20 13:43:08.544   999  1449 I LL-vis  : false
+12-20 13:43:08.545   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.550   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.557   999  1449 I LL-botpose: null
+12-20 13:43:08.557   999  1449 I LL-vis  : false
+12-20 13:43:08.557   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.567   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.574   999  1449 I LL-botpose: null
+12-20 13:43:08.574   999  1449 I LL-vis  : false
+12-20 13:43:08.574   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.591   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.598   999  1449 I LL-botpose: null
+12-20 13:43:08.599   999  1449 I LL-vis  : false
+12-20 13:43:08.599   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.605   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.615   999  1449 I LL-botpose: null
+12-20 13:43:08.615   999  1449 I LL-vis  : false
+12-20 13:43:08.615   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.629   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.638   999  1449 I LL-botpose: null
+12-20 13:43:08.638   999  1449 I LL-vis  : false
+12-20 13:43:08.638   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.650   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.658   999  1449 I LL-botpose: null
+12-20 13:43:08.659   999  1449 I LL-vis  : false
+12-20 13:43:08.659   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.670   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.678   999  1449 I LL-botpose: null
+12-20 13:43:08.678   999  1449 I LL-vis  : false
+12-20 13:43:08.678   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.687   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.694   999  1449 I LL-botpose: null
+12-20 13:43:08.694   999  1449 I LL-vis  : false
+12-20 13:43:08.694   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.701   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.709   999  1449 I LL-botpose: null
+12-20 13:43:08.709   999  1449 I LL-vis  : false
+12-20 13:43:08.709   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.718   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.727   999  1449 I LL-botpose: null
+12-20 13:43:08.727   999  1449 I LL-vis  : false
+12-20 13:43:08.727   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.734   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.741   999  1449 I LL-botpose: null
+12-20 13:43:08.741   999  1449 I LL-vis  : false
+12-20 13:43:08.741   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.748   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.755   999  1449 I LL-botpose: null
+12-20 13:43:08.755   999  1449 I LL-vis  : false
+12-20 13:43:08.755   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.764   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.771   999  1449 I LL-botpose: null
+12-20 13:43:08.771   999  1449 I LL-vis  : false
+12-20 13:43:08.771   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.778   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.785   999  1449 I LL-botpose: null
+12-20 13:43:08.785   999  1449 I LL-vis  : false
+12-20 13:43:08.785   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.793   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.800   999  1449 I LL-botpose: null
+12-20 13:43:08.800   999  1449 I LL-vis  : false
+12-20 13:43:08.800   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.809   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.815   999  1449 I LL-botpose: null
+12-20 13:43:08.815   999  1449 I LL-vis  : false
+12-20 13:43:08.815   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.822   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.829   999  1449 I LL-botpose: null
+12-20 13:43:08.829   999  1449 I LL-vis  : false
+12-20 13:43:08.829   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.839   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.848   999  1449 I LL-botpose: null
+12-20 13:43:08.848   999  1449 I LL-vis  : false
+12-20 13:43:08.848   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.857   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.865   999  1449 I LL-botpose: null
+12-20 13:43:08.865   999  1449 I LL-vis  : false
+12-20 13:43:08.865   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.873   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.887   999  1449 I LL-botpose: null
+12-20 13:43:08.887   999  1449 I LL-vis  : false
+12-20 13:43:08.887   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.896   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.905   999  1449 I LL-botpose: null
+12-20 13:43:08.906   999  1449 I LL-vis  : false
+12-20 13:43:08.906   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.916   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.925   999  1449 I LL-botpose: null
+12-20 13:43:08.925   999  1449 I LL-vis  : false
+12-20 13:43:08.925   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.933   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.941   999  1449 I LL-botpose: null
+12-20 13:43:08.941   999  1449 I LL-vis  : false
+12-20 13:43:08.941   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.950   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.959   999  1449 I LL-botpose: null
+12-20 13:43:08.960   999  1449 I LL-vis  : false
+12-20 13:43:08.960   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.967   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.975   999  1449 I LL-botpose: null
+12-20 13:43:08.975   999  1449 I LL-vis  : false
+12-20 13:43:08.975   999  1449 I LL-tx   : 0.0
+12-20 13:43:08.977   999  1449 W RobotCore: Expansion Hub 2 is currently unresponsive.
+12-20 13:43:08.985   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:08.991   999  1449 I LL-botpose: null
+12-20 13:43:08.991   999  1449 I LL-vis  : false
+12-20 13:43:08.991   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.000   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.007   999  1449 I LL-botpose: null
+12-20 13:43:09.008   999  1449 I LL-vis  : false
+12-20 13:43:09.008   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.017   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.024   999  1449 I LL-botpose: null
+12-20 13:43:09.024   999  1449 I LL-vis  : false
+12-20 13:43:09.024   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.035   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.042   999  1449 I LL-botpose: null
+12-20 13:43:09.042   999  1449 I LL-vis  : false
+12-20 13:43:09.042   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.066   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.072   999  1449 I LL-botpose: null
+12-20 13:43:09.072   999  1449 I LL-vis  : false
+12-20 13:43:09.072   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.079   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.085   999  1449 I LL-botpose: null
+12-20 13:43:09.085   999  1449 I LL-vis  : false
+12-20 13:43:09.085   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.098   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.104   999  1449 I LL-botpose: null
+12-20 13:43:09.104   999  1449 I LL-vis  : false
+12-20 13:43:09.104   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.111   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.119   999  1449 I LL-botpose: null
+12-20 13:43:09.119   999  1449 I LL-vis  : false
+12-20 13:43:09.119   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.134   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.144   999  1449 I LL-botpose: null
+12-20 13:43:09.144   999  1449 I LL-vis  : false
+12-20 13:43:09.144   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.154   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.160   999  1449 I LL-botpose: null
+12-20 13:43:09.160   999  1449 I LL-vis  : false
+12-20 13:43:09.160   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.173   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.182   999  1449 I LL-botpose: null
+12-20 13:43:09.182   999  1449 I LL-vis  : false
+12-20 13:43:09.182   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.193   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.201   999  1449 I LL-botpose: null
+12-20 13:43:09.201   999  1449 I LL-vis  : false
+12-20 13:43:09.201   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.211   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.218   999  1449 I LL-botpose: null
+12-20 13:43:09.218   999  1449 I LL-vis  : false
+12-20 13:43:09.218   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.225   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.233   999  1449 I LL-botpose: null
+12-20 13:43:09.233   999  1449 I LL-vis  : false
+12-20 13:43:09.233   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.241   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.248   999  1449 I LL-botpose: null
+12-20 13:43:09.248   999  1449 I LL-vis  : false
+12-20 13:43:09.248   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.255   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.263   999  1449 I LL-botpose: null
+12-20 13:43:09.263   999  1449 I LL-vis  : false
+12-20 13:43:09.263   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.270   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.278   999  1449 I LL-botpose: null
+12-20 13:43:09.278   999  1449 I LL-vis  : false
+12-20 13:43:09.278   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.293   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.299   999  1449 I LL-botpose: null
+12-20 13:43:09.299   999  1449 I LL-vis  : false
+12-20 13:43:09.299   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.307   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.313   999  1449 I LL-botpose: null
+12-20 13:43:09.313   999  1449 I LL-vis  : false
+12-20 13:43:09.313   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.323   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.329   999  1449 I LL-botpose: null
+12-20 13:43:09.329   999  1449 I LL-vis  : false
+12-20 13:43:09.329   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.343   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.350   999  1449 I LL-botpose: null
+12-20 13:43:09.350   999  1449 I LL-vis  : false
+12-20 13:43:09.350   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.357   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.366   999  1449 I LL-botpose: null
+12-20 13:43:09.366   999  1449 I LL-vis  : false
+12-20 13:43:09.366   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.383   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.389   999  1449 I LL-botpose: null
+12-20 13:43:09.389   999  1449 I LL-vis  : false
+12-20 13:43:09.389   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.401   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.411   999  1449 I LL-botpose: null
+12-20 13:43:09.412   999  1449 I LL-vis  : false
+12-20 13:43:09.412   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.427   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.433   999  1449 I LL-botpose: null
+12-20 13:43:09.433   999  1449 I LL-vis  : false
+12-20 13:43:09.433   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.439   999  1449 W RobotCore: Control Hub is currently unresponsive.
+12-20 13:43:09.441   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.450   999  1449 I LL-botpose: null
+12-20 13:43:09.450   999  1449 I LL-vis  : false
+12-20 13:43:09.450   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.460   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.465   999  1449 I LL-botpose: null
+12-20 13:43:09.465   999  1449 I LL-vis  : false
+12-20 13:43:09.465   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.472   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.479   999  1449 I LL-botpose: null
+12-20 13:43:09.479   999  1449 I LL-vis  : false
+12-20 13:43:09.479   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.485   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.491   999  1449 I LL-botpose: null
+12-20 13:43:09.492   999  1449 I LL-vis  : false
+12-20 13:43:09.492   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.500   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.507   999  1449 I LL-botpose: null
+12-20 13:43:09.507   999  1449 I LL-vis  : false
+12-20 13:43:09.507   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.514   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.519   999  1449 I LL-botpose: null
+12-20 13:43:09.519   999  1449 I LL-vis  : false
+12-20 13:43:09.519   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.528   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.535   999  1449 I LL-botpose: null
+12-20 13:43:09.535   999  1449 I LL-vis  : false
+12-20 13:43:09.535   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.542   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.548   999  1449 I LL-botpose: null
+12-20 13:43:09.548   999  1449 I LL-vis  : false
+12-20 13:43:09.548   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.555   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.561   999  1449 I LL-botpose: null
+12-20 13:43:09.561   999  1449 I LL-vis  : false
+12-20 13:43:09.561   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.568   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.574   999  1449 I LL-botpose: null
+12-20 13:43:09.574   999  1449 I LL-vis  : false
+12-20 13:43:09.574   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.580   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.586   999  1449 I LL-botpose: null
+12-20 13:43:09.586   999  1449 I LL-vis  : false
+12-20 13:43:09.586   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.592   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.600   999  1449 I LL-botpose: null
+12-20 13:43:09.600   999  1449 I LL-vis  : false
+12-20 13:43:09.600   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.609   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.617   999  1449 I LL-botpose: null
+12-20 13:43:09.617   999  1449 I LL-vis  : false
+12-20 13:43:09.617   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.627   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.636   999  1449 I LL-botpose: null
+12-20 13:43:09.636   999  1449 I LL-vis  : false
+12-20 13:43:09.636   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.646   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.656   999  1449 I LL-botpose: null
+12-20 13:43:09.657   999  1449 I LL-vis  : false
+12-20 13:43:09.657   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.668   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.684   999  1449 I LL-botpose: null
+12-20 13:43:09.684   999  1449 I LL-vis  : false
+12-20 13:43:09.684   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.692   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.698   999  1449 I LL-botpose: null
+12-20 13:43:09.698   999  1449 I LL-vis  : false
+12-20 13:43:09.698   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.706   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.716   999  1449 I LL-botpose: null
+12-20 13:43:09.716   999  1449 I LL-vis  : false
+12-20 13:43:09.716   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.727   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.734   999  1449 I LL-botpose: null
+12-20 13:43:09.734   999  1449 I LL-vis  : false
+12-20 13:43:09.734   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.741   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.748   999  1449 I LL-botpose: null
+12-20 13:43:09.748   999  1449 I LL-vis  : false
+12-20 13:43:09.748   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.759   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.768   999  1449 I LL-botpose: null
+12-20 13:43:09.768   999  1449 I LL-vis  : false
+12-20 13:43:09.768   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.779   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.789   999  1449 I LL-botpose: null
+12-20 13:43:09.789   999  1449 I LL-vis  : false
+12-20 13:43:09.789   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.801   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.808   999  1449 I LL-botpose: null
+12-20 13:43:09.808   999  1449 I LL-vis  : false
+12-20 13:43:09.808   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.816   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.822   999  1449 I LL-botpose: null
+12-20 13:43:09.822   999  1449 I LL-vis  : false
+12-20 13:43:09.822   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.830   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.838   999  1449 I LL-botpose: null
+12-20 13:43:09.838   999  1449 I LL-vis  : false
+12-20 13:43:09.838   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.847   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.855   999  1449 I LL-botpose: null
+12-20 13:43:09.855   999  1449 I LL-vis  : false
+12-20 13:43:09.856   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.862   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.868   999  1449 I LL-botpose: null
+12-20 13:43:09.868   999  1449 I LL-vis  : false
+12-20 13:43:09.868   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.877   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.884   999  1449 I LL-botpose: null
+12-20 13:43:09.884   999  1449 I LL-vis  : false
+12-20 13:43:09.884   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.891   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.898   999  1449 I LL-botpose: null
+12-20 13:43:09.898   999  1449 I LL-vis  : false
+12-20 13:43:09.898   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.907   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.917   999  1449 I LL-botpose: null
+12-20 13:43:09.917   999  1449 I LL-vis  : false
+12-20 13:43:09.917   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.933   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.942   999  1449 I LL-botpose: null
+12-20 13:43:09.942   999  1449 I LL-vis  : false
+12-20 13:43:09.942   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.950   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.957   999  1449 I LL-botpose: null
+12-20 13:43:09.957   999  1449 I LL-vis  : false
+12-20 13:43:09.957   999  1449 I LL-tx   : 0.0
+12-20 13:43:09.966   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:09.976   999  1449 I LL-botpose: null
+12-20 13:43:09.976   999  1449 I LL-vis  : false
+12-20 13:43:09.976   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.000   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.009   999  1449 I LL-botpose: null
+12-20 13:43:10.010   999  1449 I LL-vis  : false
+12-20 13:43:10.010   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.026   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.032   999  1449 I LL-botpose: null
+12-20 13:43:10.032   999  1449 I LL-vis  : false
+12-20 13:43:10.032   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.041   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.048   999  1449 I LL-botpose: null
+12-20 13:43:10.048   999  1449 I LL-vis  : false
+12-20 13:43:10.048   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.065   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.071   999  1449 I LL-botpose: null
+12-20 13:43:10.071   999  1449 I LL-vis  : false
+12-20 13:43:10.071   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.080   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.086   999  1449 I LL-botpose: null
+12-20 13:43:10.086   999  1449 I LL-vis  : false
+12-20 13:43:10.086   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.093   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.100   999  1449 I LL-botpose: null
+12-20 13:43:10.100   999  1449 I LL-vis  : false
+12-20 13:43:10.101   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.112   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.120   999  1449 I LL-botpose: null
+12-20 13:43:10.120   999  1449 I LL-vis  : false
+12-20 13:43:10.120   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.127   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.137   999  1449 I LL-botpose: null
+12-20 13:43:10.137   999  1449 I LL-vis  : false
+12-20 13:43:10.137   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.148   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.155   999  1449 I LL-botpose: null
+12-20 13:43:10.155   999  1449 I LL-vis  : false
+12-20 13:43:10.155   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.164   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.172   999  1449 I LL-botpose: null
+12-20 13:43:10.173   999  1449 I LL-vis  : false
+12-20 13:43:10.173   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.180   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.189   999  1449 I LL-botpose: null
+12-20 13:43:10.189   999  1449 I LL-vis  : false
+12-20 13:43:10.189   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.196   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.205   999  1449 I LL-botpose: null
+12-20 13:43:10.205   999  1449 I LL-vis  : false
+12-20 13:43:10.205   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.211   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.219   999  1449 I LL-botpose: null
+12-20 13:43:10.219   999  1449 I LL-vis  : false
+12-20 13:43:10.219   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.226   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.232   999  1449 I LL-botpose: null
+12-20 13:43:10.232   999  1449 I LL-vis  : false
+12-20 13:43:10.232   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.240   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.248   999  1449 I LL-botpose: null
+12-20 13:43:10.248   999  1449 I LL-vis  : false
+12-20 13:43:10.248   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.255   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.261   999  1449 I LL-botpose: null
+12-20 13:43:10.261   999  1449 I LL-vis  : false
+12-20 13:43:10.261   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.270   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.280   999  1449 I LL-botpose: null
+12-20 13:43:10.280   999  1449 I LL-vis  : false
+12-20 13:43:10.280   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.289   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.296   999  1449 I LL-botpose: null
+12-20 13:43:10.296   999  1449 I LL-vis  : false
+12-20 13:43:10.296   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.302   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.310   999  1449 I LL-botpose: null
+12-20 13:43:10.310   999  1449 I LL-vis  : false
+12-20 13:43:10.310   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.319   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.327   999  1449 I LL-botpose: null
+12-20 13:43:10.327   999  1449 I LL-vis  : false
+12-20 13:43:10.327   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.337   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.345   999  1449 I LL-botpose: null
+12-20 13:43:10.345   999  1449 I LL-vis  : false
+12-20 13:43:10.345   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.351   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.358   999  1449 I LL-botpose: null
+12-20 13:43:10.358   999  1449 I LL-vis  : false
+12-20 13:43:10.358   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.368   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.377   999  1449 I LL-botpose: null
+12-20 13:43:10.377   999  1449 I LL-vis  : false
+12-20 13:43:10.377   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.384   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.391   999  1449 I LL-botpose: null
+12-20 13:43:10.391   999  1449 I LL-vis  : false
+12-20 13:43:10.391   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.398   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.404   999  1449 I LL-botpose: null
+12-20 13:43:10.404   999  1449 I LL-vis  : false
+12-20 13:43:10.404   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.414   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.422   999  1449 I LL-botpose: null
+12-20 13:43:10.423   999  1449 I LL-vis  : false
+12-20 13:43:10.423   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.432   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.439   999  1449 I LL-botpose: null
+12-20 13:43:10.439   999  1449 I LL-vis  : false
+12-20 13:43:10.439   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.448   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.457   999  1449 I LL-botpose: null
+12-20 13:43:10.457   999  1449 I LL-vis  : false
+12-20 13:43:10.457   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.465   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.475   999  1449 I LL-botpose: null
+12-20 13:43:10.475   999  1449 I LL-vis  : false
+12-20 13:43:10.475   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.483   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.490   999  1449 I LL-botpose: null
+12-20 13:43:10.490   999  1449 I LL-vis  : false
+12-20 13:43:10.490   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.500   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.507   999  1449 I LL-botpose: null
+12-20 13:43:10.507   999  1449 I LL-vis  : false
+12-20 13:43:10.507   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.513   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.519   999  1449 I LL-botpose: null
+12-20 13:43:10.519   999  1449 I LL-vis  : false
+12-20 13:43:10.519   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.526   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.532   999  1449 I LL-botpose: null
+12-20 13:43:10.532   999  1449 I LL-vis  : false
+12-20 13:43:10.532   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.539   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.545   999  1449 I LL-botpose: null
+12-20 13:43:10.545   999  1449 I LL-vis  : false
+12-20 13:43:10.545   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.552   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.559   999  1449 I LL-botpose: null
+12-20 13:43:10.559   999  1449 I LL-vis  : false
+12-20 13:43:10.559   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.575   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.582   999  1449 I LL-botpose: null
+12-20 13:43:10.582   999  1449 I LL-vis  : false
+12-20 13:43:10.582   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.590   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.595   999  1449 I LL-botpose: null
+12-20 13:43:10.595   999  1449 I LL-vis  : false
+12-20 13:43:10.595   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.604   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.611   999  1449 I LL-botpose: null
+12-20 13:43:10.611   999  1449 I LL-vis  : false
+12-20 13:43:10.611   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.618   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.626   999  1449 I LL-botpose: null
+12-20 13:43:10.626   999  1449 I LL-vis  : false
+12-20 13:43:10.626   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.633   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.640   999  1449 I LL-botpose: null
+12-20 13:43:10.640   999  1449 I LL-vis  : false
+12-20 13:43:10.640   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.648   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.655   999  1449 I LL-botpose: null
+12-20 13:43:10.655   999  1449 I LL-vis  : false
+12-20 13:43:10.655   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.661   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.669   999  1449 I LL-botpose: null
+12-20 13:43:10.669   999  1449 I LL-vis  : false
+12-20 13:43:10.669   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.677   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.685   999  1449 I LL-botpose: null
+12-20 13:43:10.686   999  1449 I LL-vis  : false
+12-20 13:43:10.686   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.696   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.702   999  1449 I LL-botpose: null
+12-20 13:43:10.702   999  1449 I LL-vis  : false
+12-20 13:43:10.702   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.711   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.718   999  1449 I LL-botpose: null
+12-20 13:43:10.718   999  1449 I LL-vis  : false
+12-20 13:43:10.718   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.728   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.743   999  1449 I LL-botpose: null
+12-20 13:43:10.743   999  1449 I LL-vis  : false
+12-20 13:43:10.743   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.750   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.757   999  1449 I LL-botpose: null
+12-20 13:43:10.757   999  1449 I LL-vis  : false
+12-20 13:43:10.757   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.766   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.774   999  1449 I LL-botpose: null
+12-20 13:43:10.774   999  1449 I LL-vis  : false
+12-20 13:43:10.774   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.783   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.791   999  1449 I LL-botpose: null
+12-20 13:43:10.791   999  1449 I LL-vis  : false
+12-20 13:43:10.791   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.802   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.809   999  1449 I LL-botpose: null
+12-20 13:43:10.810   999  1449 I LL-vis  : false
+12-20 13:43:10.810   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.821   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.826   999  1187 W RobotCore: Servo Hub 3 is currently unresponsive.
+12-20 13:43:10.831   999  1449 I LL-botpose: null
+12-20 13:43:10.831   999  1449 I LL-vis  : false
+12-20 13:43:10.831   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.841   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.848   999  1449 I LL-botpose: null
+12-20 13:43:10.848   999  1449 I LL-vis  : false
+12-20 13:43:10.848   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.857   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.865   999  1449 I LL-botpose: null
+12-20 13:43:10.865   999  1449 I LL-vis  : false
+12-20 13:43:10.865   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.872   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.881   999  1449 I LL-botpose: null
+12-20 13:43:10.881   999  1449 I LL-vis  : false
+12-20 13:43:10.881   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.887   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.895   999  1449 I LL-botpose: null
+12-20 13:43:10.895   999  1449 I LL-vis  : false
+12-20 13:43:10.897   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.904   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.910   999  1449 I LL-botpose: null
+12-20 13:43:10.910   999  1449 I LL-vis  : false
+12-20 13:43:10.910   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.920   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.928   999  1449 I LL-botpose: null
+12-20 13:43:10.928   999  1449 I LL-vis  : false
+12-20 13:43:10.928   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.937   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.946   999  1449 I LL-botpose: null
+12-20 13:43:10.946   999  1449 I LL-vis  : false
+12-20 13:43:10.946   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.952   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.959   999  1449 I LL-botpose: null
+12-20 13:43:10.959   999  1449 I LL-vis  : false
+12-20 13:43:10.959   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.968   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.976   999  1449 I LL-botpose: null
+12-20 13:43:10.977   999  1449 I LL-vis  : false
+12-20 13:43:10.977   999  1449 I LL-tx   : 0.0
+12-20 13:43:10.978   999  1449 W RobotCore: Expansion Hub 2 is currently unresponsive.
+12-20 13:43:10.985   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:10.991   999  1449 I LL-botpose: null
+12-20 13:43:10.991   999  1449 I LL-vis  : false
+12-20 13:43:10.991   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.000   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.008   999  1449 I LL-botpose: null
+12-20 13:43:11.008   999  1449 I LL-vis  : false
+12-20 13:43:11.008   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.016   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.025   999  1449 I LL-botpose: null
+12-20 13:43:11.025   999  1449 I LL-vis  : false
+12-20 13:43:11.025   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.032   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.044   999  1449 I LL-botpose: null
+12-20 13:43:11.044   999  1449 I LL-vis  : false
+12-20 13:43:11.044   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.053   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.060   999  1449 I LL-botpose: null
+12-20 13:43:11.060   999  1449 I LL-vis  : false
+12-20 13:43:11.060   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.076   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.082   999  1449 I LL-botpose: null
+12-20 13:43:11.083   999  1449 I LL-vis  : false
+12-20 13:43:11.083   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.089   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.095   999  1449 I LL-botpose: null
+12-20 13:43:11.095   999  1449 I LL-vis  : false
+12-20 13:43:11.095   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.101   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.108   999  1449 I LL-botpose: null
+12-20 13:43:11.108   999  1449 I LL-vis  : false
+12-20 13:43:11.108   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.116   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.122   999  1449 I LL-botpose: null
+12-20 13:43:11.122   999  1449 I LL-vis  : false
+12-20 13:43:11.123   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.130   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.138   999  1449 I LL-botpose: null
+12-20 13:43:11.138   999  1449 I LL-vis  : false
+12-20 13:43:11.138   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.147   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.155   999  1449 I LL-botpose: null
+12-20 13:43:11.155   999  1449 I LL-vis  : false
+12-20 13:43:11.155   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.163   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.170   999  1449 I LL-botpose: null
+12-20 13:43:11.170   999  1449 I LL-vis  : false
+12-20 13:43:11.170   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.176   999  1449 I command : end(true)-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.176   999  1449 I command : init-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.185   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.192   999  1449 I LL-botpose: null
+12-20 13:43:11.192   999  1449 I LL-vis  : false
+12-20 13:43:11.192   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.204   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.209   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.215   999  1449 I LL-botpose: null
+12-20 13:43:11.215   999  1449 I LL-vis  : false
+12-20 13:43:11.215   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.221   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.226   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.237   999  1449 I LL-botpose: null
+12-20 13:43:11.237   999  1449 I LL-vis  : false
+12-20 13:43:11.237   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.242   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.246   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.252   999  1449 I LL-botpose: null
+12-20 13:43:11.253   999  1449 I LL-vis  : false
+12-20 13:43:11.253   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.259   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.265   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.277   999  1449 I LL-botpose: null
+12-20 13:43:11.277   999  1449 I LL-vis  : false
+12-20 13:43:11.277   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.284   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.288   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.297   999  1449 I LL-botpose: null
+12-20 13:43:11.297   999  1449 I LL-vis  : false
+12-20 13:43:11.297   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.305   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.310   999  1449 I command : execute-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.318   999  1449 I LL-botpose: null
+12-20 13:43:11.318   999  1449 I LL-vis  : false
+12-20 13:43:11.318   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.327   999  1449 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 13:43:11.337   999  1449 I command : end(true)-[ParallelDeadlineGroup] *** com.arcrobotics.ftclib.command.ParallelDeadlineGroup@42449b
+12-20 13:43:11.338   999  1449 I command : init-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.344   999  1449 I LL-botpose: null
+12-20 13:43:11.344   999  1449 I LL-vis  : false
+12-20 13:43:11.344   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.352   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.359   999  1449 I LL-botpose: null
+12-20 13:43:11.359   999  1449 I LL-vis  : false
+12-20 13:43:11.359   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.365   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.372   999  1449 I LL-botpose: null
+12-20 13:43:11.372   999  1449 I LL-vis  : false
+12-20 13:43:11.372   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.380   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.387   999  1449 I LL-botpose: null
+12-20 13:43:11.387   999  1449 I LL-vis  : false
+12-20 13:43:11.387   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.398   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.405   999  1449 I LL-botpose: null
+12-20 13:43:11.405   999  1449 I LL-vis  : false
+12-20 13:43:11.405   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.412   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.418   999  1449 I LL-botpose: null
+12-20 13:43:11.418   999  1449 I LL-vis  : false
+12-20 13:43:11.418   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.426   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.432   999  1449 I LL-botpose: null
+12-20 13:43:11.432   999  1449 I LL-vis  : false
+12-20 13:43:11.432   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.440   999  1449 W RobotCore: Control Hub is currently unresponsive.
+12-20 13:43:11.441   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.450   999  1449 I LL-botpose: null
+12-20 13:43:11.451   999  1449 I LL-vis  : false
+12-20 13:43:11.451   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.461   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.469   999  1449 I LL-botpose: null
+12-20 13:43:11.469   999  1449 I LL-vis  : false
+12-20 13:43:11.469   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.479   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.485   999  1449 I LL-botpose: null
+12-20 13:43:11.485   999  1449 I LL-vis  : false
+12-20 13:43:11.485   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.493   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.500   999  1449 I LL-botpose: null
+12-20 13:43:11.500   999  1449 I LL-vis  : false
+12-20 13:43:11.500   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.509   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.515   999  1449 I LL-botpose: null
+12-20 13:43:11.515   999  1449 I LL-vis  : false
+12-20 13:43:11.515   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.522   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.531   999  1449 I LL-botpose: null
+12-20 13:43:11.531   999  1449 I LL-vis  : false
+12-20 13:43:11.531   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.539   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.545   999  1449 I LL-botpose: null
+12-20 13:43:11.545   999  1449 I LL-vis  : false
+12-20 13:43:11.545   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.554   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.560   999  1449 I LL-botpose: null
+12-20 13:43:11.561   999  1449 I LL-vis  : false
+12-20 13:43:11.561   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.571   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.578   999  1449 I LL-botpose: null
+12-20 13:43:11.578   999  1449 I LL-vis  : false
+12-20 13:43:11.578   999  1449 I LL-tx   : 0.0
+12-20 13:43:11.589   999  1449 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@9003c16
+12-20 13:43:11.596   999  1449 I LL-botpose: null
+12-20 13:43:11.596   999  1449 I LL-vis  : false
+12-20 13:43:11.596   999  1449 

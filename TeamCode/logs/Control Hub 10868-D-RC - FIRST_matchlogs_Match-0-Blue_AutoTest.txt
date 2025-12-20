@@ -1,0 +1,1176 @@
+--------- beginning of main
+12-20 14:14:42.787   974  1360 V Robocol : received command: CMD_SET_MATCH_NUMBER(19527) 0
+12-20 14:14:42.789   974  1360 V Robocol : received command: CMD_INIT_OP_MODE(19528) Blue AutoTest
+12-20 14:14:42.833   974  2047 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 14:14:42.837   974  1393 I RobotCore: Attempting to switch to OpMode Blue AutoTest
+12-20 14:14:42.842   974  1393 I RobotCore: ******************** START - OPMODE Blue AutoTest ********************
+12-20 14:14:43.058   974  1393 D HardwareMap: Clearing which device instances have been retrieved
+12-20 14:14:43.060   974  2050 V RobotCore: thread: 'OpModeThread' starting...
+12-20 14:14:43.070   974  1375 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(9604), attempt: 0
+12-20 14:14:43.070   974  1375 V Robocol : sending CMD_TEXT_TO_SPEECH(9605), attempt: 0
+12-20 14:14:43.106   974  2050 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+12-20 14:14:43.120   974  2050 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-20 14:14:43.148   974  2050 I command : init-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:28.866   974  1360 V Robocol : received command: CMD_SET_MATCH_NUMBER(19979) 19
+12-20 14:15:55.186   974  1360 V Robocol : received command: CMD_RUN_OP_MODE(20233) Blue AutoTest
+12-20 14:15:55.221   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.221   974  2050 I LL-vis  : true
+12-20 14:15:55.221   974  2050 I LL-tx   : 6.5877353501089715
+12-20 14:15:55.230   974  1375 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(10304), attempt: 0
+12-20 14:15:55.240   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.256   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.256   974  2050 I LL-vis  : true
+12-20 14:15:55.257   974  2050 I LL-tx   : 6.587180305315641
+12-20 14:15:55.274   974  2050 I EncoderDriveCommand: initialize: with IMU - Initial Heading=0.00
+12-20 14:15:55.275   974  2050 I EncoderDriveCommand: initialize: forward(0.00),turn(0.00),strafe(0.21),inches(6.00)
+12-20 14:15:55.275   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.289   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.289   974  2050 I LL-vis  : true
+12-20 14:15:55.289   974  2050 I LL-tx   : 6.5875824812966925
+12-20 14:15:55.322   974  2050 I EncoderDriveCommand: execute: with PID output -0.25 for initial heading 0.00 and current heading -6.33
+12-20 14:15:55.324   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.337   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.337   974  2050 I LL-vis  : true
+12-20 14:15:55.338   974  2050 I LL-tx   : 6.584117008167226
+12-20 14:15:55.352   974  2050 I EncoderDriveCommand: execute: with PID output -0.25 for initial heading 0.00 and current heading -6.33
+12-20 14:15:55.354   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.366   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.366   974  2050 I LL-vis  : true
+12-20 14:15:55.366   974  2050 I LL-tx   : 6.592625417245117
+12-20 14:15:55.380   974  2050 I EncoderDriveCommand: execute: with PID output -0.25 for initial heading 0.00 and current heading -6.33
+12-20 14:15:55.382   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.397   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.397   974  2050 I LL-vis  : true
+12-20 14:15:55.397   974  2050 I LL-tx   : 6.59077291363721
+12-20 14:15:55.421   974  2050 I EncoderDriveCommand: execute: with PID output -0.25 for initial heading 0.00 and current heading -6.23
+12-20 14:15:55.423   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.437   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.437   974  2050 I LL-vis  : true
+12-20 14:15:55.438   974  2050 I LL-tx   : 6.636186996448359
+12-20 14:15:55.457   974  2050 I EncoderDriveCommand: execute: with PID output -0.22 for initial heading 0.00 and current heading -5.50
+12-20 14:15:55.459   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.482   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.482   974  2050 I LL-vis  : true
+12-20 14:15:55.482   974  2050 I LL-tx   : 7.699608774779222
+12-20 14:15:55.500   974  2050 I EncoderDriveCommand: execute: with PID output -0.17 for initial heading 0.00 and current heading -4.22
+12-20 14:15:55.504   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.519   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.519   974  2050 I LL-vis  : true
+12-20 14:15:55.519   974  2050 I LL-tx   : 8.731186681331408
+12-20 14:15:55.539   974  2050 I EncoderDriveCommand: execute: with PID output -0.10 for initial heading 0.00 and current heading -2.43
+12-20 14:15:55.540   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.556   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.556   974  2050 I LL-vis  : true
+12-20 14:15:55.556   974  2050 I LL-tx   : 10.347115052059252
+12-20 14:15:55.576   974  2050 I EncoderDriveCommand: execute: with PID output -0.02 for initial heading 0.00 and current heading -0.60
+12-20 14:15:55.578   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.596   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.596   974  2050 I LL-vis  : true
+12-20 14:15:55.596   974  2050 I LL-tx   : 12.669815875029656
+12-20 14:15:55.616   974  2050 I EncoderDriveCommand: execute: with PID output 0.02 for initial heading 0.00 and current heading 0.61
+12-20 14:15:55.618   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.631   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.631   974  2050 I LL-vis  : true
+12-20 14:15:55.631   974  2050 I LL-tx   : 13.543695106945592
+12-20 14:15:55.651   974  2050 I EncoderDriveCommand: execute: with PID output 0.05 for initial heading 0.00 and current heading 1.29
+12-20 14:15:55.653   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.667   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.668   974  2050 I LL-vis  : true
+12-20 14:15:55.668   974  2050 I LL-tx   : 14.512891022074044
+12-20 14:15:55.686   974  2050 I EncoderDriveCommand: execute: with PID output 0.06 for initial heading 0.00 and current heading 1.46
+12-20 14:15:55.688   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.702   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.702   974  2050 I LL-vis  : true
+12-20 14:15:55.702   974  2050 I LL-tx   : 14.836106755365563
+12-20 14:15:55.721   974  2050 I EncoderDriveCommand: execute: with PID output 0.05 for initial heading 0.00 and current heading 1.25
+12-20 14:15:55.723   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.748   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.748   974  2050 I LL-vis  : true
+12-20 14:15:55.748   974  2050 I LL-tx   : 14.798473217448915
+12-20 14:15:55.768   974  2050 I EncoderDriveCommand: execute: with PID output 0.03 for initial heading 0.00 and current heading 0.65
+12-20 14:15:55.769   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.780   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.780   974  2050 I LL-vis  : true
+12-20 14:15:55.781   974  2050 I LL-tx   : 14.296918984661858
+12-20 14:15:55.802   974  2050 I EncoderDriveCommand: execute: with PID output 0.02 for initial heading 0.00 and current heading 0.44
+12-20 14:15:55.803   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.816   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.816   974  2050 I LL-vis  : true
+12-20 14:15:55.816   974  2050 I LL-tx   : 13.947641677610704
+12-20 14:15:55.847   974  2050 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.11
+12-20 14:15:55.849   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.860   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.860   974  2050 I LL-vis  : true
+12-20 14:15:55.860   974  2050 I LL-tx   : 13.590060309383944
+12-20 14:15:55.881   974  2050 I EncoderDriveCommand: execute: with PID output -0.01 for initial heading 0.00 and current heading -0.13
+12-20 14:15:55.883   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.899   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.899   974  2050 I LL-vis  : true
+12-20 14:15:55.899   974  2050 I LL-tx   : 13.413694511801495
+12-20 14:15:55.920   974  2050 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading -0.03
+12-20 14:15:55.922   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.936   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.936   974  2050 I LL-vis  : true
+12-20 14:15:55.936   974  2050 I LL-tx   : 13.468965739715813
+12-20 14:15:55.958   974  2050 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.08
+12-20 14:15:55.959   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:55.972   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:55.973   974  2050 I LL-vis  : true
+12-20 14:15:55.973   974  2050 I LL-tx   : 13.710952372672693
+12-20 14:15:55.991   974  2050 I EncoderDriveCommand: execute: with PID output 0.01 for initial heading 0.00 and current heading 0.14
+12-20 14:15:55.993   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.010   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.010   974  2050 I LL-vis  : true
+12-20 14:15:56.010   974  2050 I LL-tx   : 13.804500882993409
+12-20 14:15:56.029   974  2050 I EncoderDriveCommand: execute: with PID output 0.01 for initial heading 0.00 and current heading 0.26
+12-20 14:15:56.042   974  2050 I EncoderDriveCommand: end: initialHeading=0.00, ending Heading=0.26
+12-20 14:15:56.043   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.055   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.055   974  2050 I LL-vis  : true
+12-20 14:15:56.055   974  2050 I LL-tx   : 13.973953799977494
+12-20 14:15:56.071   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.082   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.082   974  2050 I LL-vis  : true
+12-20 14:15:56.082   974  2050 I LL-tx   : 13.975399919590245
+12-20 14:15:56.106   974  2050 I amps    : 4.082000, 1.133000
+12-20 14:15:56.110   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, 0.000000
+12-20 14:15:56.118   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.131   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.131   974  2050 I LL-vis  : true
+12-20 14:15:56.131   974  2050 I LL-tx   : 13.925802054820977
+12-20 14:15:56.142   974  2050 I amps    : 7.279000, 7.672000
+12-20 14:15:56.147   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 40.000000, 0.547891
+12-20 14:15:56.155   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.168   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.168   974  2050 I LL-vis  : true
+12-20 14:15:56.168   974  2050 I LL-tx   : 13.74993939316029
+12-20 14:15:56.178   974  2050 I amps    : 7.774000, 8.605000
+12-20 14:15:56.182   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 120.000000, 2160.988979
+12-20 14:15:56.191   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.206   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.206   974  2050 I LL-vis  : true
+12-20 14:15:56.206   974  2050 I LL-tx   : 13.308606843895035
+12-20 14:15:56.219   974  2050 I amps    : 7.534000, 8.525000
+12-20 14:15:56.224   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 220.000000, 4042.053933
+12-20 14:15:56.235   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.251   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.251   974  2050 I LL-vis  : true
+12-20 14:15:56.251   974  2050 I LL-tx   : 12.421714281864126
+12-20 14:15:56.261   974  2050 I amps    : 7.446000, 8.073000
+12-20 14:15:56.265   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 300.000000, 2506.906763
+12-20 14:15:56.274   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.289   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.289   974  2050 I LL-vis  : true
+12-20 14:15:56.289   974  2050 I LL-tx   : 11.253491870415928
+12-20 14:15:56.300   974  2050 I amps    : 7.140000, 7.975000
+12-20 14:15:56.305   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 380.000000, 2036.346494
+12-20 14:15:56.314   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.326   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.326   974  2050 I LL-vis  : true
+12-20 14:15:56.326   974  2050 I LL-tx   : 9.99247147209475
+12-20 14:15:56.337   974  2050 I amps    : 6.878000, 7.596000
+12-20 14:15:56.341   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 440.000000, 2208.063871
+12-20 14:15:56.358   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.371   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.371   974  2050 I LL-vis  : true
+12-20 14:15:56.372   974  2050 I LL-tx   : 9.347880560054918
+12-20 14:15:56.382   974  2050 I amps    : 6.681000, 7.362000
+12-20 14:15:56.386   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 520.000000, 2221.926274
+12-20 14:15:56.395   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.409   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.409   974  2050 I LL-vis  : true
+12-20 14:15:56.409   974  2050 I LL-tx   : 8.55660332596294
+12-20 14:15:56.420   974  2050 I amps    : 6.458000, 7.129000
+12-20 14:15:56.424   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 580.000000, 1581.857695
+12-20 14:15:56.434   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.448   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.449   974  2050 I LL-vis  : true
+12-20 14:15:56.449   974  2050 I LL-tx   : 7.106929115525546
+12-20 14:15:56.459   974  2050 I amps    : 6.313000, 6.859000
+12-20 14:15:56.463   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 640.000000, 2124.006284
+12-20 14:15:56.472   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.488   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.488   974  2050 I LL-vis  : true
+12-20 14:15:56.489   974  2050 I LL-tx   : 5.267515195640087
+12-20 14:15:56.499   974  2050 I amps    : 6.152000, 6.663000
+12-20 14:15:56.504   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 720.000000, 4340.924960
+12-20 14:15:56.514   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.526   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.526   974  2050 I LL-vis  : true
+12-20 14:15:56.526   974  2050 I LL-tx   : 3.392646223156788
+12-20 14:15:56.536   974  2050 I amps    : 5.944000, 6.542000
+12-20 14:15:56.540   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 740.000000, 553.624866
+12-20 14:15:56.549   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.566   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.566   974  2050 I LL-vis  : true
+12-20 14:15:56.566   974  2050 I LL-tx   : 1.5078622515439974
+12-20 14:15:56.576   974  2050 I amps    : 5.926000, 6.316000
+12-20 14:15:56.580   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 800.000000, 2295.508367
+12-20 14:15:56.600   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.617   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.617   974  2050 I LL-vis  : true
+12-20 14:15:56.617   974  2050 I LL-tx   : -0.5434488180665511
+12-20 14:15:56.642   974  2050 I amps    : 5.631000, 6.076000
+12-20 14:15:56.646   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 880.000000, 1662.559176
+12-20 14:15:56.665   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.678   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.678   974  2050 I LL-vis  : true
+12-20 14:15:56.678   974  2050 I LL-tx   : -3.6859384382985922
+12-20 14:15:56.688   974  2050 I amps    : 5.445000, 5.828000
+12-20 14:15:56.692   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 920.000000, 2259.503784
+12-20 14:15:56.701   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.716   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.717   974  2050 I LL-vis  : true
+12-20 14:15:56.717   974  2050 I LL-tx   : -5.901594348907608
+12-20 14:15:56.726   974  2050 I amps    : 5.245000, 5.678000
+12-20 14:15:56.731   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 980.000000, 2212.266776
+12-20 14:15:56.740   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.756   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.756   974  2050 I LL-vis  : true
+12-20 14:15:56.756   974  2050 I LL-tx   : -7.61317525027475
+12-20 14:15:56.766   974  2050 I amps    : 5.197000, 5.708000
+12-20 14:15:56.770   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1000.000000, 650.446990
+12-20 14:15:56.780   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.791   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.791   974  2050 I LL-vis  : true
+12-20 14:15:56.792   974  2050 I LL-tx   : -8.963437237130265
+12-20 14:15:56.801   974  2050 I amps    : 5.106000, 5.657000
+12-20 14:15:56.805   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1040.000000, 1148.407660
+12-20 14:15:56.814   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.828   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.829   974  2050 I LL-vis  : true
+12-20 14:15:56.829   974  2050 I LL-tx   : -9.283203801184115
+12-20 14:15:56.839   974  2050 I amps    : 4.909000, 5.500000
+12-20 14:15:56.843   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1080.000000, 1066.935677
+12-20 14:15:56.851   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.865   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.866   974  2050 I LL-vis  : true
+12-20 14:15:56.866   974  2050 I LL-tx   : -8.409394781956863
+12-20 14:15:56.876   974  2050 I amps    : 4.866000, 5.394000
+12-20 14:15:56.880   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1100.000000, 540.362192
+12-20 14:15:56.894   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.909   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.909   974  2050 I LL-vis  : true
+12-20 14:15:56.909   974  2050 I LL-tx   : -7.5029165543225815
+12-20 14:15:56.920   974  2050 I amps    : 4.702000, 5.328000
+12-20 14:15:56.924   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1160.000000, 2134.917841
+12-20 14:15:56.935   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.947   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.948   974  2050 I LL-vis  : true
+12-20 14:15:56.948   974  2050 I LL-tx   : -6.5755034521432805
+12-20 14:15:56.959   974  2050 I amps    : 4.559000, 5.175000
+12-20 14:15:56.963   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1180.000000, 671.038595
+12-20 14:15:56.972   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:56.987   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:56.987   974  2050 I LL-vis  : true
+12-20 14:15:56.987   974  2050 I LL-tx   : -5.723813800181333
+12-20 14:15:56.998   974  2050 I amps    : 4.519000, 5.041000
+12-20 14:15:57.002   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1200.000000, 502.682490
+12-20 14:15:57.011   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.026   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.026   974  2050 I LL-vis  : true
+12-20 14:15:57.026   974  2050 I LL-tx   : -5.082670215746219
+12-20 14:15:57.036   974  2050 I amps    : 4.406000, 4.938000
+12-20 14:15:57.040   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1220.000000, 535.404707
+12-20 14:15:57.049   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.062   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.062   974  2050 I LL-vis  : true
+12-20 14:15:57.062   974  2050 I LL-tx   : -4.148059532397355
+12-20 14:15:57.072   974  2050 I amps    : 4.355000, 4.796000
+12-20 14:15:57.076   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1260.000000, 2238.847656
+12-20 14:15:57.085   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.100   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.100   974  2050 I LL-vis  : true
+12-20 14:15:57.100   974  2050 I LL-tx   : -3.344518172729366
+12-20 14:15:57.110   974  2050 I amps    : 4.301000, 4.709000
+12-20 14:15:57.115   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1280.000000, 671.814377
+12-20 14:15:57.125   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.144   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.144   974  2050 I LL-vis  : true
+12-20 14:15:57.144   974  2050 I LL-tx   : -2.0351867536629697
+12-20 14:15:57.171   974  2050 I amps    : 4.173000, 4.610000
+12-20 14:15:57.175   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1300.000000, 290.006351
+12-20 14:15:57.197   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.209   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.209   974  2050 I LL-vis  : true
+12-20 14:15:57.209   974  2050 I LL-tx   : 0.8483587312176581
+12-20 14:15:57.219   974  2050 I amps    : 4.107000, 4.395000
+12-20 14:15:57.223   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1340.000000, 1009.561277
+12-20 14:15:57.238   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.249   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.249   974  2050 I LL-vis  : true
+12-20 14:15:57.249   974  2050 I LL-tx   : 2.3313166784979558
+12-20 14:15:57.259   974  2050 I amps    : 4.049000, 4.268000
+12-20 14:15:57.263   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1340.000000, 1009.561277
+12-20 14:15:57.272   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.286   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.286   974  2050 I LL-vis  : true
+12-20 14:15:57.286   974  2050 I LL-tx   : 4.328186895506761
+12-20 14:15:57.295   974  2050 I amps    : 4.035000, 4.304000
+12-20 14:15:57.300   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1360.000000, 261.964951
+12-20 14:15:57.308   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.320   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.320   974  2050 I LL-vis  : true
+12-20 14:15:57.320   974  2050 I LL-tx   : 5.331249631027717
+12-20 14:15:57.330   974  2050 I amps    : 4.075000, 4.395000
+12-20 14:15:57.334   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1380.000000, 583.129991
+12-20 14:15:57.343   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.359   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.359   974  2050 I LL-vis  : true
+12-20 14:15:57.359   974  2050 I LL-tx   : 6.529147622077488
+12-20 14:15:57.368   974  2050 I amps    : 3.969000, 4.286000
+12-20 14:15:57.372   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1380.000000, 583.129991
+12-20 14:15:57.381   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.392   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.392   974  2050 I LL-vis  : true
+12-20 14:15:57.392   974  2050 I LL-tx   : 6.070710392527744
+12-20 14:15:57.402   974  2050 I amps    : 3.940000, 4.235000
+12-20 14:15:57.406   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1420.000000, 557.203570
+12-20 14:15:57.424   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.436   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.436   974  2050 I LL-vis  : true
+12-20 14:15:57.436   974  2050 I LL-tx   : 4.72889163554207
+12-20 14:15:57.445   974  2050 I amps    : 3.907000, 4.261000
+12-20 14:15:57.449   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1420.000000, 557.203570
+12-20 14:15:57.459   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.479   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.480   974  2050 I LL-vis  : true
+12-20 14:15:57.480   974  2050 I LL-tx   : 3.5970748637819696
+12-20 14:15:57.490   974  2050 I amps    : 3.849000, 4.173000
+12-20 14:15:57.494   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1440.000000, 226.555065
+12-20 14:15:57.507   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.522   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.522   974  2050 I LL-vis  : true
+12-20 14:15:57.522   974  2050 I LL-tx   : 2.490680960714343
+12-20 14:15:57.532   974  2050 I amps    : 3.761000, 4.056000
+12-20 14:15:57.536   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1460.000000, 391.756104
+12-20 14:15:57.546   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.560   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.560   974  2050 I LL-vis  : true
+12-20 14:15:57.560   974  2050 I LL-tx   : 1.7543548655019237
+12-20 14:15:57.571   974  2050 I amps    : 3.710000, 4.031000
+12-20 14:15:57.575   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1480.000000, 520.339824
+12-20 14:15:57.583   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.598   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.598   974  2050 I LL-vis  : true
+12-20 14:15:57.598   974  2050 I LL-tx   : 0.5922728479403929
+12-20 14:15:57.609   974  2050 I amps    : 3.703000, 3.987000
+12-20 14:15:57.613   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1480.000000, 520.339824
+12-20 14:15:57.622   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.638   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.638   974  2050 I LL-vis  : true
+12-20 14:15:57.638   974  2050 I LL-tx   : -0.4525274825921457
+12-20 14:15:57.648   974  2050 I amps    : 3.663000, 3.983000
+12-20 14:15:57.652   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1480.000000, 520.339824
+12-20 14:15:57.667   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.679   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.679   974  2050 I LL-vis  : true
+12-20 14:15:57.679   974  2050 I LL-tx   : -2.446311601728411
+12-20 14:15:57.703   974  2050 I amps    : 3.601000, 3.980000
+12-20 14:15:57.707   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1500.000000, 180.520942
+12-20 14:15:57.716   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.727   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.728   974  2050 I LL-vis  : true
+12-20 14:15:57.728   974  2050 I LL-tx   : -4.2490270265068375
+12-20 14:15:57.738   974  2050 I amps    : 3.583000, 3.962000
+12-20 14:15:57.743   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1500.000000, 180.520942
+12-20 14:15:57.752   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.766   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.766   974  2050 I LL-vis  : true
+12-20 14:15:57.766   974  2050 I LL-tx   : -6.272751229761241
+12-20 14:15:57.775   974  2050 I amps    : 3.604000, 3.958000
+12-20 14:15:57.780   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1520.000000, 234.099269
+12-20 14:15:57.788   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.801   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.802   974  2050 I LL-vis  : true
+12-20 14:15:57.802   974  2050 I LL-tx   : -7.1967927523787125
+12-20 14:15:57.812   974  2050 I amps    : 3.546000, 4.002000
+12-20 14:15:57.816   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1520.000000, 234.099269
+12-20 14:15:57.825   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.837   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.838   974  2050 I LL-vis  : true
+12-20 14:15:57.838   974  2050 I LL-tx   : -6.416398213524431
+12-20 14:15:57.849   974  2050 I amps    : 3.535000, 3.943000
+12-20 14:15:57.853   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1540.000000, 271.793881
+12-20 14:15:57.862   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.876   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.876   974  2050 I LL-vis  : true
+12-20 14:15:57.876   974  2050 I LL-tx   : -5.550866723147877
+12-20 14:15:57.888   974  2050 I amps    : 3.521000, 3.889000
+12-20 14:15:57.892   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1540.000000, 271.793881
+12-20 14:15:57.901   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.927   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.927   974  2050 I LL-vis  : true
+12-20 14:15:57.927   974  2050 I LL-tx   : -4.228741731950564
+12-20 14:15:57.937   974  2050 I amps    : 3.437000, 3.856000
+12-20 14:15:57.941   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1560.000000, 227.133652
+12-20 14:15:57.956   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:57.968   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:57.968   974  2050 I LL-vis  : true
+12-20 14:15:57.968   974  2050 I LL-tx   : -3.2913491371325563
+12-20 14:15:57.979   974  2050 I amps    : 3.444000, 3.841000
+12-20 14:15:57.984   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1560.000000, 227.133652
+12-20 14:15:57.992   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.006   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.006   974  2050 I LL-vis  : true
+12-20 14:15:58.006   974  2050 I LL-tx   : -2.0049663520070595
+12-20 14:15:58.016   974  2050 I amps    : 3.400000, 3.849000
+12-20 14:15:58.020   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1560.000000, -2284.800105
+12-20 14:15:58.030   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.042   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.042   974  2050 I LL-vis  : true
+12-20 14:15:58.042   974  2050 I LL-tx   : -0.9372559697954159
+12-20 14:15:58.052   974  2050 I amps    : 3.382000, 3.768000
+12-20 14:15:58.056   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1580.000000, 743.523142
+12-20 14:15:58.065   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.078   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.078   974  2050 I LL-vis  : true
+12-20 14:15:58.078   974  2050 I LL-tx   : 0.03835583723130753
+12-20 14:15:58.089   974  2050 I amps    : 3.375000, 3.823000
+12-20 14:15:58.093   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1580.000000, 743.523142
+12-20 14:15:58.112   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.126   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.126   974  2050 I LL-vis  : true
+12-20 14:15:58.126   974  2050 I LL-tx   : 2.366610118261775
+12-20 14:15:58.136   974  2050 I amps    : 3.364000, 3.812000
+12-20 14:15:58.140   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1580.000000, 743.523142
+12-20 14:15:58.152   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.166   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.166   974  2050 I LL-vis  : true
+12-20 14:15:58.166   974  2050 I LL-tx   : 3.971289294418355
+12-20 14:15:58.176   974  2050 I amps    : 3.408000, 3.852000
+12-20 14:15:58.181   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1600.000000, 161.228437
+12-20 14:15:58.195   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.212   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.212   974  2050 I LL-vis  : true
+12-20 14:15:58.212   974  2050 I LL-tx   : 6.32444292783191
+12-20 14:15:58.234   974  2050 I amps    : 3.378000, 3.838000
+12-20 14:15:58.238   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1600.000000, 161.228437
+12-20 14:15:58.246   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.259   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.259   974  2050 I LL-vis  : true
+12-20 14:15:58.259   974  2050 I LL-tx   : 7.776730635755968
+12-20 14:15:58.269   974  2050 I amps    : 3.342000, 3.830000
+12-20 14:15:58.274   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1620.000000, 214.837558
+12-20 14:15:58.282   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.297   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.297   974  2050 I LL-vis  : true
+12-20 14:15:58.297   974  2050 I LL-tx   : 8.532807535138033
+12-20 14:15:58.307   974  2050 I amps    : 3.295000, 3.794000
+12-20 14:15:58.311   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1620.000000, 214.837558
+12-20 14:15:58.320   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.331   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.331   974  2050 I LL-vis  : true
+12-20 14:15:58.331   974  2050 I LL-tx   : 8.540783752977092
+12-20 14:15:58.341   974  2050 I amps    : 3.302000, 3.812000
+12-20 14:15:58.346   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1620.000000, 214.837558
+12-20 14:15:58.355   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.370   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.370   974  2050 I LL-vis  : true
+12-20 14:15:58.370   974  2050 I LL-tx   : 8.385140754023809
+12-20 14:15:58.380   974  2050 I amps    : 3.353000, 3.765000
+12-20 14:15:58.385   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1620.000000, 214.837558
+12-20 14:15:58.395   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.409   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.409   974  2050 I LL-vis  : true
+12-20 14:15:58.409   974  2050 I LL-tx   : 8.059532514735423
+12-20 14:15:58.422   974  2050 I amps    : 3.298000, 3.747000
+12-20 14:15:58.426   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1620.000000, 214.837558
+12-20 14:15:58.436   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.451   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.452   974  2050 I LL-vis  : true
+12-20 14:15:58.452   974  2050 I LL-tx   : 7.809281075396754
+12-20 14:15:58.464   974  2050 I amps    : 3.258000, 3.794000
+12-20 14:15:58.468   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1640.000000, 103.791515
+12-20 14:15:58.476   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.492   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.492   974  2050 I LL-vis  : true
+12-20 14:15:58.492   974  2050 I LL-tx   : 7.605198027244128
+12-20 14:15:58.501   974  2050 I amps    : 3.302000, 3.706000
+12-20 14:15:58.505   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1640.000000, 2352.606276
+12-20 14:15:58.514   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.527   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.527   974  2050 I LL-vis  : true
+12-20 14:15:58.527   974  2050 I LL-tx   : 7.681444316633957
+12-20 14:15:58.538   974  2050 I amps    : 3.258000, 3.692000
+12-20 14:15:58.542   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1640.000000, 2352.606276
+12-20 14:15:58.550   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.562   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.562   974  2050 I LL-vis  : true
+12-20 14:15:58.562   974  2050 I LL-tx   : 7.786505939058912
+12-20 14:15:58.571   974  2050 I amps    : 3.273000, 3.659000
+12-20 14:15:58.575   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1640.000000, -2280.772438
+12-20 14:15:58.584   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.595   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.595   974  2050 I LL-vis  : true
+12-20 14:15:58.595   974  2050 I LL-tx   : 7.834683695857038
+12-20 14:15:58.606   974  2050 I amps    : 3.254000, 3.699000
+12-20 14:15:58.610   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1660.000000, 584.521793
+12-20 14:15:58.618   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.632   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.632   974  2050 I LL-vis  : true
+12-20 14:15:58.632   974  2050 I LL-tx   : 7.799722139797595
+12-20 14:15:58.642   974  2050 I amps    : 3.284000, 3.652000
+12-20 14:15:58.646   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1660.000000, 2388.083083
+12-20 14:15:58.654   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.671   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.671   974  2050 I LL-vis  : true
+12-20 14:15:58.671   974  2050 I LL-tx   : 7.769228775128212
+12-20 14:15:58.686   974  2050 I amps    : 3.247000, 3.674000
+12-20 14:15:58.690   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 451.445573
+12-20 14:15:58.699   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.711   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.712   974  2050 I LL-vis  : true
+12-20 14:15:58.712   974  2050 I LL-tx   : 7.698120273695423
+12-20 14:15:58.721   974  2050 I amps    : 3.258000, 3.634000
+12-20 14:15:58.725   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1660.000000, -571.428506
+12-20 14:15:58.738   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.762   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.762   974  2050 I LL-vis  : true
+12-20 14:15:58.762   974  2050 I LL-tx   : 7.697460669892038
+12-20 14:15:58.786   974  2050 I amps    : 3.236000, 3.696000
+12-20 14:15:58.790   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1640.000000, -311.012539
+12-20 14:15:58.799   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.810   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.810   974  2050 I LL-vis  : true
+12-20 14:15:58.810   974  2050 I LL-tx   : 7.7631736359598165
+12-20 14:15:58.821   974  2050 I amps    : 3.203000, 3.615000
+12-20 14:15:58.825   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1660.000000, -2134.917841
+12-20 14:15:58.833   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.843   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.843   974  2050 I LL-vis  : true
+12-20 14:15:58.843   974  2050 I LL-tx   : 7.7117435194205655
+12-20 14:15:58.852   974  2050 I amps    : 3.163000, 3.634000
+12-20 14:15:58.856   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:58.864   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.877   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.877   974  2050 I LL-vis  : true
+12-20 14:15:58.877   974  2050 I LL-tx   : 7.704701949917208
+12-20 14:15:58.888   974  2050 I amps    : 3.167000, 3.546000
+12-20 14:15:58.892   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:58.900   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.915   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.915   974  2050 I LL-vis  : true
+12-20 14:15:58.915   974  2050 I LL-tx   : 7.723285917635579
+12-20 14:15:58.925   974  2050 I amps    : 3.196000, 3.586000
+12-20 14:15:58.929   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:58.937   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.951   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.951   974  2050 I LL-vis  : true
+12-20 14:15:58.951   974  2050 I LL-tx   : 7.680539069965789
+12-20 14:15:58.963   974  2050 I amps    : 3.182000, 3.593000
+12-20 14:15:58.967   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:58.975   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:58.991   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:58.991   974  2050 I LL-vis  : true
+12-20 14:15:58.991   974  2050 I LL-tx   : 7.684911040022527
+12-20 14:15:59.000   974  2050 I amps    : 3.167000, 3.593000
+12-20 14:15:59.004   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:59.013   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.034   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.035   974  2050 I LL-vis  : true
+12-20 14:15:59.035   974  2050 I LL-tx   : 7.749393704022424
+12-20 14:15:59.043   974  2050 I amps    : 3.207000, 3.550000
+12-20 14:15:59.048   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:59.056   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.067   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.067   974  2050 I LL-vis  : true
+12-20 14:15:59.067   974  2050 I LL-tx   : 7.72780029438637
+12-20 14:15:59.076   974  2050 I amps    : 3.203000, 3.553000
+12-20 14:15:59.080   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, 873.810684
+12-20 14:15:59.088   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.100   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.100   974  2050 I LL-vis  : true
+12-20 14:15:59.100   974  2050 I LL-tx   : 7.658742403691662
+12-20 14:15:59.111   974  2050 I amps    : 3.167000, 3.593000
+12-20 14:15:59.115   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 74.812587
+12-20 14:15:59.125   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.139   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.140   974  2050 I LL-vis  : true
+12-20 14:15:59.140   974  2050 I LL-tx   : 7.716077126469884
+12-20 14:15:59.150   974  2050 I amps    : 3.171000, 3.586000
+12-20 14:15:59.155   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, -668.565504
+12-20 14:15:59.164   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.180   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.180   974  2050 I LL-vis  : true
+12-20 14:15:59.180   974  2050 I LL-tx   : 7.747498326437139
+12-20 14:15:59.191   974  2050 I amps    : 3.171000, 3.546000
+12-20 14:15:59.195   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 402.589277
+12-20 14:15:59.205   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.219   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.220   974  2050 I LL-vis  : true
+12-20 14:15:59.220   974  2050 I LL-tx   : 7.715930467478515
+12-20 14:15:59.231   974  2050 I amps    : 3.138000, 3.604000
+12-20 14:15:59.235   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 402.589277
+12-20 14:15:59.244   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.261   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.261   974  2050 I LL-vis  : true
+12-20 14:15:59.261   974  2050 I LL-tx   : 7.666688309889395
+12-20 14:15:59.271   974  2050 I amps    : 3.174000, 3.539000
+12-20 14:15:59.275   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 2399.615678
+12-20 14:15:59.284   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.302   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.302   974  2050 I LL-vis  : true
+12-20 14:15:59.303   974  2050 I LL-tx   : 7.69051416994445
+12-20 14:15:59.325   974  2050 I amps    : 3.163000, 3.528000
+12-20 14:15:59.329   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, -617.888585
+12-20 14:15:59.339   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.353   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.353   974  2050 I LL-vis  : true
+12-20 14:15:59.353   974  2050 I LL-tx   : 7.730450884461746
+12-20 14:15:59.362   974  2050 I amps    : 3.141000, 3.593000
+12-20 14:15:59.366   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, -2357.945847
+12-20 14:15:59.375   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.391   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.391   974  2050 I LL-vis  : true
+12-20 14:15:59.391   974  2050 I LL-tx   : 7.688369324564647
+12-20 14:15:59.401   974  2050 I amps    : 3.149000, 3.499000
+12-20 14:15:59.407   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 664.902768
+12-20 14:15:59.416   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.429   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.429   974  2050 I LL-vis  : true
+12-20 14:15:59.429   974  2050 I LL-tx   : 7.6621793236344615
+12-20 14:15:59.440   974  2050 I amps    : 3.127000, 3.572000
+12-20 14:15:59.444   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 664.902768
+12-20 14:15:59.453   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.467   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.467   974  2050 I LL-vis  : true
+12-20 14:15:59.467   974  2050 I LL-tx   : 7.702607535964546
+12-20 14:15:59.478   974  2050 I amps    : 3.138000, 3.480000
+12-20 14:15:59.483   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 664.902768
+12-20 14:15:59.491   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.503   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.503   974  2050 I LL-vis  : true
+12-20 14:15:59.503   974  2050 I LL-tx   : 7.704235129573149
+12-20 14:15:59.515   974  2050 I amps    : 3.116000, 3.546000
+12-20 14:15:59.519   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 163.009908
+12-20 14:15:59.527   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.539   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.539   974  2050 I LL-vis  : true
+12-20 14:15:59.539   974  2050 I LL-tx   : 7.728344996326612
+12-20 14:15:59.548   974  2050 I amps    : 3.112000, 3.557000
+12-20 14:15:59.552   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -817.046232
+12-20 14:15:59.561   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.576   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.576   974  2050 I LL-vis  : true
+12-20 14:15:59.576   974  2050 I LL-tx   : 7.706299356005758
+12-20 14:15:59.586   974  2050 I amps    : 3.123000, 3.517000
+12-20 14:15:59.590   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -2394.588135
+12-20 14:15:59.598   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.609   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.609   974  2050 I LL-vis  : true
+12-20 14:15:59.609   974  2050 I LL-tx   : 7.664163490663981
+12-20 14:15:59.619   974  2050 I amps    : 3.112000, 3.550000
+12-20 14:15:59.623   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -2434.114010
+12-20 14:15:59.631   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.643   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.643   974  2050 I LL-vis  : true
+12-20 14:15:59.643   974  2050 I LL-tx   : 7.655146151834828
+12-20 14:15:59.653   974  2050 I amps    : 3.098000, 3.513000
+12-20 14:15:59.657   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -2434.114010
+12-20 14:15:59.665   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.677   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.678   974  2050 I LL-vis  : true
+12-20 14:15:59.678   974  2050 I LL-tx   : 7.694132446753045
+12-20 14:15:59.687   974  2050 I amps    : 3.112000, 3.502000
+12-20 14:15:59.692   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 291.074887
+12-20 14:15:59.700   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.712   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.712   974  2050 I LL-vis  : true
+12-20 14:15:59.712   974  2050 I LL-tx   : 7.719441036470968
+12-20 14:15:59.724   974  2050 I amps    : 3.112000, 3.539000
+12-20 14:15:59.728   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 291.074887
+12-20 14:15:59.737   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.751   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.751   974  2050 I LL-vis  : true
+12-20 14:15:59.751   974  2050 I LL-tx   : 7.707734999664993
+12-20 14:15:59.760   974  2050 I amps    : 3.109000, 3.502000
+12-20 14:15:59.765   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -311.830019
+12-20 14:15:59.773   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.786   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.786   974  2050 I LL-vis  : true
+12-20 14:15:59.786   974  2050 I LL-tx   : 7.682978197917691
+12-20 14:15:59.795   974  2050 I amps    : 3.083000, 3.524000
+12-20 14:15:59.799   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 460.346829
+12-20 14:15:59.807   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.821   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.821   974  2050 I LL-vis  : true
+12-20 14:15:59.822   974  2050 I LL-tx   : 7.661219506512879
+12-20 14:15:59.844   974  2050 I amps    : 3.094000, 3.517000
+12-20 14:15:59.848   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -737.239916
+12-20 14:15:59.856   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.872   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.872   974  2050 I LL-vis  : true
+12-20 14:15:59.872   974  2050 I LL-tx   : 7.67909150538388
+12-20 14:15:59.882   974  2050 I amps    : 3.141000, 3.491000
+12-20 14:15:59.886   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 336.960301
+12-20 14:15:59.894   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.907   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.907   974  2050 I LL-vis  : true
+12-20 14:15:59.907   974  2050 I LL-tx   : 7.688389440449626
+12-20 14:15:59.916   974  2050 I amps    : 3.131000, 3.459000
+12-20 14:15:59.920   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 336.960301
+12-20 14:15:59.929   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.943   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.943   974  2050 I LL-vis  : true
+12-20 14:15:59.943   974  2050 I LL-tx   : 7.71344311532458
+12-20 14:15:59.952   974  2050 I amps    : 3.080000, 3.539000
+12-20 14:15:59.956   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2420.452729
+12-20 14:15:59.965   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:15:59.978   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:15:59.978   974  2050 I LL-vis  : true
+12-20 14:15:59.978   974  2050 I LL-tx   : 7.705071550205716
+12-20 14:15:59.989   974  2050 I amps    : 3.090000, 3.524000
+12-20 14:15:59.993   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2420.452729
+12-20 14:16:00.001   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.016   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.016   974  2050 I LL-vis  : true
+12-20 14:16:00.016   974  2050 I LL-tx   : 7.696801902141715
+12-20 14:16:00.025   974  2050 I amps    : 3.098000, 3.499000
+12-20 14:16:00.030   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, -616.749311
+12-20 14:16:00.038   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.049   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.049   974  2050 I LL-vis  : true
+12-20 14:16:00.049   974  2050 I LL-tx   : 7.678348021610006
+12-20 14:16:00.059   974  2050 I amps    : 3.069000, 3.524000
+12-20 14:16:00.063   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 481.896208
+12-20 14:16:00.071   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.082   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.082   974  2050 I LL-vis  : true
+12-20 14:16:00.082   974  2050 I LL-tx   : 7.665131676914214
+12-20 14:16:00.091   974  2050 I amps    : 3.083000, 3.448000
+12-20 14:16:00.095   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1760.000000, 2377.814798
+12-20 14:16:00.106   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.117   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.117   974  2050 I LL-vis  : true
+12-20 14:16:00.117   974  2050 I LL-tx   : 7.678613731445637
+12-20 14:16:00.129   974  2050 I amps    : 3.094000, 3.480000
+12-20 14:16:00.133   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, -1823.271564
+12-20 14:16:00.142   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.159   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.159   974  2050 I LL-vis  : true
+12-20 14:16:00.159   974  2050 I LL-tx   : 7.682132469130579
+12-20 14:16:00.168   974  2050 I amps    : 3.098000, 3.499000
+12-20 14:16:00.172   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 504.762064
+12-20 14:16:00.181   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.193   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.193   974  2050 I LL-vis  : true
+12-20 14:16:00.193   974  2050 I LL-tx   : 7.706042900235431
+12-20 14:16:00.203   974  2050 I amps    : 3.105000, 3.473000
+12-20 14:16:00.207   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 504.762064
+12-20 14:16:00.215   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.226   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.227   974  2050 I LL-vis  : true
+12-20 14:16:00.227   974  2050 I LL-tx   : 7.704598025909107
+12-20 14:16:00.236   974  2050 I amps    : 3.090000, 3.513000
+12-20 14:16:00.240   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 338.821743
+12-20 14:16:00.249   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.264   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.264   974  2050 I LL-vis  : true
+12-20 14:16:00.265   974  2050 I LL-tx   : 7.6963224922487115
+12-20 14:16:00.275   974  2050 I amps    : 3.123000, 3.440000
+12-20 14:16:00.279   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2315.897980
+12-20 14:16:00.287   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.298   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.298   974  2050 I LL-vis  : true
+12-20 14:16:00.298   974  2050 I LL-tx   : 7.6660462106599425
+12-20 14:16:00.307   974  2050 I amps    : 3.123000, 3.429000
+12-20 14:16:00.311   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2315.897980
+12-20 14:16:00.320   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.332   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.332   974  2050 I LL-vis  : true
+12-20 14:16:00.332   974  2050 I LL-tx   : 7.672621348207059
+12-20 14:16:00.356   974  2050 I amps    : 3.098000, 3.429000
+12-20 14:16:00.360   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 855.570648
+12-20 14:16:00.368   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.379   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.379   974  2050 I LL-vis  : true
+12-20 14:16:00.379   974  2050 I LL-tx   : 7.667567630591179
+12-20 14:16:00.389   974  2050 I amps    : 3.094000, 3.462000
+12-20 14:16:00.393   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1760.000000, 1191.024026
+12-20 14:16:00.402   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.419   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.420   974  2050 I LL-vis  : true
+12-20 14:16:00.420   974  2050 I LL-tx   : 7.694560735290622
+12-20 14:16:00.431   974  2050 I amps    : 3.101000, 3.491000
+12-20 14:16:00.435   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1740.000000, -636.553202
+12-20 14:16:00.445   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.458   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.459   974  2050 I LL-vis  : true
+12-20 14:16:00.459   974  2050 I LL-tx   : 7.7094337900417
+12-20 14:16:00.470   974  2050 I amps    : 3.072000, 3.510000
+12-20 14:16:00.474   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, -488.184864
+12-20 14:16:00.483   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.493   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.493   974  2050 I LL-vis  : true
+12-20 14:16:00.493   974  2050 I LL-tx   : 7.703403734211861
+12-20 14:16:00.503   974  2050 I amps    : 3.105000, 3.459000
+12-20 14:16:00.507   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, 2347.291384
+12-20 14:16:00.515   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.528   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.528   974  2050 I LL-vis  : true
+12-20 14:16:00.528   974  2050 I LL-tx   : 7.684624383730579
+12-20 14:16:00.540   974  2050 I amps    : 3.094000, 3.437000
+12-20 14:16:00.544   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 4548.533593
+12-20 14:16:00.554   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.565   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.565   974  2050 I LL-vis  : true
+12-20 14:16:00.566   974  2050 I LL-tx   : 7.667721867590117
+12-20 14:16:00.575   974  2050 I amps    : 3.054000, 3.535000
+12-20 14:16:00.579   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 4548.533593
+12-20 14:16:00.587   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.600   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.600   974  2050 I LL-vis  : true
+12-20 14:16:00.600   974  2050 I LL-tx   : 7.667817427413226
+12-20 14:16:00.610   974  2050 I amps    : 3.087000, 3.491000
+12-20 14:16:00.614   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 4548.533593
+12-20 14:16:00.622   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.635   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.635   974  2050 I LL-vis  : true
+12-20 14:16:00.635   974  2050 I LL-tx   : 7.664021824943205
+12-20 14:16:00.646   974  2050 I amps    : 3.065000, 3.506000
+12-20 14:16:00.650   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1740.000000, 188.885339
+12-20 14:16:00.658   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.677   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.677   974  2050 I LL-vis  : true
+12-20 14:16:00.677   974  2050 I LL-tx   : 7.669158613334602
+12-20 14:16:00.688   974  2050 I amps    : 3.087000, 3.462000
+12-20 14:16:00.692   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1680.000000, -2379.382272
+12-20 14:16:00.702   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.715   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.715   974  2050 I LL-vis  : true
+12-20 14:16:00.716   974  2050 I LL-tx   : 7.6985594496639465
+12-20 14:16:00.725   974  2050 I amps    : 3.065000, 3.491000
+12-20 14:16:00.729   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 1417.570374
+12-20 14:16:00.738   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.750   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.750   974  2050 I LL-vis  : true
+12-20 14:16:00.750   974  2050 I LL-tx   : 7.697324055376015
+12-20 14:16:00.760   974  2050 I amps    : 3.076000, 3.419000
+12-20 14:16:00.764   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2433.941312
+12-20 14:16:00.772   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.785   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.785   974  2050 I LL-vis  : true
+12-20 14:16:00.785   974  2050 I LL-tx   : 7.695823804221433
+12-20 14:16:00.797   974  2050 I amps    : 3.094000, 3.433000
+12-20 14:16:00.804   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2433.941312
+12-20 14:16:00.813   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.831   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.831   974  2050 I LL-vis  : true
+12-20 14:16:00.831   974  2050 I LL-tx   : 7.665453566421689
+12-20 14:16:00.843   974  2050 I amps    : 3.090000, 3.429000
+12-20 14:16:00.848   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 2093.847721
+12-20 14:16:00.856   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.867   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.867   974  2050 I LL-vis  : true
+12-20 14:16:00.867   974  2050 I LL-tx   : 7.650505303536619
+12-20 14:16:00.892   974  2050 I amps    : 3.054000, 3.419000
+12-20 14:16:00.895   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1740.000000, 418.184721
+12-20 14:16:00.904   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.916   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.916   974  2050 I LL-vis  : true
+12-20 14:16:00.916   974  2050 I LL-tx   : 7.6736054217421525
+12-20 14:16:00.925   974  2050 I amps    : 3.083000, 3.455000
+12-20 14:16:00.929   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, -784.444405
+12-20 14:16:00.940   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.958   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.958   974  2050 I LL-vis  : true
+12-20 14:16:00.958   974  2050 I LL-tx   : 7.6805273352611465
+12-20 14:16:00.967   974  2050 I amps    : 3.087000, 3.528000
+12-20 14:16:00.973   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -482.615234
+12-20 14:16:00.981   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:00.995   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:00.995   974  2050 I LL-vis  : true
+12-20 14:16:00.995   974  2050 I LL-tx   : 7.686860627697371
+12-20 14:16:01.004   974  2050 I amps    : 3.105000, 3.488000
+12-20 14:16:01.008   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1720.000000, 541.279270
+12-20 14:16:01.017   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.032   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.032   974  2050 I LL-vis  : true
+12-20 14:16:01.032   974  2050 I LL-tx   : 7.680811482567847
+12-20 14:16:01.041   974  2050 I amps    : 3.069000, 3.477000
+12-20 14:16:01.045   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1700.000000, -541.604178
+12-20 14:16:01.058   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.068   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.068   974  2050 I LL-vis  : true
+12-20 14:16:01.068   974  2050 I LL-tx   : 7.685639413460208
+12-20 14:16:01.082   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.096   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.096   974  2050 I LL-vis  : true
+12-20 14:16:01.096   974  2050 I LL-tx   : 7.665819882788483
+12-20 14:16:01.104   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.117   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.117   974  2050 I LL-vis  : true
+12-20 14:16:01.117   974  2050 I LL-tx   : 7.662045200980785
+12-20 14:16:01.127   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.138   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.138   974  2050 I LL-vis  : true
+12-20 14:16:01.138   974  2050 I LL-tx   : 7.654258396305096
+12-20 14:16:01.147   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.158   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.158   974  2050 I LL-vis  : true
+12-20 14:16:01.158   974  2050 I LL-tx   : 7.66743099663357
+12-20 14:16:01.168   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.182   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.182   974  2050 I LL-vis  : true
+12-20 14:16:01.182   974  2050 I LL-tx   : 7.681645482030561
+12-20 14:16:01.190   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.206   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.206   974  2050 I LL-vis  : true
+12-20 14:16:01.206   974  2050 I LL-tx   : 7.7019102314353205
+12-20 14:16:01.217   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.232   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.232   974  2050 I LL-vis  : true
+12-20 14:16:01.232   974  2050 I LL-tx   : 7.654638983175047
+12-20 14:16:01.241   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.256   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.256   974  2050 I LL-vis  : true
+12-20 14:16:01.256   974  2050 I LL-tx   : 7.6641961827398575
+12-20 14:16:01.264   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.278   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.278   974  2050 I LL-vis  : true
+12-20 14:16:01.278   974  2050 I LL-tx   : 7.63982325220816
+12-20 14:16:01.288   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.298   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.298   974  2050 I LL-vis  : true
+12-20 14:16:01.298   974  2050 I LL-tx   : 7.623778202112774
+12-20 14:16:01.307   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.319   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.319   974  2050 I LL-vis  : true
+12-20 14:16:01.319   974  2050 I LL-tx   : 7.62933433043284
+12-20 14:16:01.328   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.338   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.338   974  2050 I LL-vis  : true
+12-20 14:16:01.338   974  2050 I LL-tx   : 7.658459903144319
+12-20 14:16:01.348   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.359   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.359   974  2050 I LL-vis  : true
+12-20 14:16:01.359   974  2050 I LL-tx   : 7.692303619714167
+12-20 14:16:01.368   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.388   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.388   974  2050 I LL-vis  : true
+12-20 14:16:01.388   974  2050 I LL-tx   : 7.702004099487894
+12-20 14:16:01.399   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.413   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.413   974  2050 I LL-vis  : true
+12-20 14:16:01.413   974  2050 I LL-tx   : 7.696647686491545
+12-20 14:16:01.422   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.436   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.436   974  2050 I LL-vis  : true
+12-20 14:16:01.438   974  2050 I LL-tx   : 7.669746217723599
+12-20 14:16:01.447   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.464   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.465   974  2050 I LL-vis  : true
+12-20 14:16:01.465   974  2050 I LL-tx   : 7.648290469637601
+12-20 14:16:01.476   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.492   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.492   974  2050 I LL-vis  : true
+12-20 14:16:01.492   974  2050 I LL-tx   : 7.645663991890501
+12-20 14:16:01.500   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.514   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.514   974  2050 I LL-vis  : true
+12-20 14:16:01.514   974  2050 I LL-tx   : 7.646503998861775
+12-20 14:16:01.523   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.534   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.534   974  2050 I LL-vis  : true
+12-20 14:16:01.534   974  2050 I LL-tx   : 7.659293991205814
+12-20 14:16:01.543   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.555   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.555   974  2050 I LL-vis  : true
+12-20 14:16:01.555   974  2050 I LL-tx   : 7.674073986653909
+12-20 14:16:01.564   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.577   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.577   974  2050 I LL-vis  : true
+12-20 14:16:01.577   974  2050 I LL-tx   : 7.664654709525664
+12-20 14:16:01.586   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.601   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.601   974  2050 I LL-vis  : true
+12-20 14:16:01.601   974  2050 I LL-tx   : 7.684465968243458
+12-20 14:16:01.610   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.623   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.623   974  2050 I LL-vis  : true
+12-20 14:16:01.624   974  2050 I LL-tx   : 7.67129108134867
+12-20 14:16:01.633   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.647   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.647   974  2050 I LL-vis  : true
+12-20 14:16:01.647   974  2050 I LL-tx   : 7.6514559480476265
+12-20 14:16:01.658   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.669   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.669   974  2050 I LL-vis  : true
+12-20 14:16:01.669   974  2050 I LL-tx   : 7.651831510130563
+12-20 14:16:01.678   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.691   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.692   974  2050 I LL-vis  : true
+12-20 14:16:01.692   974  2050 I LL-tx   : 7.721121295113932
+12-20 14:16:01.703   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.715   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.715   974  2050 I LL-vis  : true
+12-20 14:16:01.715   974  2050 I LL-tx   : 7.7216802609552815
+12-20 14:16:01.724   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.737   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.737   974  2050 I LL-vis  : true
+12-20 14:16:01.737   974  2050 I LL-tx   : 7.727799456382314
+12-20 14:16:01.748   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.766   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.766   974  2050 I LL-vis  : true
+12-20 14:16:01.766   974  2050 I LL-tx   : 7.636069064416162
+12-20 14:16:01.776   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.788   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.788   974  2050 I LL-vis  : true
+12-20 14:16:01.788   974  2050 I LL-tx   : 7.643559768136612
+12-20 14:16:01.796   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.807   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.807   974  2050 I LL-vis  : true
+12-20 14:16:01.807   974  2050 I LL-tx   : 7.6406020827226655
+12-20 14:16:01.816   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.829   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.829   974  2050 I LL-vis  : true
+12-20 14:16:01.829   974  2050 I LL-tx   : 7.626250684653499
+12-20 14:16:01.838   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.851   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.851   974  2050 I LL-vis  : true
+12-20 14:16:01.851   974  2050 I LL-tx   : 7.626250684653499
+12-20 14:16:01.860   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.870   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.870   974  2050 I LL-vis  : true
+12-20 14:16:01.870   974  2050 I LL-tx   : 7.661455060290038
+12-20 14:16:01.879   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.895   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.895   974  2050 I LL-vis  : true
+12-20 14:16:01.895   974  2050 I LL-tx   : 7.6797796655860395
+12-20 14:16:01.903   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.916   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.916   974  2050 I LL-vis  : true
+12-20 14:16:01.916   974  2050 I LL-tx   : 7.680356343776367
+12-20 14:16:01.925   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.937   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.937   974  2050 I LL-vis  : true
+12-20 14:16:01.937   974  2050 I LL-tx   : 7.666105726467208
+12-20 14:16:01.947   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.963   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.963   974  2050 I LL-vis  : true
+12-20 14:16:01.963   974  2050 I LL-tx   : 7.665176104401553
+12-20 14:16:01.972   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:01.985   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:01.985   974  2050 I LL-vis  : true
+12-20 14:16:01.985   974  2050 I LL-tx   : 7.64411642538505
+12-20 14:16:01.994   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.006   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.006   974  2050 I LL-vis  : true
+12-20 14:16:02.006   974  2050 I LL-tx   : 7.647041366837456
+12-20 14:16:02.015   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.030   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.030   974  2050 I LL-vis  : true
+12-20 14:16:02.030   974  2050 I LL-tx   : 7.672372395313872
+12-20 14:16:02.039   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.055   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.055   974  2050 I LL-vis  : true
+12-20 14:16:02.055   974  2050 I LL-tx   : 7.648813581633732
+12-20 14:16:02.064   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.078   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.078   974  2050 I LL-vis  : true
+12-20 14:16:02.078   974  2050 I LL-tx   : 7.658152253749506
+12-20 14:16:02.086   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.097   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.097   974  2050 I LL-vis  : true
+12-20 14:16:02.097   974  2050 I LL-tx   : 7.652181084057744
+12-20 14:16:02.121   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.135   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.135   974  2050 I LL-vis  : true
+12-20 14:16:02.135   974  2050 I LL-tx   : 7.658959518098271
+12-20 14:16:02.157   974  2050 I amps    : 1.895000, 0.000000
+12-20 14:16:02.161   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 720.000000, -887.862825
+12-20 14:16:02.170   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.182   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.182   974  2050 I LL-vis  : true
+12-20 14:16:02.182   974  2050 I LL-tx   : 7.649259567119088
+12-20 14:16:02.191   974  2050 I amps    : 5.274000, 5.226000
+12-20 14:16:02.195   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 720.000000, 2366.490308
+12-20 14:16:02.205   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.219   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.219   974  2050 I LL-vis  : true
+12-20 14:16:02.219   974  2050 I LL-tx   : 7.636089185296711
+12-20 14:16:02.229   974  2050 I amps    : 5.842000, 6.316000
+12-20 14:16:02.233   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 760.000000, 1343.668247
+12-20 14:16:02.244   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.257   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.257   974  2050 I LL-vis  : true
+12-20 14:16:02.257   974  2050 I LL-tx   : 7.6548812506705275
+12-20 14:16:02.268   974  2050 I amps    : 5.744000, 6.196000
+12-20 14:16:02.273   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 780.000000, 504.490966
+12-20 14:16:02.281   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.302   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.302   974  2050 I LL-vis  : true
+12-20 14:16:02.302   974  2050 I LL-tx   : 7.174291336651578
+12-20 14:16:02.311   974  2050 I amps    : 5.613000, 6.054000
+12-20 14:16:02.315   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 860.000000, 2371.318617
+12-20 14:16:02.323   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.336   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.337   974  2050 I LL-vis  : true
+12-20 14:16:02.337   974  2050 I LL-tx   : 6.504893061476878
+12-20 14:16:02.349   974  2050 I amps    : 5.394000, 5.952000
+12-20 14:16:02.353   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 900.000000, 1373.103632
+12-20 14:16:02.362   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.376   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.376   974  2050 I LL-vis  : true
+12-20 14:16:02.376   974  2050 I LL-tx   : 5.97499003291108
+12-20 14:16:02.386   974  2050 I amps    : 5.237000, 5.777000
+12-20 14:16:02.390   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 920.000000, -2227.212663
+12-20 14:16:02.398   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.412   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.412   974  2050 I LL-vis  : true
+12-20 14:16:02.412   974  2050 I LL-tx   : 4.321916056531052
+12-20 14:16:02.421   974  2050 I amps    : 5.143000, 5.686000
+12-20 14:16:02.425   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 960.000000, 1512.999846
+12-20 14:16:02.434   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.448   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.448   974  2050 I LL-vis  : true
+12-20 14:16:02.448   974  2050 I LL-tx   : 2.631115298558356
+12-20 14:16:02.460   974  2050 I amps    : 5.077000, 5.573000
+12-20 14:16:02.465   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1020.000000, 1583.733118
+12-20 14:16:02.474   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.487   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.487   974  2050 I LL-vis  : true
+12-20 14:16:02.487   974  2050 I LL-tx   : 0.9845639945913405
+12-20 14:16:02.498   974  2050 I amps    : 4.946000, 5.431000
+12-20 14:16:02.502   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1040.000000, 523.314142
+12-20 14:16:02.511   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.524   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.524   974  2050 I LL-vis  : true
+12-20 14:16:02.524   974  2050 I LL-tx   : 0.15771878542668105
+12-20 14:16:02.536   974  2050 I amps    : 4.818000, 5.369000
+12-20 14:16:02.540   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1080.000000, 1025.765853
+12-20 14:16:02.550   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.572   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.572   974  2050 I LL-vis  : true
+12-20 14:16:02.572   974  2050 I LL-tx   : -2.0235463972203718
+12-20 14:16:02.582   974  2050 I amps    : 4.625000, 5.256000
+12-20 14:16:02.585   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1100.000000, 442.447649
+12-20 14:16:02.599   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.612   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.612   974  2050 I LL-vis  : true
+12-20 14:16:02.612   974  2050 I LL-tx   : -4.019989515212657
+12-20 14:16:02.621   974  2050 I amps    : 4.545000, 5.117000
+12-20 14:16:02.625   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 1160.000000, 2217.059184
+12-20 14:16:02.639   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.659   974  2050 I LL-botpose: position=(0.000 0.000 0.000)m, orientation={yaw=0.000, pitch=0.000, roll=0.000}
+12-20 14:16:02.659   974  2050 I LL-vis  : true
+12-20 14:16:02.659   974  2050 I LL-tx   : -6.631295319293457
+12-20 14:16:02.665   974  1360 V Robocol : received command: CMD_INIT_OP_MODE(20339) $Stop$Robot$
+12-20 14:16:02.684   974  2050 V RobotCore: nack rec'd mod=2 msg#=0 ref#=0 reason=CANCELLED_FOR_SAFETY:259
+12-20 14:16:02.697   974  2050 I amps    : 4.439000, 0.000000
+12-20 14:16:02.698   974  2050 I pct/MAX_TICKS/vel/accel: 5.500000, 0.000000, 0.000000, -36682.841520
+12-20 14:16:02.703   974  2050 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@9794954
+12-20 14:16:02.703   974  2050 D RobotCore: User runOpModeMethod exited
+12-20 14:16:02.704   974  2050 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 14:16:02.707   974  1393 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+12-20 14:16:02.709   974  1393 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-Blue_AutoTest.txt ********************
+12-20 14:16:02.719   974  1393 D HardwareMap: Clearing which device instances have been retrieved
+12-20 14:16:02.719   974  2063 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-Blue_AutoTest.txt
+12-20 14:16:02.719   974  2063 I RobotCore: logging command line: exec logcat -d -T '12-20 14:14:42.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-Blue_AutoTest.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+12-20 14:16:02.723   974  2065 V RobotCore: thread: 'OpModeThread' starting...
+12-20 14:16:02.735  2064  2064 I sh      : type=1400 audit(0.0:147): avc: denied { read } for name="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+12-20 14:16:02.735  2064  2064 I sh      : type=1400 audit(0.0:148): avc: denied { open } for path="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+12-20 14:16:02.749   974  1375 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(10414), attempt: 0
+12-20 14:16:02.750   974  1375 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(10415), attempt: 0
+12-20 14:16:02.797   974  1372 V LynxModule: retransmitting: mod=2 cmd=0x7f03 msg#=219 ref#=0 

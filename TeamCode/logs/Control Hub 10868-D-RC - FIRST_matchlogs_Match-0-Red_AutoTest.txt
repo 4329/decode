@@ -1,0 +1,59 @@
+--------- beginning of main
+12-20 11:39:17.170  1005  1364 V Robocol : received command: CMD_SET_MATCH_NUMBER(16228) 0
+12-20 11:39:17.171  1005  1364 V Robocol : received command: CMD_INIT_OP_MODE(16229) Red AutoTest
+12-20 11:39:17.205  1005  2269 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 11:39:17.209  1005  1397 I RobotCore: Attempting to switch to OpMode Red AutoTest
+12-20 11:39:17.214  1005  1397 I RobotCore: ******************** START - OPMODE Red AutoTest ********************
+12-20 11:39:17.409  1005  1397 D HardwareMap: Clearing which device instances have been retrieved
+12-20 11:39:17.412  1005  2277 V RobotCore: thread: 'OpModeThread' starting...
+12-20 11:39:17.452  1005  1377 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(6320), attempt: 0
+12-20 11:39:17.453  1005  1377 V Robocol : sending CMD_TEXT_TO_SPEECH(6322), attempt: 0
+12-20 11:39:17.455  1005  2277 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+12-20 11:39:17.479  1005  2277 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 11:39:17.483  1005  1397 E OpModeManager: User code threw an uncaught exception
+12-20 11:39:17.489  1005  1397 E OpModeManager: java.lang.IllegalArgumentException: Unable to find a hardware device with name "blinky" and type RevBlinkinLedDriver
+12-20 11:39:17.492  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.hardware.HardwareMap.get(HardwareMap.java:213)
+12-20 11:39:17.495  1005  1397 E OpModeManager: 	at org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem.<init>(BlinkinSubsystem.java:17)
+12-20 11:39:17.498  1005  1397 E OpModeManager: 	at org.firstinspires.ftc.teamcode.opmode.ColorAdo.initialize(ColorAdo.java:52)
+12-20 11:39:17.500  1005  1397 E OpModeManager: 	at com.arcrobotics.ftclib.command.CommandOpMode.runOpMode(CommandOpMode.java:43)
+12-20 11:39:17.503  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.LinearOpMode.internalRunOpMode(LinearOpMode.java:199)
+12-20 11:39:17.508  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$1$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:184)
+12-20 11:39:17.511  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+12-20 11:39:17.514  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool.logThreadLifeCycle(ThreadPool.java:737)
+12-20 11:39:17.518  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$2$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:182)
+12-20 11:39:17.521  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+12-20 11:39:17.524  1005  1397 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+12-20 11:39:17.524  1005  1397 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+12-20 11:39:17.525  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool$ThreadFactoryImpl$1.run(ThreadPool.java:793)
+12-20 11:39:17.526  1005  1397 E OpModeManager: 	at java.lang.Thread.run(Thread.java:761)
+12-20 11:39:17.532  1005  1377 V Robocol : sending CMD_SHOW_STACKTRACE(6326), attempt: 0
+12-20 11:39:17.541  1005  1397 E OpModeManager: User code threw an uncaught exception
+12-20 11:39:17.544  1005  1397 E OpModeManager: java.lang.IllegalArgumentException: Unable to find a hardware device with name "blinky" and type RevBlinkinLedDriver
+12-20 11:39:17.545  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.hardware.HardwareMap.get(HardwareMap.java:213)
+12-20 11:39:17.545  1005  1397 E OpModeManager: 	at org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem.<init>(BlinkinSubsystem.java:17)
+12-20 11:39:17.546  1005  1397 E OpModeManager: 	at org.firstinspires.ftc.teamcode.opmode.ColorAdo.initialize(ColorAdo.java:52)
+12-20 11:39:17.547  1005  1397 E OpModeManager: 	at com.arcrobotics.ftclib.command.CommandOpMode.runOpMode(CommandOpMode.java:43)
+12-20 11:39:17.547  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.LinearOpMode.internalRunOpMode(LinearOpMode.java:199)
+12-20 11:39:17.549  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$1$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:184)
+12-20 11:39:17.550  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+12-20 11:39:17.550  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool.logThreadLifeCycle(ThreadPool.java:737)
+12-20 11:39:17.551  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$2$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:182)
+12-20 11:39:17.552  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+12-20 11:39:17.553  1005  1397 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+12-20 11:39:17.553  1005  1397 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+12-20 11:39:17.554  1005  1397 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool$ThreadFactoryImpl$1.run(ThreadPool.java:793)
+12-20 11:39:17.554  1005  1397 E OpModeManager: 	at java.lang.Thread.run(Thread.java:761)
+12-20 11:39:17.556  1005  1397 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+12-20 11:39:17.557  1005  1397 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-Red_AutoTest.txt ********************
+12-20 11:39:17.563  1005  1397 D HardwareMap: Clearing which device instances have been retrieved
+12-20 11:39:17.563  1005  2279 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-Red_AutoTest.txt
+12-20 11:39:17.563  1005  2279 I RobotCore: logging command line: exec logcat -d -T '12-20 11:39:17.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-Red_AutoTest.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+12-20 11:39:17.566  1005  2281 V RobotCore: thread: 'OpModeThread' starting...
+12-20 11:39:17.572  1005  1377 V Robocol : sending CMD_SHOW_STACKTRACE(6329), attempt: 0
+12-20 11:39:17.573  1005  1377 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(6334), attempt: 0
+12-20 11:39:17.600  1005  2281 V RobotCore: thread: ...terminating 'OpModeThread'
+12-20 11:39:17.604  1005  1397 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+12-20 11:39:17.606  1005  1397 D HardwareMap: Clearing which device instances have been retrieved
+12-20 11:39:17.608  1005  2284 V RobotCore: thread: 'OpModeThread' starting...
+12-20 11:39:17.612  1005  1377 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(6343), attempt: 0
+12-20 11:39:17.613  1005  1377 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(6344), attempt: 0
