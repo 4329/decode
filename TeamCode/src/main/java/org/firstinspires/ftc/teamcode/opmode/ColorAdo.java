@@ -23,7 +23,6 @@ import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
 
-@Autonomous(name = "ExampleAuto", group = "2")
 public abstract class ColorAdo extends CommandOpMode {
     private MecanumDriveSubsystem mecanumDriveSubsystem;
     private TelemetryUpdateSubsystem telemetryUpdateSubsystem;
@@ -56,15 +55,18 @@ public abstract class ColorAdo extends CommandOpMode {
                 new SpindexerCommand(spindexerSubsystem, 1),
                 factory.rMove(6,0),
                 factory.scoreThingsPlease().withTimeout(5000),
+                new WaitCommand(500),
                 new SpindexerCommand(spindexerSubsystem, 1),
-                new WaitCommand(1000),
+                new WaitCommand(500),
                 factory.scoreThingsPlease().withTimeout(5000),
+                new WaitCommand(500),
                 new SpindexerCommand(spindexerSubsystem, 1),
-                new WaitCommand(1000),
+                new WaitCommand(500),
                 factory.scoreThingsPlease().withTimeout(5000),
+                new WaitCommand(500),
                 new SpindexerCommand(spindexerSubsystem, 1),
-                new WaitCommand(1000),
-                factory.getOutThingo()
+                new WaitCommand(500),
+                factory.rMove(10,0)
         );
 
         register(telemetryUpdateSubsystem, imuSubsystem);

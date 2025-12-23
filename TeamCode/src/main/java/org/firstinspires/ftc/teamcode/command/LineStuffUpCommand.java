@@ -1,6 +1,8 @@
 package org.firstinspires.ftc.teamcode.command;
 
 
+import android.util.Log;
+
 import com.arcrobotics.ftclib.command.CommandBase;
 
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
@@ -50,6 +52,7 @@ public class LineStuffUpCommand extends CommandBase {
     public boolean isFinished() {
         boolean isLinedUp = Math.abs(limeLightSubsystem.getTubroXylophone())<= tolerance;
         boolean cantSeeTag = !limeLightSubsystem.isTargetVisible()&& limeLightSubsystem.getTimeSinceTag()>150;
+        Log.i("ll-lineup", String.format("isLinedUp / cantSeeTag:  %b / %b", isLinedUp, cantSeeTag));
         return isLinedUp || cantSeeTag;
     }
 }
