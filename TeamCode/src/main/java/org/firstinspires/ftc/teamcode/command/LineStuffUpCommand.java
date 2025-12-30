@@ -27,7 +27,7 @@ public class LineStuffUpCommand extends CommandBase {
     @Override
     public void execute() {
         if(limeLightSubsystem. isTargetVisible()){
-            double Tx = limeLightSubsystem.getTubroXylophone();
+            double Tx = limeLightSubsystem.getTurboXylophone();
             if(Math.abs(Tx)>tolerance){
                 mecanumDriveSubsystem.drive( 0,0,Tx<0 ? -.2:.2);
             }  else{
@@ -50,7 +50,7 @@ public class LineStuffUpCommand extends CommandBase {
 
     @Override
     public boolean isFinished() {
-        boolean isLinedUp = Math.abs(limeLightSubsystem.getTubroXylophone())<= tolerance;
+        boolean isLinedUp = Math.abs(limeLightSubsystem.getTurboXylophone())<= tolerance;
         boolean cantSeeTag = !limeLightSubsystem.isTargetVisible()&& limeLightSubsystem.getTimeSinceTag()>150;
         Log.i("ll-lineup", String.format("isLinedUp / cantSeeTag:  %b / %b", isLinedUp, cantSeeTag));
         return isLinedUp || cantSeeTag;

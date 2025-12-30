@@ -17,12 +17,14 @@ public class LimeLightSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
     private final Limelight3A limelight;
     private final Alliance alliance;
-    private double tubroXylophone;
+    private double turboXylophone;
+    private double turboYogurt;
     private Pose3D botpose;
 
     private boolean targetVisible = false;
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
+
     public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
         this.telemetry = telemetry;
         limelight = hardwareMap.get(Limelight3A.class, "limelight");
@@ -43,7 +45,8 @@ public class LimeLightSubsystem extends SubsystemBase {
                 status.getTemp(), status.getCpu(), (int) status.getFps());
         LLResult result = limelight.getLatestResult();
         if (result.isValid()) {
-             tubroXylophone = result.getTx();
+             turboXylophone = result.getTx();
+             turboYogurt = result.getTy();
              botpose = result.getBotpose();
              targetVisible = true;
              timeSinceTag.reset();
@@ -53,8 +56,10 @@ public class LimeLightSubsystem extends SubsystemBase {
         }
         Log.i("LL-botpose", botpose + "");
         Log.i("LL-vis", targetVisible + "");
-        Log.i("LL-tx", tubroXylophone + "");
+        Log.i("LL-tx", turboXylophone + "");
+        Log.i("LL-ty", turboYogurt + "");
         telemetry.addData("tx", result.getTx());
+        telemetry.addData("ty", result.getTy());
         telemetry.addData("Botpose", (botpose != null) ? botpose.toString() : "blech");
         telemetry.addData("targetVisible", targetVisible);
 
@@ -80,7 +85,11 @@ public class LimeLightSubsystem extends SubsystemBase {
         return botpose;
     }
 
-    public double getTubroXylophone() {
-        return tubroXylophone;
+    public double getTurboXylophone() {
+        return turboXylophone;
+    }
+
+    public double getTurboYogurt() {
+        return turboYogurt;
     }
 }
