@@ -4,6 +4,7 @@ import android.renderscript.AllocationAdapter;
 
 import com.arcrobotics.ftclib.command.Command;
 import com.arcrobotics.ftclib.command.ParallelDeadlineGroup;
+import com.arcrobotics.ftclib.command.ParallelRaceGroup;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.command.WaitCommand;
 
@@ -73,17 +74,20 @@ public class AutoCommandFactory {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, .7, inches);
     }
 
-    public Command scoreThingsPlease() {
-        return new ParallelDeadlineGroup(
-            new SequentialCommandGroup(
-                new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-                new ReadyShootCommand(shooterSubsystem, telemetry),
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                new WaitCommand(500),
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.down())
-        //and thank you
-            ),
-            new ShootCommand(shooterSubsystem)
+    public Command scoreThingsPlease(boolean stopAfterShot) {
+        return new SequentialCommandGroup(
+                new ParallelDeadlineGroup(
+                    new SequentialCommandGroup(
+                        new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+                        new ReadyShootCommand(shooterSubsystem, telemetry),
+                        new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                        new WaitCommand(500)
+                        //and thank you
+                    ),
+                    new ShootCommand(shooterSubsystem, stopAfterShot)
+                ).withTimeout(5000),
+                new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
+                new WaitCommand(500)
         );
     }
 

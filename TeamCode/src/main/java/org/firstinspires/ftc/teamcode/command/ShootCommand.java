@@ -6,10 +6,12 @@ import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 
 public class ShootCommand extends CommandBase {
     private final ShooterSubsystem shooterSubsystem;
+    private final boolean stopAfterShot;
 
-    public ShootCommand(ShooterSubsystem shooterSubsystem) {
+    public ShootCommand(ShooterSubsystem shooterSubsystem, boolean stopAfterShot) {
         this.shooterSubsystem = shooterSubsystem;
-    addRequirements(shooterSubsystem);
+        this.stopAfterShot = stopAfterShot;
+        addRequirements(shooterSubsystem);
     }
 
     @Override
@@ -19,7 +21,9 @@ public class ShootCommand extends CommandBase {
 
     @Override
     public void end(boolean interrupted) {
-        shooterSubsystem.stop();
+        if (stopAfterShot) {
+            shooterSubsystem.stop();
+        }
     }
 
     @Override

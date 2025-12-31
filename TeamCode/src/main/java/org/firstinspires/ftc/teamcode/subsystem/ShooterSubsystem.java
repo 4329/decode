@@ -5,7 +5,7 @@ import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FF_S;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FF_V;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_I;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_P;
-import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_PERCENT;
+import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FAR_PERCENT;
 
 import android.util.Log;
 
@@ -52,14 +52,16 @@ public class ShooterSubsystem extends SubsystemBase {
 
     public void shoot() {
         running = true;
+        groupOfGoop.setVeloCoefficients(SHOOTER_P, SHOOTER_I, SHOOTER_D);
+        groupOfGoop.setFeedforwardCoefficients(SHOOTER_FF_S, SHOOTER_FF_V);
     }
 
     @Override
     public void periodic() {
         if (running) {
-            groupOfGoop.set(SHOOTER_PERCENT);
+            groupOfGoop.set(SHOOTER_FAR_PERCENT);
             Log.i("amps", String.format("%f, %f", shooterMotor.motorEx.getCurrent(CurrentUnit.AMPS), shootorMotor.motorEx.getCurrent(CurrentUnit.AMPS)));
-            Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getVelocity(), shooterMotor.getAcceleration()));
+            Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_FAR_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getVelocity(), shooterMotor.getAcceleration()));
         }
         List<Double> velocities = groupOfGoop.getVelocities();
         telemetry.addData("speedy", velocities.get(0));
