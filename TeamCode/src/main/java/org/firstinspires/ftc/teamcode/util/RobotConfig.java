@@ -24,4 +24,5 @@ public class RobotConfig {
     public static double SHOOTER_CLOSE_GOAL = 1450;
     public static double SHOOTER_CLOSE_PERCENT = 1.7; // 1.9 with a bad battery
 
+    public static double EXPECTED_BATTERY_VOLTAGE = 12.0;
 }

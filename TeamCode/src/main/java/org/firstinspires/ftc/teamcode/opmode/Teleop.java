@@ -22,6 +22,7 @@ import org.firstinspires.ftc.teamcode.subsystem.PushyMcPushermanSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.VoltageSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
 import org.firstinspires.ftc.teamcode.util.RobotState;
@@ -40,6 +41,7 @@ public abstract class Teleop extends CommandOpMode {
     private AutoCommandFactory autoCommandFactory;
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem blinkinSubsystem;
+    private VoltageSubsystem voltageSubsystem;
     private RobotState robotState = new RobotState();
 
 
@@ -59,6 +61,7 @@ public abstract class Teleop extends CommandOpMode {
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
      //    blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
+        voltageSubsystem = new VoltageSubsystem(hardwareMap);
         autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
         MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
@@ -88,7 +91,7 @@ public abstract class Teleop extends CommandOpMode {
 
         operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
         mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem/*, blinkinSubsystem*/);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem/*, blinkinSubsystem*/);
     }
     public abstract Alliance getAlliance();
 }

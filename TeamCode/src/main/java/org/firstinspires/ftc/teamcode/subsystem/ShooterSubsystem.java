@@ -36,8 +36,6 @@ public class ShooterSubsystem extends SubsystemBase {
         shooterMotor = new MotorEx(hardwareMap, "shooterMotor");
         shootorMotor = new MotorEx(hardwareMap, "shootorMotor");
         groupOfGoop = new MotorGroup(shooterMotor, shootorMotor);
-        setUp();
-
     }
 
     private void setUp() {
@@ -61,6 +59,7 @@ public class ShooterSubsystem extends SubsystemBase {
         running = true;
         groupOfGoop.setVeloCoefficients(SHOOTER_P, SHOOTER_I, SHOOTER_D);
         groupOfGoop.setFeedforwardCoefficients(SHOOTER_FF_S, SHOOTER_FF_V);
+
     }
 
     @Override
