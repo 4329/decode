@@ -12,6 +12,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
 import org.firstinspires.ftc.teamcode.util.Alliance;
+import org.firstinspires.ftc.teamcode.util.RobotConfig;
 
 public class LimeLightSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
@@ -22,6 +23,7 @@ public class LimeLightSubsystem extends SubsystemBase {
     private Pose3D botpose;
 
     private boolean targetVisible = false;
+    private final double DIVIDING_POINT = 3.6;
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
 
@@ -91,5 +93,23 @@ public class LimeLightSubsystem extends SubsystemBase {
 
     public double getTurboYogurt() {
         return turboYogurt;
+    }
+
+    public double getMotorPercent() {
+        if (turboYogurt < DIVIDING_POINT) {
+            return RobotConfig.SHOOTER_FAR_PERCENT;
+        }
+        else {
+            return RobotConfig.SHOOTER_CLOSE_PERCENT;
+        }
+    }
+
+    public double getTargetVelocity() {
+        if (turboYogurt < DIVIDING_POINT) {
+            return RobotConfig.SHOOTER_FAR_GOAL;
+        }
+        else {
+            return RobotConfig.SHOOTER_CLOSE_GOAL;
+        }
     }
 }

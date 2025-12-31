@@ -79,12 +79,12 @@ public class AutoCommandFactory {
                 new ParallelDeadlineGroup(
                     new SequentialCommandGroup(
                         new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-                        new ReadyShootCommand(shooterSubsystem, telemetry),
+                        new ReadyShootCommand(shooterSubsystem, limeLightSubsystem, telemetry),
                         new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                         new WaitCommand(500)
                         //and thank you
                     ),
-                    new ShootCommand(shooterSubsystem, stopAfterShot)
+                    new ShootCommand(shooterSubsystem, limeLightSubsystem, stopAfterShot)
                 ).withTimeout(5000),
                 new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                 new WaitCommand(500)
