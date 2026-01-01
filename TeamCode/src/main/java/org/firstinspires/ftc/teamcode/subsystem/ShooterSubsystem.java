@@ -20,6 +20,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
 import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
 import java.util.List;
+import java.util.function.DoubleSupplier;
 
 public class ShooterSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
@@ -28,14 +29,13 @@ public class ShooterSubsystem extends SubsystemBase {
     private MotorGroup groupOfGoop;
     private boolean running = false;
     private SpindexerMode currentMode;
+    private double shootPercent = 5;
 
     public ShooterSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
         shooterMotor = new MotorEx(hardwareMap, "shooterMotor");
         shootorMotor = new MotorEx(hardwareMap, "shootorMotor");
         groupOfGoop = new MotorGroup(shooterMotor, shootorMotor);
-        setUp();
-
     }
 
     private void setUp() {
@@ -50,16 +50,22 @@ public class ShooterSubsystem extends SubsystemBase {
         groupOfGoop.stopMotor();
     }
 
-    public void shoot() {
+    public void shoot(DoubleSupplier doubleSupplier) {
+        shoot(doubleSupplier.getAsDouble());
+    }
+
+    public void shoot(double shootPercent) {
+        this.shootPercent = shootPercent;
         running = true;
         groupOfGoop.setVeloCoefficients(SHOOTER_P, SHOOTER_I, SHOOTER_D);
         groupOfGoop.setFeedforwardCoefficients(SHOOTER_FF_S, SHOOTER_FF_V);
+
     }
 
     @Override
     public void periodic() {
         if (running) {
-            groupOfGoop.set(SHOOTER_FAR_PERCENT);
+            groupOfGoop.set(shootPercent);
             Log.i("amps", String.format("%f, %f", shooterMotor.motorEx.getCurrent(CurrentUnit.AMPS), shootorMotor.motorEx.getCurrent(CurrentUnit.AMPS)));
             Log.i("pct/MAX_TICKS/vel/accel", String.format("%f, %f, %f, %f", SHOOTER_FAR_PERCENT, groupOfGoop.ACHIEVABLE_MAX_TICKS_PER_SECOND, groupOfGoop.getVelocity(), shooterMotor.getAcceleration()));
         }
