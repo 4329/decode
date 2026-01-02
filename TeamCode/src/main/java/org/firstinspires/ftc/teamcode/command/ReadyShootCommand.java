@@ -13,7 +13,6 @@ import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 public class ReadyShootCommand extends CommandBase {
     private final ShooterSubsystem shooterSubsystem;
     private final LimeLightSubsystem limeLightSubsystem;
-    private final PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private final Telemetry telemetry;
     private double velocity;
 

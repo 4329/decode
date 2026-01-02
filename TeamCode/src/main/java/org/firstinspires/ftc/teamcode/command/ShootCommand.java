@@ -19,7 +19,7 @@ public class ShootCommand extends CommandBase {
 
     @Override
     public void execute() {
-        shooterSubsystem.shoot(limeLightSubsystem.getMotorPercent());
+        shooterSubsystem.shoot(limeLightSubsystem.getTargetVelocity());
     }
 
     @Override

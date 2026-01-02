@@ -33,7 +33,9 @@ public class SpindexerSubsystem extends SubsystemBase {
 
     public void spinTo(@NonNull SpindexPos position) {
             this.position = position;
-            storage.setPosition(position.getValue()); }
+            storage.setPosition(position.getValue());
+            telemetry.addData("spindexer", position.getValue());
+    }
 
     public void spin() {
         storage.setPosition(DASHBOARD_SPIN);

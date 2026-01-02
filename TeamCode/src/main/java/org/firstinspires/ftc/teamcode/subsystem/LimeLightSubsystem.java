@@ -23,7 +23,7 @@ public class LimeLightSubsystem extends SubsystemBase {
     private Pose3D botpose;
 
     private boolean targetVisible = false;
-    private final double DIVIDING_POINT = 3.6;
+    private final double DIVIDING_POINT = 13.2;
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
 
@@ -93,15 +93,6 @@ public class LimeLightSubsystem extends SubsystemBase {
 
     public double getTurboYogurt() {
         return turboYogurt;
-    }
-
-    public double getMotorPercent() {
-        if (turboYogurt < DIVIDING_POINT) {
-            return RobotConfig.SHOOTER_FAR_PERCENT;
-        }
-        else {
-            return RobotConfig.SHOOTER_CLOSE_PERCENT;
-        }
     }
 
     public double getTargetVelocity() {
