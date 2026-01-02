@@ -5,7 +5,6 @@ import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FF_S;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FF_V;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_I;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_P;
-import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FAR_PERCENT;
 
 import android.util.Log;
 
@@ -18,7 +17,6 @@ import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
-import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
 import org.firstinspires.ftc.teamcode.util.MathUtil;
 import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
@@ -32,7 +30,7 @@ public class ShooterSubsystem extends SubsystemBase {
     private MotorGroup groupOfGoop;
     private boolean running = false;
     private SpindexerMode currentMode;
-    private double shootPercent = 5;
+    private double setpoint = 5;
     private PIDController shooterPID;
     private SimpleMotorFeedforward shooterFeedForward;
 
@@ -59,11 +57,11 @@ public class ShooterSubsystem extends SubsystemBase {
         shoot(doubleSupplier.getAsDouble());
     }
 
-    public void shoot(double shootPercent) {
-        this.shootPercent = shootPercent;
+    public void shoot(double setpoint) {
+        this.setpoint = setpoint;
         running = true;
         shooterPID.setPID(SHOOTER_P, SHOOTER_I, SHOOTER_D);
-        shooterPID.setSetPoint(1700); // just temporarily...
+        shooterPID.setSetPoint(setpoint);
         shooterFeedForward = new SimpleMotorFeedforward(SHOOTER_FF_S, SHOOTER_FF_V);
     }
 

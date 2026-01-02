@@ -91,6 +91,33 @@ public class AutoCommandFactory {
         );
     }
 
+    public Command tripleShotEspresso() {
+        return new ParallelDeadlineGroup(
+                new SequentialCommandGroup(
+                    new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+                    new ReadyShootCommand(shooterSubsystem, limeLightSubsystem,telemetry),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                    new WaitCommand(500),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
+                    new WaitCommand(500),
+                    new SpindexerCommand(spindexerSubsystem, 1),
+                    new WaitCommand(1200),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                    new WaitCommand(500),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
+                    new WaitCommand(500),
+                    new SpindexerCommand(spindexerSubsystem, 1),
+                    new WaitCommand(1200),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                    new WaitCommand(500),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
+                    new WaitCommand(500)
+                        ),
+                new ShootCommand(shooterSubsystem, limeLightSubsystem, true)
+
+        );
+    }
+
     public Command strafeToYourLou() {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, 0, 0, .3, 26);
     }
