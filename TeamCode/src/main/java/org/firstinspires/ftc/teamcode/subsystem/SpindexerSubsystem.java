@@ -51,6 +51,7 @@ public class SpindexerSubsystem extends SubsystemBase {
     }
     public void changeMode(SpindexerMode newMode) {
         this.spindexerMode = newMode;
+        spinFirst();
     }
     public void right() {
         int nextIDX = 1;

@@ -34,11 +34,11 @@ public class BlinkinSubsystem extends SubsystemBase {
 
     public void changeMode(SpindexerMode newMode) {
         this.newMode = newMode;
-        if (newMode.equals(SpindexerMode.UNKNOWN)) {
+        if (SpindexerMode.UNKNOWN.equals(newMode)) {
             AllianceColor();
         }
 
-        else if (newMode.equals(SpindexerMode.SHOOT)) {
+        else if (SpindexerMode.SHOOT.equals(newMode)) {
             currentPattern = RevBlinkinLedDriver.BlinkinPattern.LARSON_SCANNER_GRAY;
         }
         else {
