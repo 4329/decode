@@ -58,9 +58,9 @@ public abstract class Teleop extends CommandOpMode {
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
        // intakeSubsystem = new IntakeSubsystem(hardwareMap);
         pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
-        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
-     //    blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
+         blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
+        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), blinkinSubsystem::tagInSight);
         voltageSubsystem = new VoltageSubsystem(hardwareMap);
         autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 

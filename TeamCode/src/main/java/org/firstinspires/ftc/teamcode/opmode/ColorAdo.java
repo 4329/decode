@@ -44,25 +44,17 @@ public abstract class ColorAdo extends CommandOpMode {
         mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
-        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance());
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
         shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
         pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
-        //BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
+        BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
+//        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 factory.rMove(10,0),
-                factory.scoreThingsPlease(false),
-                new SpindexerCommand(spindexerSubsystem, 1),
-                new WaitCommand(1000),
-                factory.scoreThingsPlease(false),
-                new SpindexerCommand(spindexerSubsystem, 1),
-                new WaitCommand(1000),
-                factory.scoreThingsPlease(true),
-                new SpindexerCommand(spindexerSubsystem, 1),
-                new WaitCommand(1000),
+                factory.tripleShotEspresso().withTimeout(12000),
                 factory.rMove(10,5)
         );
 

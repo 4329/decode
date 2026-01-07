@@ -14,10 +14,13 @@ import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.RobotConfig;
 
+import java.util.function.Consumer;
+
 public class LimeLightSubsystem extends SubsystemBase {
     private final Telemetry telemetry;
     private final Limelight3A limelight;
     private final Alliance alliance;
+    private final Consumer<Boolean> tagInSightChanger;
     private double turboXylophone;
     private double turboYogurt;
     private Pose3D botpose;
@@ -27,10 +30,11 @@ public class LimeLightSubsystem extends SubsystemBase {
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
 
-    public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
+    public LimeLightSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance, Consumer<Boolean> tagInSightChanger) {
         this.telemetry = telemetry;
         limelight = hardwareMap.get(Limelight3A.class, "limelight");
         this.alliance = alliance;
+        this.tagInSightChanger = tagInSightChanger;
         init();
     }
     private void init(){
@@ -56,6 +60,7 @@ public class LimeLightSubsystem extends SubsystemBase {
         else {
             targetVisible = false;
         }
+        tagInSightChanger.accept(targetVisible);
         Log.i("LL-botpose", botpose + "");
         Log.i("LL-vis", targetVisible + "");
         Log.i("LL-tx", turboXylophone + "");

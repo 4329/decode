@@ -13,6 +13,8 @@ public class BlinkinSubsystem extends SubsystemBase {
     private final Alliance alliance;
     private RevBlinkinLedDriver blinky;
     private RevBlinkinLedDriver.BlinkinPattern currentPattern;
+    private SpindexerMode newMode;
+
     public BlinkinSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
         this.blinky = hardwareMap.get(RevBlinkinLedDriver.class, "blinky");
         this.telemetry = telemetry;
@@ -31,6 +33,7 @@ public class BlinkinSubsystem extends SubsystemBase {
     }
 
     public void changeMode(SpindexerMode newMode) {
+        this.newMode = newMode;
         if (newMode.equals(SpindexerMode.UNKNOWN)) {
             AllianceColor();
         }
@@ -44,5 +47,14 @@ public class BlinkinSubsystem extends SubsystemBase {
 
         blinky.setPattern(currentPattern);
 
+    }
+    public void tagInSight(boolean geoffery) {
+        if (geoffery) {
+            currentPattern = RevBlinkinLedDriver.BlinkinPattern.BEATS_PER_MINUTE_FOREST_PALETTE;
+            blinky.setPattern(currentPattern);
+        }
+        else {
+            changeMode(newMode);
+        }
     }
 }
