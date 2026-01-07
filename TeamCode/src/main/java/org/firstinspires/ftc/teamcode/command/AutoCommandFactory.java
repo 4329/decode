@@ -53,16 +53,19 @@ public class AutoCommandFactory {
     public Command forward(double inches, double heading) {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0.35, 0, 0, inches);
     }
+    public Command allianceForward(double inches, double heading) {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0.35*alliance.value, 0, 0, inches);
+    }
 
     private Command slowForward(double inches, double heading) {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, -0.2, 0, 0, inches);
     }
 
-    private Command lMove(double inches, double heading) {
-        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, -.3, inches);
+    public Command lMove(double inches, double heading) {
+        return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, -.21, inches);
     }
 
-    private Command lFastMove(double inches, double heading) {
+     private Command lFastMove(double inches, double heading) {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, -.7, inches);
     }
 

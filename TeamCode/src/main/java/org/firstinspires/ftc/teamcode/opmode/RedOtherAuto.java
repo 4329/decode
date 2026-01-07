@@ -4,10 +4,10 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 
 import org.firstinspires.ftc.teamcode.util.Alliance;
 
-@Autonomous(name = "Blue Auto")
-public class BlueAdo extends ColorAdo {
+@Autonomous(name = "Red OtherAuto")
+public class RedOtherAuto extends OtherAuto {
     @Override
     public Alliance getAlliance() {
-        return Alliance.BLUE;
+        return Alliance.RED;
     }
 }
