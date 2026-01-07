@@ -17,6 +17,7 @@ import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
+import org.firstinspires.ftc.robotcore.internal.camera.delegating.DelegatingCaptureSequence;
 import org.firstinspires.ftc.teamcode.util.MathUtil;
 import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
@@ -90,5 +91,11 @@ public class ShooterSubsystem extends SubsystemBase {
 
     public void changeMode(SpindexerMode newMode) {
         this.currentMode = newMode;
+        if (SpindexerMode.SHOOT.equals(newMode)) {
+            shoot(1000);
+        }
+        else {
+            stop();
+        }
     }
 }

@@ -30,15 +30,14 @@ public class SpindexerModeeCommand extends CommandBase {
     public void execute() {
         SpindexerMode currentMode = robotState.getSpindexerModes();
         SpindexerMode newMode;
-        if (currentMode.equals(SpindexerMode.SHOOT)){
+        if (currentMode.equals(SpindexerMode.SHOOT)) {
             newMode = SpindexerMode.INTAKE;
-        }
-        else {
+        } else {
             newMode = SpindexerMode.SHOOT;
         }
         robotState.setSpindexerModes(newMode);
- //   blinkinSubsystem.changeMode(newMode);
-    spindexerSubsystem.changeMode(newMode);
-    shooterSubsystem.changeMode(newMode);
+        blinkinSubsystem.changeMode(newMode);
+        spindexerSubsystem.changeMode(newMode);
+        shooterSubsystem.changeMode(newMode);
     }
 }

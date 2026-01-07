@@ -1,12 +1,12 @@
 package org.firstinspires.ftc.teamcode.util;
 
 public enum SpindexPos {
-    INTAKE_ONE(0.6),
-    INTAKE_TWO(0.13),
+    INTAKE_ONE(0.13),
+    INTAKE_TWO(0.6),
     INTAKE_THREE(1),
-    SHOOT_ONE(0.13),
+    SHOOT_ONE(0.6),
     SHOOT_TWO(1),
-    SHOOT_THREE(0.6);
+    SHOOT_THREE(0.13);
 
     private double value;
     SpindexPos(double v){

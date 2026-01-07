@@ -41,7 +41,14 @@ public class SpindexerSubsystem extends SubsystemBase {
         storage.setPosition(DASHBOARD_SPIN);
         telemetry.addData("spindexer",DASHBOARD_SPIN);
     }
-
+    public void spinFirst() {
+        if (SpindexerMode.SHOOT == spindexerMode) {
+            spinTo(SpindexPos.SHOOT_ONE);
+        }
+        else {
+            spinTo(SpindexPos.INTAKE_ONE);
+        }
+    }
     public void changeMode(SpindexerMode newMode) {
         this.spindexerMode = newMode;
     }
