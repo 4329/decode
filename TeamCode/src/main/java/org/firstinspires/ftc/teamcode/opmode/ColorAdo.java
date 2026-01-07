@@ -57,11 +57,12 @@ public abstract class ColorAdo extends CommandOpMode {
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
                 new SpindexerCommand(spindexerSubsystem, 1),
                 factory.rMove(10,0),
+                new ObeliskCommand(limeLightSubsystem, telemetry, robotState),
                 factory.tripleShotEspresso().withTimeout(12000),
                 factory.rMove(10,5)
         );
 
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, BlinkyguySubsystem);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, BlinkyguySubsystem;
         schedule(autoCommandGroup);
     }
     public abstract Alliance getAlliance();
