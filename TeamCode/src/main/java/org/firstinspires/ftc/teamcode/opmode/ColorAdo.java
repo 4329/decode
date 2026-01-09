@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.opmode;
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
+import com.arcrobotics.ftclib.command.ParallelCommandGroup;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.command.WaitCommand;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
@@ -11,6 +12,7 @@ import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
 import org.firstinspires.ftc.teamcode.command.LineStuffUpCommand;
 import org.firstinspires.ftc.teamcode.command.ObeliskCommand;
+import org.firstinspires.ftc.teamcode.command.ObeliskSpinCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
@@ -55,11 +57,13 @@ public abstract class ColorAdo extends CommandOpMode {
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
-                new SpindexerCommand(spindexerSubsystem, 1),
-                factory.rMove(10,0),
                 new ObeliskCommand(limeLightSubsystem, telemetry, robotState),
+                 new ParallelCommandGroup(
+                         factory.rMove(10,0),
+                         new ObeliskSpinCommand(spindexerSubsystem, robotState)
+                 ),
                 factory.tripleShotEspresso().withTimeout(12000),
-                factory.rMove(10,5)
+                factory.rMove(15,5*getAlliance().value)
         );
 
         register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, BlinkyguySubsystem);
