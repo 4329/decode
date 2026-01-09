@@ -1,0 +1,28 @@
+--------- beginning of main
+01-10 13:00:14.932  1006  1162 V Robocol : received command: CMD_SET_MATCH_NUMBER(10218) 9
+01-10 13:00:14.933  1006  1162 V Robocol : received command: CMD_INIT_OP_MODE(10219) Red Auto
+01-10 13:00:14.979  1006  1201 V RobotCore: thread: ...terminating 'OpModeThread'
+01-10 13:00:14.983  1006  1189 I RobotCore: Attempting to switch to OpMode Red Auto
+01-10 13:00:14.988  1006  1189 I RobotCore: ******************** START - OPMODE Red Auto ********************
+01-10 13:00:15.241  1006  1189 D HardwareMap: Clearing which device instances have been retrieved
+01-10 13:00:15.244  1006  1206 V RobotCore: thread: 'OpModeThread' starting...
+01-10 13:00:15.255  1006  1166 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(280), attempt: 0
+01-10 13:00:15.257  1006  1166 V Robocol : sending CMD_TEXT_TO_SPEECH(281), attempt: 0
+01-10 13:00:15.305  1006  1206 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+01-10 13:00:15.320  1006  1206 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+01-10 13:00:15.330  1006  1206 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+01-10 13:00:15.344  1006  1206 I command : init-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@980a41a
+01-10 13:01:04.132  1006  1162 V Robocol : received command: CMD_INIT_OP_MODE(10700) $Stop$Robot$
+01-10 13:01:04.155  1006  1206 D RobotCore: User runOpModeMethod exited
+01-10 13:01:04.155  1006  1206 V RobotCore: thread: ...terminating 'OpModeThread'
+01-10 13:01:04.161  1006  1189 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+01-10 13:01:04.164  1006  1189 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-9-Red_Auto.txt ********************
+01-10 13:01:04.170  1006  1189 I RobotCore: Pruning old match logs: deleting Match-1-BlueTeleop.txt
+01-10 13:01:04.172  1006  1189 D HardwareMap: Clearing which device instances have been retrieved
+01-10 13:01:04.173  1006  1230 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-9-Red_Auto.txt
+01-10 13:01:04.173  1006  1230 I RobotCore: logging command line: exec logcat -d -T '1-10 13:0:14.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-9-Red_Auto.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+01-10 13:01:04.176  1006  1232 V RobotCore: thread: 'OpModeThread' starting...
+01-10 13:01:04.189  1231  1231 I sh      : type=1400 audit(0.0:116): avc: denied { read } for name="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-10 13:01:04.189  1231  1231 I sh      : type=1400 audit(0.0:117): avc: denied { open } for path="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+01-10 13:01:04.215  1006  1166 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(760), attempt: 0
+01-10 13:01:04.216  1006  1166 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(761), attempt: 0
