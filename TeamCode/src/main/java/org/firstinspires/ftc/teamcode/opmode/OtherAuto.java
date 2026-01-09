@@ -8,6 +8,8 @@ import com.arcrobotics.ftclib.command.WaitCommand;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
+import org.firstinspires.ftc.teamcode.command.ObeliskCommand;
+import org.firstinspires.ftc.teamcode.command.ObeliskSpinCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.TurnToHeadingCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
@@ -20,6 +22,7 @@ import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
+import org.firstinspires.ftc.teamcode.util.RobotState;
 
 public abstract class OtherAuto extends CommandOpMode {
     private MecanumDriveSubsystem mecanumDriveSubsystem;
@@ -31,6 +34,7 @@ public abstract class OtherAuto extends CommandOpMode {
     private ShooterSubsystem shooterSubsystem;
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem BlinkyguySubsystem;
+    private RobotState robotState = new RobotState();
 
     @Override
     public void initialize() {
@@ -50,10 +54,11 @@ public abstract class OtherAuto extends CommandOpMode {
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
-                new SpindexerCommand(spindexerSubsystem, 1),
-                factory.rMove(50,0),
+                factory.lMove(60,0),
+                new ObeliskCommand(limeLightSubsystem, telemetry, robotState),
+                new ObeliskSpinCommand(spindexerSubsystem, robotState),
                 factory.tripleShotEspresso().withTimeout(12000),
-                factory.allianceForward(15,0)
+                factory.allianceForward(13,0)
         );
 
         register(telemetryUpdateSubsystem, imuSubsystem);
