@@ -25,4 +25,8 @@ private ArtifactOrder artifactOrder = ArtifactOrder.unknown;
          artifactOrder = ArtifactOrder.unknown;
         }
     }
+
+    public ArtifactOrder getArtifactOrder() {
+        return artifactOrder;
+    }
 }

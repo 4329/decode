@@ -62,7 +62,7 @@ public abstract class ColorAdo extends CommandOpMode {
                 factory.rMove(10,5)
         );
 
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, BlinkyguySubsystem;
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, BlinkyguySubsystem);
         schedule(autoCommandGroup);
     }
     public abstract Alliance getAlliance();
