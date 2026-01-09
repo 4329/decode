@@ -48,7 +48,7 @@ public abstract class ColorAdo extends CommandOpMode {
         shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
         pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
         BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
-//        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
+        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),

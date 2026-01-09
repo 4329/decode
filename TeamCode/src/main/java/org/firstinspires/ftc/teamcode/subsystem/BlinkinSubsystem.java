@@ -50,7 +50,7 @@ public class BlinkinSubsystem extends SubsystemBase {
     }
     public void tagInSight(boolean geoffery) {
         if (geoffery) {
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.BEATS_PER_MINUTE_FOREST_PALETTE;
+            currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_FOREST_PALETTE;
             blinky.setPattern(currentPattern);
         }
         else {
