@@ -27,7 +27,7 @@ public class LimeLightSubsystem extends SubsystemBase {
     private Pose3D botpose;
     private int tagID = -123;
     private boolean targetVisible = false;
-    private final double DIVIDING_POINT = 13.2;
+    private final double DIVIDING_POINT = 11.0;
 
     private ElapsedTime timeSinceTag = new ElapsedTime();
 

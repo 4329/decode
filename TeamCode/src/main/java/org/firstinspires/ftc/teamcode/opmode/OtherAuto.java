@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.opmode;
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
+import com.arcrobotics.ftclib.command.ParallelCommandGroup;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.command.WaitCommand;
 
@@ -54,10 +55,16 @@ public abstract class OtherAuto extends CommandOpMode {
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
-                factory.lMove(60,0),
+                factory.lMove(50,0),
+                new TurnToHeadingCommand(mecanumDriveSubsystem, imuSubsystem,telemetry,-60*getAlliance().value),
+                new WaitCommand(500),
                 new ObeliskCommand(limeLightSubsystem, telemetry, robotState),
-                new ObeliskSpinCommand(spindexerSubsystem, robotState),
-                factory.tripleShotEspresso().withTimeout(12000),
+                new ParallelCommandGroup(
+                        new ObeliskSpinCommand(spindexerSubsystem, robotState),
+                        new TurnToHeadingCommand(mecanumDriveSubsystem, imuSubsystem, telemetry, 0)
+                        ),
+                new WaitCommand(500),
+                factory.tripleShotEspresso().withTimeout(8000),
                 factory.allianceForward(13,0)
         );
 
