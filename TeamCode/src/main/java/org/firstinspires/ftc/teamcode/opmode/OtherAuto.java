@@ -6,6 +6,7 @@ import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.command.ParallelCommandGroup;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.command.WaitCommand;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
@@ -36,11 +37,25 @@ public abstract class OtherAuto extends CommandOpMode {
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem BlinkyguySubsystem;
     private RobotState robotState = new RobotState();
+    private int dellay = 0;
+
 
     @Override
     public void initialize() {
         telemetry.speak("running" + getClass().getSimpleName());
         LoggingUtil.enableCommandLogging();
+        while (!isStarted() && !isStopRequested()){
+            if (gamepad1.dpad_up) {
+                dellay = Math.min(dellay + 500, 10000);
+                sleep(200);
+            }
+            else if (gamepad1.dpad_down) {
+                dellay = Math.max(dellay - 500, 0);
+                sleep(200);
+            }
+            telemetry.addData("Autonomous Delay ", dellay);
+            telemetry.update();
+        }
 
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
 
@@ -54,6 +69,7 @@ public abstract class OtherAuto extends CommandOpMode {
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
+                new WaitCommand(dellay),
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
                 factory.lMove(50,0),
                 new TurnToHeadingCommand(mecanumDriveSubsystem, imuSubsystem,telemetry,-60*getAlliance().value),
