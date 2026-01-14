@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode.command;
 
+import android.util.Log;
+
 import com.arcrobotics.ftclib.command.CommandBase;
 
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
@@ -24,6 +26,7 @@ public class ShootCommand extends CommandBase {
 
     @Override
     public void end(boolean interrupted) {
+        Log.i("SHOOT", "ShootCommand ended! interruped was: " + interrupted);
         if (stopAfterShot) {
             shooterSubsystem.stop();
         }

@@ -3,8 +3,8 @@ package org.firstinspires.ftc.teamcode.command;
 import android.renderscript.AllocationAdapter;
 
 import com.arcrobotics.ftclib.command.Command;
+import com.arcrobotics.ftclib.command.DeadlinableSequentialCommandGroup;
 import com.arcrobotics.ftclib.command.ParallelDeadlineGroup;
-import com.arcrobotics.ftclib.command.ParallelRaceGroup;
 import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.command.WaitCommand;
 
@@ -80,7 +80,7 @@ public class AutoCommandFactory {
     public Command scoreThingsPlease(boolean stopAfterShot) {
         return new SequentialCommandGroup(
                 new ParallelDeadlineGroup(
-                    new SequentialCommandGroup(
+                    new DeadlinableSequentialCommandGroup(
                         new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
                         new ReadyShootCommand(shooterSubsystem, limeLightSubsystem, telemetry),
                         new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
@@ -96,7 +96,7 @@ public class AutoCommandFactory {
 
     public Command tripleShotEspresso() {
         return new ParallelDeadlineGroup(
-                new SequentialCommandGroup(
+                new DeadlinableSequentialCommandGroup(
                     new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
                     new ReadyShootCommand(shooterSubsystem, limeLightSubsystem,telemetry),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
@@ -115,9 +115,8 @@ public class AutoCommandFactory {
                     new WaitCommand(500),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                     new WaitCommand(500)
-                        ),
+                ),
                 new ShootCommand(shooterSubsystem, limeLightSubsystem, true)
-
         );
     }
 
