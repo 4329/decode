@@ -65,7 +65,7 @@ public class AutoCommandFactory {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, -.21, inches);
     }
 
-     private Command lFastMove(double inches, double heading) {
+     public Command lFastMove(double inches, double heading) {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, heading, 0, 0, -.7, inches);
     }
 
@@ -104,13 +104,11 @@ public class AutoCommandFactory {
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                     new WaitCommand(500),
                     new SpindexerCommand(spindexerSubsystem, 1),
-                    new WaitCommand(400),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                     new WaitCommand(500),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                     new WaitCommand(500),
                     new SpindexerCommand(spindexerSubsystem, 1),
-                    new WaitCommand(400),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                     new WaitCommand(500),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),

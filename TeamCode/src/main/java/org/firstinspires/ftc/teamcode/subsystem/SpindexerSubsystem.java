@@ -53,30 +53,37 @@ public class SpindexerSubsystem extends SubsystemBase {
         this.spindexerMode = newMode;
         spinFirst();
     }
-    public void right() {
+    public int right() {
+        int deliay = 400;
         int nextIDX = 1;
         if (position == SpindexPos.SHOOT_TWO || position == SpindexPos.INTAKE_TWO) {
             nextIDX = 2;
         } else if (position == SpindexPos.SHOOT_THREE || position == SpindexPos.INTAKE_THREE) {
             nextIDX = 0;
+            deliay = 600;
         }
         if (SpindexerMode.SHOOT == spindexerMode) {
             spinTo(Disarray[nextIDX]);
         } else {
             spinTo(Datarray[nextIDX]);
         }
+        return deliay;
     }
-        public void left() {
+        public int left() {
+            int deliay = 600;
             int nextIDX = 2;
             if (position == SpindexPos.SHOOT_TWO || position == SpindexPos.INTAKE_TWO) {
                 nextIDX = 0;
+                deliay = 400;
             } else if (position == SpindexPos.SHOOT_THREE || position == SpindexPos.INTAKE_THREE) {
                 nextIDX = 1;
+                deliay = 400;
             }
             if (SpindexerMode.SHOOT == spindexerMode) {
                 spinTo(Disarray[nextIDX]);
             } else {
                 spinTo(Datarray[nextIDX]);
             }
+            return deliay;
     }
 }

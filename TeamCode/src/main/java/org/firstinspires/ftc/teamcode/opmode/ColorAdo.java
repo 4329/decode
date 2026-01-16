@@ -40,14 +40,14 @@ public abstract class ColorAdo extends CommandOpMode {
     private BlinkinSubsystem BlinkyguySubsystem;
     private VoltageSubsystem voltageSubsystem;
     private RobotState robotState = new RobotState();
+    private int dellay = 0;
+
 
     @Override
     public void initialize() {
         telemetry.speak("running" + getClass().getSimpleName());
         LoggingUtil.enableCommandLogging();
-
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
-
         mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
@@ -58,6 +58,18 @@ public abstract class ColorAdo extends CommandOpMode {
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
         voltageSubsystem = new VoltageSubsystem(hardwareMap);
         AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
+        while (!isStarted() && !isStopRequested()){
+            if (gamepad1.dpad_up) {
+                dellay = Math.min(dellay + 500, 13000);
+                sleep(200);
+            }
+            else if (gamepad1.dpad_down) {
+                dellay = Math.max(dellay - 500, 0);
+                sleep(200);
+            }
+            telemetry.addData("Autonomous Delay ", dellay);
+            telemetry.update();
+        }
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
                 new ObeliskCommand(limeLightSubsystem, telemetry, robotState),
