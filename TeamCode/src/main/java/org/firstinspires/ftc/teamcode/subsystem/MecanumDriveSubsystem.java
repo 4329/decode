@@ -50,5 +50,7 @@ public class MecanumDriveSubsystem extends SubsystemBase {
     public void drive(double strafe, double forward, double turn) {
         mecanumDrive.driveRobotCentric(strafe, forward, turn);
     }
+    public void driveFieldOriented(double strafe, double forward, double turn, double gyro) {
+        mecanumDrive.driveFieldCentric(strafe, forward, turn, gyro);
+    }
 }
-

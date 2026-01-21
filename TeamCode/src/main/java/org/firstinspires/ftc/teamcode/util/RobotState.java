@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.util;
 public class RobotState {
 private SpindexerMode spindexerModes = SpindexerMode.UNKNOWN;
 private ArtifactOrder artifactOrder = ArtifactOrder.unknown;
+private boolean robotOriented = true;
     public SpindexerMode getSpindexerModes() {
         return spindexerModes;
     }
@@ -28,5 +29,13 @@ private ArtifactOrder artifactOrder = ArtifactOrder.unknown;
 
     public ArtifactOrder getArtifactOrder() {
         return artifactOrder;
+    }
+
+    public void toggleDriveMode() {
+        robotOriented = !robotOriented;
+    }
+
+    public boolean isRobotOriented() {
+        return robotOriented;
     }
 }

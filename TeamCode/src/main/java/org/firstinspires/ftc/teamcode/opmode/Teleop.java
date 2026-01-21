@@ -70,12 +70,16 @@ public abstract class Teleop extends CommandOpMode {
             () -> driver.getLeftY(),
             () -> driver.getRightX(),
             () -> driver.getButton(GamepadKeys.Button.LEFT_BUMPER),
-            () -> driver.getButton(GamepadKeys.Button.A)
+            () -> driver.getButton(GamepadKeys.Button.A),
+                imuSubsystem,
+                robotState
         );
         driver.getGamepadButton(GamepadKeys.Button.DPAD_RIGHT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),1, 0, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_DOWN).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_UP).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, 1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
+        driver.getGamepadButton(GamepadKeys.Button.START).whenPressed(new InstantCommand(() ->robotState.toggleDriveMode()));
+        driver.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new InstantCommand(()->imuSubsystem.reset()));
 
         operator.getGamepadButton(GamepadKeys.Button.DPAD_UP).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
         operator.getGamepadButton(GamepadKeys.Button.Y).whileHeld(autoCommandFactory.tripleShotEspresso());
