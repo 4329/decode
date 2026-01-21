@@ -5,6 +5,7 @@ import static org.firstinspires.ftc.teamcode.util.RobotConfig.SLOW_DRIVE_DIVISOR
 
 import com.arcrobotics.ftclib.command.CommandBase;
 
+import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.util.RobotState;
@@ -20,8 +21,9 @@ public class MecanumDriveCommand extends CommandBase {
     private Supplier<Boolean> slowMode;
     private final ImuSubsystem imuSubsystem;
     private final RobotState robotState;
+    private final Telemetry telemetry;
 
-    public MecanumDriveCommand(MecanumDriveSubsystem mecanumDriveSubsystem, Supplier<Double> strafeDrive, Supplier<Double> forwardDrive, Supplier<Double> turnDrive, Supplier<Boolean> speedBoost, Supplier<Boolean> slowMode, ImuSubsystem imuSubsystem, RobotState robotState) {
+    public MecanumDriveCommand(MecanumDriveSubsystem mecanumDriveSubsystem, Supplier<Double> strafeDrive, Supplier<Double> forwardDrive, Supplier<Double> turnDrive, Supplier<Boolean> speedBoost, Supplier<Boolean> slowMode, ImuSubsystem imuSubsystem, RobotState robotState, Telemetry telemetry) {
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
         this.strafeDrive = strafeDrive;
         this.forwardDrive = forwardDrive;
@@ -30,6 +32,7 @@ public class MecanumDriveCommand extends CommandBase {
         this.slowMode = slowMode;
         this.imuSubsystem = imuSubsystem;
         this.robotState = robotState;
+        this.telemetry = telemetry;
         addRequirements(mecanumDriveSubsystem);
     }
 
@@ -59,5 +62,6 @@ public class MecanumDriveCommand extends CommandBase {
         else {
             mecanumDriveSubsystem.driveFieldOriented(strafe, forward, turn, imuSubsystem.getHeading());
         }
+        telemetry.addData("Drive Mode is ", robotState.isRobotOriented()? "robot oriented": "field oriented");
     }
 }

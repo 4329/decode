@@ -70,7 +70,8 @@ public class Testop extends CommandOpMode {
             () -> driver.getButton(GamepadKeys.Button.LEFT_BUMPER),
             () -> driver.getButton(GamepadKeys.Button.A),
                 imuSubsystem,
-                robotState
+                robotState,
+                telemetry
         );
     //    driver.getGamepadButton(GamepadKeys.Button.DPAD_RIGHT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),1, 0, telemetry));
    //     driver.getGamepadButton(GamepadKeys.Button.DPAD_DOWN).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));

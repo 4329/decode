@@ -4,6 +4,7 @@ import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
 import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.command.InstantCommand;
+import com.arcrobotics.ftclib.command.SequentialCommandGroup;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 
@@ -72,13 +73,15 @@ public abstract class Teleop extends CommandOpMode {
             () -> driver.getButton(GamepadKeys.Button.LEFT_BUMPER),
             () -> driver.getButton(GamepadKeys.Button.A),
                 imuSubsystem,
-                robotState
+                robotState,
+                telemetry
         );
         driver.getGamepadButton(GamepadKeys.Button.DPAD_RIGHT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),1, 0, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_DOWN).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_UP).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, 1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
-        driver.getGamepadButton(GamepadKeys.Button.START).whenPressed(new InstantCommand(() ->robotState.toggleDriveMode()));
+        driver.getGamepadButton(GamepadKeys.Button.START).whenPressed(new SequentialCommandGroup(new InstantCommand(() ->robotState.toggleDriveMode()),
+                                                                                                 new InstantCommand(()-> blinkinSubsystem.changeDriveMode(robotState.isRobotOriented()))));
         driver.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new InstantCommand(()->imuSubsystem.reset()));
 
         operator.getGamepadButton(GamepadKeys.Button.DPAD_UP).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));

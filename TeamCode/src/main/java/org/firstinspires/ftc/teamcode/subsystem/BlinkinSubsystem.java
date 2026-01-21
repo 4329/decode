@@ -14,6 +14,7 @@ public class BlinkinSubsystem extends SubsystemBase {
     private RevBlinkinLedDriver blinky;
     private RevBlinkinLedDriver.BlinkinPattern currentPattern;
     private SpindexerMode newMode;
+    private boolean robotOriented;
 
     public BlinkinSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {
         this.blinky = hardwareMap.get(RevBlinkinLedDriver.class, "blinky");
@@ -31,7 +32,18 @@ public class BlinkinSubsystem extends SubsystemBase {
         }
         blinky.setPattern(currentPattern);
     }
-
+    public void changeDriveMode(boolean robotOriented){
+        this.robotOriented = robotOriented;
+        if (SpindexerMode.INTAKE.equals(newMode)) {
+            if (robotOriented) {
+                currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP1_LIGHT_CHASE;
+            }
+            else {
+                currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP2_LIGHT_CHASE;
+            }
+            blinky.setPattern(currentPattern);
+        }
+    }
     public void changeMode(SpindexerMode newMode) {
         this.newMode = newMode;
         if (SpindexerMode.UNKNOWN.equals(newMode)) {
@@ -42,7 +54,7 @@ public class BlinkinSubsystem extends SubsystemBase {
             currentPattern = RevBlinkinLedDriver.BlinkinPattern.LARSON_SCANNER_GRAY;
         }
         else {
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP1_LIGHT_CHASE;
+            changeDriveMode(robotOriented);
         }
 
         blinky.setPattern(currentPattern);
