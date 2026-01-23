@@ -80,8 +80,10 @@ public abstract class Teleop extends CommandOpMode {
         driver.getGamepadButton(GamepadKeys.Button.DPAD_DOWN).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, -1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_UP).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),0, 1, telemetry));
         driver.getGamepadButton(GamepadKeys.Button.DPAD_LEFT).whileHeld(new MecanumDpadCommand(mecanumDriveSubsystem,() -> driver.getButton(GamepadKeys.Button.B),-1, 0, telemetry));
-        driver.getGamepadButton(GamepadKeys.Button.START).whenPressed(new SequentialCommandGroup(new InstantCommand(() ->robotState.toggleDriveMode()),
-                                                                                                 new InstantCommand(()-> blinkinSubsystem.changeDriveMode(robotState.isRobotOriented()))));
+        driver.getGamepadButton(GamepadKeys.Button.START).whenPressed(new InstantCommand(()-> {
+            robotState.toggleDriveMode();
+            blinkinSubsystem.changeDriveMode(robotState.isRobotOriented());
+        }));
         driver.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new InstantCommand(()->imuSubsystem.reset()));
 
         operator.getGamepadButton(GamepadKeys.Button.DPAD_UP).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));

@@ -25,23 +25,21 @@ public class BlinkinSubsystem extends SubsystemBase {
 
     private void AllianceColor() {
         if(alliance.equals(Alliance.BLUE)){
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_OCEAN_PALETTE;
+            changePattern(RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_OCEAN_PALETTE);
         }
         else{
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_LAVA_PALETTE;
+            changePattern(RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_LAVA_PALETTE);
         }
-        blinky.setPattern(currentPattern);
     }
     public void changeDriveMode(boolean robotOriented){
         this.robotOriented = robotOriented;
         if (SpindexerMode.INTAKE.equals(newMode)) {
             if (robotOriented) {
-                currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP1_LIGHT_CHASE;
+                changePattern(RevBlinkinLedDriver.BlinkinPattern.CP1_LIGHT_CHASE);
             }
             else {
-                currentPattern = RevBlinkinLedDriver.BlinkinPattern.CP2_LIGHT_CHASE;
+                changePattern(RevBlinkinLedDriver.BlinkinPattern.CP2_LIGHT_CHASE);
             }
-            blinky.setPattern(currentPattern);
         }
     }
     public void changeMode(SpindexerMode newMode) {
@@ -51,22 +49,22 @@ public class BlinkinSubsystem extends SubsystemBase {
         }
 
         else if (SpindexerMode.SHOOT.equals(newMode)) {
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.LARSON_SCANNER_GRAY;
+            changePattern(RevBlinkinLedDriver.BlinkinPattern.LARSON_SCANNER_GRAY);
         }
         else {
             changeDriveMode(robotOriented);
         }
-
-        blinky.setPattern(currentPattern);
-
     }
     public void tagInSight(boolean geoffery) {
         if (geoffery) {
-            currentPattern = RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_FOREST_PALETTE;
-            blinky.setPattern(currentPattern);
+            changePattern(RevBlinkinLedDriver.BlinkinPattern.COLOR_WAVES_FOREST_PALETTE);
         }
         else {
             changeMode(newMode);
         }
+    }
+    private void changePattern(RevBlinkinLedDriver.BlinkinPattern crocodile) {
+        currentPattern = crocodile;
+        blinky.setPattern(crocodile);
     }
 }
