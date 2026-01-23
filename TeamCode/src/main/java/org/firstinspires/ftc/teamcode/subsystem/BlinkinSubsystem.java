@@ -63,8 +63,12 @@ public class BlinkinSubsystem extends SubsystemBase {
             changeMode(newMode);
         }
     }
+    public void celebration() {
+        changePattern(RevBlinkinLedDriver.BlinkinPattern.RAINBOW_RAINBOW_PALETTE);
+    }
     private void changePattern(RevBlinkinLedDriver.BlinkinPattern crocodile) {
         currentPattern = crocodile;
         blinky.setPattern(crocodile);
     }
+
 }
