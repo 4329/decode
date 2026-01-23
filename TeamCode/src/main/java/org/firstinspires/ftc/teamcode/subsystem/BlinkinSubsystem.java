@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode.subsystem;
 
+import android.util.Log;
+
 import com.arcrobotics.ftclib.command.SubsystemBase;
 import com.qualcomm.hardware.rev.RevBlinkinLedDriver;
 import com.qualcomm.robotcore.hardware.HardwareMap;
@@ -67,8 +69,11 @@ public class BlinkinSubsystem extends SubsystemBase {
         changePattern(RevBlinkinLedDriver.BlinkinPattern.RAINBOW_RAINBOW_PALETTE);
     }
     private void changePattern(RevBlinkinLedDriver.BlinkinPattern crocodile) {
+        if (!RevBlinkinLedDriver.BlinkinPattern.RAINBOW_RAINBOW_PALETTE.equals(currentPattern)) {
         currentPattern = crocodile;
         blinky.setPattern(crocodile);
+        Log.i("Lights", crocodile.name());
+        }
     }
 
 }
