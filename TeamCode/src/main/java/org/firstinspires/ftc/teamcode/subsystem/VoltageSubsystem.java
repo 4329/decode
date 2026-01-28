@@ -36,9 +36,10 @@ public class VoltageSubsystem extends SubsystemBase {
     public double getVoltageCompensationFactor() {
        double voltage = getVoltage();
        if (voltage == 0) {
-           return EXPECTED_BATTERY_VOLTAGE;
-       }
-       else {
+           return 1;
+       } else if (voltage >= EXPECTED_BATTERY_VOLTAGE) {
+           return 1;
+       } else {
            return EXPECTED_BATTERY_VOLTAGE / voltage;
        }
     }

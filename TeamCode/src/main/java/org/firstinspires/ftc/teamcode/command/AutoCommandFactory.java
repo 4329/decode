@@ -1,7 +1,5 @@
 package org.firstinspires.ftc.teamcode.command;
 
-import android.renderscript.AllocationAdapter;
-
 import com.arcrobotics.ftclib.command.Command;
 import com.arcrobotics.ftclib.command.DeadlinableSequentialCommandGroup;
 import com.arcrobotics.ftclib.command.ParallelDeadlineGroup;
@@ -15,6 +13,7 @@ import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.PushyMcPushermanSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.VoltageSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 
 public class AutoCommandFactory {
@@ -26,8 +25,9 @@ public class AutoCommandFactory {
     private final ShooterSubsystem shooterSubsystem;
     private final SpindexerSubsystem spindexerSubsystem;
     private final Alliance alliance;
+    private final VoltageSubsystem voltageSubsystem;
 
-    public AutoCommandFactory(MecanumDriveSubsystem mecanumDriveSubsystem, ImuSubsystem imuSubsystem, Telemetry telemetry, LimeLightSubsystem limeLightSubsystem, PushyMcPushermanSubsystem pushyMcPushermanSubsystem, ShooterSubsystem shooterSubsystem, SpindexerSubsystem spindexerSubsystem, Alliance alliance) {
+    public AutoCommandFactory(MecanumDriveSubsystem mecanumDriveSubsystem, ImuSubsystem imuSubsystem, Telemetry telemetry, LimeLightSubsystem limeLightSubsystem, PushyMcPushermanSubsystem pushyMcPushermanSubsystem, ShooterSubsystem shooterSubsystem, SpindexerSubsystem spindexerSubsystem, Alliance alliance, VoltageSubsystem voltageSubsystem) {
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
         this.imuSubsystem = imuSubsystem;
         this.telemetry = telemetry;
@@ -36,6 +36,7 @@ public class AutoCommandFactory {
         this.shooterSubsystem = shooterSubsystem;
         this.spindexerSubsystem = spindexerSubsystem;
         this.alliance = alliance;
+        this.voltageSubsystem = voltageSubsystem;
     }
 
     public Command exampleCommand() {
@@ -87,7 +88,7 @@ public class AutoCommandFactory {
                         new WaitCommand(500)
                         //and thank you
                     ),
-                    new ShootCommand(shooterSubsystem, limeLightSubsystem, stopAfterShot)
+                    new ShootCommand(shooterSubsystem, limeLightSubsystem, stopAfterShot, voltageSubsystem)
                 ).withTimeout(5000),
                 new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                 new WaitCommand(500)
@@ -114,7 +115,7 @@ public class AutoCommandFactory {
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                     new WaitCommand(500)
                 ),
-                new ShootCommand(shooterSubsystem, limeLightSubsystem, true)
+                new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem)
         );
     }
 
@@ -125,4 +126,5 @@ public class AutoCommandFactory {
     public Command moveAwayFromYourLou() {
         return new EncoderDriveCommand(mecanumDriveSubsystem, imuSubsystem, 0, .3*alliance.value, 0,0 , 40);
     }
+    
 }

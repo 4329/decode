@@ -17,7 +17,6 @@ import com.arcrobotics.ftclib.hardware.motors.MotorGroup;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
-import org.firstinspires.ftc.robotcore.internal.camera.delegating.DelegatingCaptureSequence;
 import org.firstinspires.ftc.teamcode.util.MathUtil;
 import org.firstinspires.ftc.teamcode.util.SpindexerMode;
 
@@ -34,6 +33,7 @@ public class ShooterSubsystem extends SubsystemBase {
     private double setpoint = 5;
     private PIDController shooterPID;
     private SimpleMotorFeedforward shooterFeedForward;
+    private double voltageCompensationFactor;
 
     public ShooterSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.telemetry = telemetry;
@@ -42,6 +42,7 @@ public class ShooterSubsystem extends SubsystemBase {
         groupOfGoop = new MotorGroup(shooterMotor, shootorMotor);
         shooterPID = new PIDController(SHOOTER_P, SHOOTER_I, SHOOTER_D);
         shooterFeedForward = new SimpleMotorFeedforward(SHOOTER_FF_S, SHOOTER_FF_V);
+        setUp();
     }
 
     private void setUp() {
@@ -54,11 +55,11 @@ public class ShooterSubsystem extends SubsystemBase {
         groupOfGoop.stopMotor();
     }
 
-    public void shoot(DoubleSupplier doubleSupplier) {
-        shoot(doubleSupplier.getAsDouble());
-    }
+   // public void shoot(DoubleSupplier doubleSupplier) {
+       // shoot(doubleSupplier.getAsDouble(), voltageCompensationFactor);
+    //}
 
-    public void shoot(double setpoint) {
+    public void shoot(double setpoint, double voltageCompensationFactor) {
         this.setpoint = setpoint;
         running = true;
         shooterPID.setPID(SHOOTER_P, SHOOTER_I, SHOOTER_D);
@@ -72,7 +73,7 @@ public class ShooterSubsystem extends SubsystemBase {
             double currentVelocity = shooterMotor.getCorrectedVelocity();
             double pidOutput = shooterPID.calculate(currentVelocity);
             double ffOutput = shooterFeedForward.calculate(currentVelocity, shooterMotor.getAcceleration());
-            double clamped = MathUtil.clamp(pidOutput + ffOutput, -1.0, 1.0);
+            double clamped = MathUtil.clamp((pidOutput + ffOutput)*voltageCompensationFactor, -1.0, 1.0);
 
             Log.i("vel/ffOutput/pidOutput/clamped", String.format("%f, %f, %f, %f", currentVelocity, ffOutput, pidOutput, clamped));
             telemetry.addData("ffOutput", ffOutput);
@@ -92,7 +93,7 @@ public class ShooterSubsystem extends SubsystemBase {
     public void changeMode(SpindexerMode newMode) {
         this.currentMode = newMode;
         if (SpindexerMode.SHOOT.equals(newMode)) {
-            shoot(1000);
+            shoot(1000, voltageCompensationFactor);
         }
         else {
             stop();

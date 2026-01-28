@@ -56,7 +56,7 @@ public abstract class OtherAuto extends CommandOpMode {
         BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
         voltageSubsystem = new VoltageSubsystem(hardwareMap);
-        AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
+        AutoCommandFactory factory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance(), voltageSubsystem);
         while (!isStarted() && !isStopRequested()){
             if (gamepad1.dpad_up) {
                 dellay = Math.min(dellay + 500, 15000);
