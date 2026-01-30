@@ -61,6 +61,7 @@ public class ShooterSubsystem extends SubsystemBase {
 
     public void shoot(double setpoint, double voltageCompensationFactor) {
         this.setpoint = setpoint;
+        this.voltageCompensationFactor = voltageCompensationFactor;
         running = true;
         shooterPID.setPID(SHOOTER_P, SHOOTER_I, SHOOTER_D);
         shooterPID.setSetPoint(setpoint);

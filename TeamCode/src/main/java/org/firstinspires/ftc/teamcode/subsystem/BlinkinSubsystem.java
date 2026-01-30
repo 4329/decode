@@ -15,7 +15,7 @@ public class BlinkinSubsystem extends SubsystemBase {
     private final Alliance alliance;
     private RevBlinkinLedDriver blinky;
     private RevBlinkinLedDriver.BlinkinPattern currentPattern;
-    private SpindexerMode newMode;
+    private SpindexerMode newMode = SpindexerMode.UNKNOWN;
     private boolean robotOriented;
 
     public BlinkinSubsystem(HardwareMap hardwareMap, Telemetry telemetry, Alliance alliance) {

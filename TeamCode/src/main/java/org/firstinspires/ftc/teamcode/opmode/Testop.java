@@ -51,15 +51,15 @@ public class Testop extends CommandOpMode {
 
         driver = new GamepadEx(gamepad1);
         operator = new GamepadEx(gamepad2);
-        mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
+      //  mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
 //        imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
 //        spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
-          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, Alliance.RED);
+   //       blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, Alliance.RED);
 //        intakeSubsystem = new IntakeSubsystem(hardwareMap);
-        limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE, blinkinSubsystem::tagInSight);
+ //       limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE, blinkinSubsystem::tagInSight);
 //        shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
-//          pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+          pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
 //        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
         MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
@@ -81,15 +81,22 @@ public class Testop extends CommandOpMode {
 
      //           driver.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
 
-//        operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease());
-//        operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
-//        operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
-//        operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(()-> pushyMcPushermanSubsystem.down());
-//        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(()-> pushyMcPushermanSubsystem.up());
-        //  operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new SpindexerModeeCommand(spindexerSubsystem,shooterSubsystem, blinkinSubsystem, robotState));
-         // operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new ResetSpindexerCommand(spindexerSubsystem,shooterSubsystem, blinkinSubsystem, robotState));
+       // operator.getGamepadButton(GamepadKeys.Button.DPAD_UP).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
+        //operator.getGamepadButton(GamepadKeys.Button.Y).whileHeld(autoCommandFactory.tripleShotEspresso());
 
-        mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-        register(limeLightSubsystem);
+        //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
+        //operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
+        //    operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease(true));
+        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand(() -> pushyMcPushermanSubsystem.up()));
+        operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(() -> pushyMcPushermanSubsystem.down()));
+     //   operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
+     //   operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
+    //    operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand(()-> blinkinSubsystem.celebration()));
+        //  operator.getGamepadButton(GamepadKeys.Button.X).whileHeld(new InstantCommand(() -> shooterSubsystem.shoot(() -> limeLightSubsystem.getTargetVelocity())));
+        //  operator.getGamepadButton(GamepadKeys.Button.START).whileHeld(new InstantCommand(() -> shooterSubsystem.stop()));
+
+      //  operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
+      //  mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
+      //  register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem/*, blinkinSubsystem*/);
     }
 }
