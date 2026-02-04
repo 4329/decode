@@ -25,6 +25,7 @@ public class SpindexerSubsystem extends SubsystemBase {
     public SpindexerSubsystem(HardwareMap hardwareMap, Telemetry telemetry) {
         this.storage = hardwareMap.get(Servo.class, "spindexer");
         this.telemetry=telemetry;
+        spinTo(SpindexPos.SHOOT_ONE);
     }
 
     public SpindexPos getPosition() {
