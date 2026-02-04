@@ -94,7 +94,7 @@ public class ShooterSubsystem extends SubsystemBase {
     public void changeMode(SpindexerMode newMode) {
         this.currentMode = newMode;
         if (SpindexerMode.SHOOT.equals(newMode)) {
-            shoot(1000, voltageCompensationFactor);
+            shoot(1000, 1);
         }
         else {
             stop();

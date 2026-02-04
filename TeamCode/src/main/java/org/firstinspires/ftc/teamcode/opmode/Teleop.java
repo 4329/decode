@@ -86,7 +86,7 @@ public abstract class Teleop extends CommandOpMode {
         }));
         driver.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new InstantCommand(()->imuSubsystem.reset()));
 
-        operator.getGamepadButton(GamepadKeys.Button.DPAD_UP).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
+     //   operator.getGamepadButton(GamepadKeys.Button.DPAD_UP).whenPressed(new InstantCommand(()-> spindexerSubsystem.spin()));
         operator.getGamepadButton(GamepadKeys.Button.Y).whileHeld(autoCommandFactory.tripleShotEspresso());
 
         //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
