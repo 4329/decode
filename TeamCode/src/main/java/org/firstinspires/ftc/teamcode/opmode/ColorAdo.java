@@ -71,7 +71,8 @@ public abstract class ColorAdo extends CommandOpMode {
             telemetry.update();
         }
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
-            new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
+                new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
+                new WaitCommand(dellay),
                 new ObeliskCommand(limeLightSubsystem, telemetry, robotState),
                  new ParallelCommandGroup(
                          factory.rMove(10,0),

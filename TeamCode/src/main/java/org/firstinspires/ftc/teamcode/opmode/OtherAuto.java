@@ -70,8 +70,8 @@ public abstract class OtherAuto extends CommandOpMode {
             telemetry.update();
         }
         SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
-                new WaitCommand(dellay),
             new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
+                new WaitCommand(dellay),
                 factory.lFastMove(50,0),
                 new TurnToHeadingCommand(mecanumDriveSubsystem, imuSubsystem,telemetry,-60*getAlliance().value),
                 new WaitCommand(500),
