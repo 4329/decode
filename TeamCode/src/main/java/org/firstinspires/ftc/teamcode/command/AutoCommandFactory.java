@@ -103,17 +103,17 @@ public class AutoCommandFactory {
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                     new WaitCommand(500),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                    new WaitCommand(500),
+                    new WaitCommand(700),
                     new SpindexerCommand(spindexerSubsystem, 1),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                     new WaitCommand(500),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                    new WaitCommand(500),
+                    new WaitCommand(700),
                     new SpindexerCommand(spindexerSubsystem, 1),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                     new WaitCommand(500),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                    new WaitCommand(500)
+                    new WaitCommand(700)
                 ),
                 new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem)
         );
