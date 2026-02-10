@@ -1,0 +1,501 @@
+--------- beginning of main
+02-07 12:53:25.482   974  1198 V Robocol : received command: CMD_SET_MATCH_NUMBER(11397) 0
+02-07 12:53:25.483   974  1198 V Robocol : received command: CMD_INIT_OP_MODE(11398) Red Far
+02-07 12:53:25.535   974  1650 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 12:53:25.539   974  1227 I RobotCore: Attempting to switch to OpMode Red Far
+02-07 12:53:25.542   974  1227 I RobotCore: ******************** START - OPMODE Red Far ********************
+02-07 12:53:25.732   974  1227 D HardwareMap: Clearing which device instances have been retrieved
+02-07 12:53:25.734   974  1659 V RobotCore: thread: 'OpModeThread' starting...
+02-07 12:53:25.755   974  1201 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1498), attempt: 0
+02-07 12:53:25.756   974  1201 V Robocol : sending CMD_TEXT_TO_SPEECH(1499), attempt: 0
+02-07 12:53:25.775   974  1659 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+02-07 12:53:25.803   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:25.807   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:30.880   974  1198 V Robocol : received command: CMD_RUN_OP_MODE(11532) Red Far
+02-07 12:53:30.891   974  1659 I command : init-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:30.912   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:30.916   974  1201 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(1626), attempt: 0
+02-07 12:53:30.917   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:30.917   974  1659 I LL-botpose: null
+02-07 12:53:30.917   974  1659 I LL-vis  : false
+02-07 12:53:30.917   974  1659 I LL-tx   : 0.0
+02-07 12:53:30.917   974  1659 I LL-ty   : 0.0
+02-07 12:53:30.919   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.769000V
+02-07 12:53:30.922   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.874000V
+02-07 12:53:30.924   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.897000V
+02-07 12:53:30.931   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:30.961   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:30.961   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:30.961   974  1659 I LL-botpose: null
+02-07 12:53:30.961   974  1659 I LL-vis  : false
+02-07 12:53:30.961   974  1659 I LL-tx   : 0.0
+02-07 12:53:30.962   974  1659 I LL-ty   : 0.0
+02-07 12:53:30.963   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.773000V
+02-07 12:53:30.965   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.882000V
+02-07 12:53:30.968   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.915000V
+02-07 12:53:30.975   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:30.993   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:30.993   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:30.993   974  1659 I LL-botpose: null
+02-07 12:53:30.993   974  1659 I LL-vis  : false
+02-07 12:53:30.993   974  1659 I LL-tx   : 0.0
+02-07 12:53:30.993   974  1659 I LL-ty   : 0.0
+02-07 12:53:30.995   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.782000V
+02-07 12:53:30.997   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.891000V
+02-07 12:53:31.000   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.000   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.028   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.028   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.028   974  1659 I LL-botpose: null
+02-07 12:53:31.028   974  1659 I LL-vis  : false
+02-07 12:53:31.028   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.028   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.030   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:31.033   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.035   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.942000V
+02-07 12:53:31.036   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.056   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.058   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.058   974  1659 I LL-botpose: null
+02-07 12:53:31.058   974  1659 I LL-vis  : false
+02-07 12:53:31.058   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.058   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.060   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.795000V
+02-07 12:53:31.063   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.065   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.924000V
+02-07 12:53:31.066   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.084   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.084   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.084   974  1659 I LL-botpose: null
+02-07 12:53:31.084   974  1659 I LL-vis  : false
+02-07 12:53:31.084   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.084   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.087   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.795000V
+02-07 12:53:31.089   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.900000V
+02-07 12:53:31.091   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.092   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.113   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.113   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.113   974  1659 I LL-botpose: null
+02-07 12:53:31.113   974  1659 I LL-vis  : false
+02-07 12:53:31.113   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.113   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.115   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:31.118   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.120   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.121   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.140   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.140   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.140   974  1659 I LL-botpose: null
+02-07 12:53:31.140   974  1659 I LL-vis  : false
+02-07 12:53:31.140   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.140   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.142   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:31.144   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.147   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.147   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.164   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.164   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.164   974  1659 I LL-botpose: null
+02-07 12:53:31.164   974  1659 I LL-vis  : false
+02-07 12:53:31.164   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.165   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.167   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:31.170   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.172   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.172   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.192   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.192   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.192   974  1659 I LL-botpose: null
+02-07 12:53:31.192   974  1659 I LL-vis  : false
+02-07 12:53:31.193   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.193   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.194   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:31.197   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.199   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.200   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.229   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.229   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.229   974  1659 I LL-botpose: null
+02-07 12:53:31.230   974  1659 I LL-vis  : false
+02-07 12:53:31.230   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.230   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.232   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.795000V
+02-07 12:53:31.234   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.236   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.942000V
+02-07 12:53:31.237   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.258   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.258   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.258   974  1659 I LL-botpose: null
+02-07 12:53:31.258   974  1659 I LL-vis  : false
+02-07 12:53:31.258   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.258   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.260   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:31.262   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.265   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.265   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.290   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.290   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.290   974  1659 I LL-botpose: null
+02-07 12:53:31.290   974  1659 I LL-vis  : false
+02-07 12:53:31.290   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.290   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.292   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.782000V
+02-07 12:53:31.294   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.891000V
+02-07 12:53:31.298   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.924000V
+02-07 12:53:31.305   974  1659 I EncoderDriveCommand: initialize: with IMU - Initial Heading=0.00
+02-07 12:53:31.306   974  1659 I EncoderDriveCommand: initialize: forward(0.00),turn(0.00),strafe(0.21),inches(10.00)
+02-07 12:53:31.306   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.329   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.330   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.330   974  1659 I LL-botpose: null
+02-07 12:53:31.330   974  1659 I LL-vis  : false
+02-07 12:53:31.330   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.330   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.332   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.795000V
+02-07 12:53:31.335   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.895000V
+02-07 12:53:31.337   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.933000V
+02-07 12:53:31.356   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.357   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.378   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.378   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.378   974  1659 I LL-botpose: null
+02-07 12:53:31.378   974  1659 I LL-vis  : false
+02-07 12:53:31.378   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.378   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.380   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.795000V
+02-07 12:53:31.383   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.904000V
+02-07 12:53:31.385   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.658000V
+02-07 12:53:31.390   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.392   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.413   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.418   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.418   974  1659 I LL-botpose: null
+02-07 12:53:31.418   974  1659 I LL-vis  : false
+02-07 12:53:31.418   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.418   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.420   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.673000V
+02-07 12:53:31.422   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.773000V
+02-07 12:53:31.425   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.818000V
+02-07 12:53:31.430   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.431   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.451   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.451   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.451   974  1659 I LL-botpose: null
+02-07 12:53:31.451   974  1659 I LL-vis  : false
+02-07 12:53:31.451   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.451   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.453   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.747000V
+02-07 12:53:31.456   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.856000V
+02-07 12:53:31.459   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.880000V
+02-07 12:53:31.463   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.464   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.496   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.496   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.496   974  1659 I LL-botpose: null
+02-07 12:53:31.496   974  1659 I LL-vis  : false
+02-07 12:53:31.496   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.496   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.498   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.734000V
+02-07 12:53:31.501   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.839000V
+02-07 12:53:31.504   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.871000V
+02-07 12:53:31.511   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.513   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.533   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.533   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.533   974  1659 I LL-botpose: null
+02-07 12:53:31.533   974  1659 I LL-vis  : false
+02-07 12:53:31.533   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.533   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.535   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.742000V
+02-07 12:53:31.538   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.821000V
+02-07 12:53:31.540   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.853000V
+02-07 12:53:31.544   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.547   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.565   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.565   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.565   974  1659 I LL-botpose: null
+02-07 12:53:31.565   974  1659 I LL-vis  : false
+02-07 12:53:31.565   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.565   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.568   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.721000V
+02-07 12:53:31.570   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.834000V
+02-07 12:53:31.573   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.862000V
+02-07 12:53:31.576   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.578   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.597   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.597   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.597   974  1659 I LL-botpose: null
+02-07 12:53:31.597   974  1659 I LL-vis  : false
+02-07 12:53:31.597   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.597   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.600   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.729000V
+02-07 12:53:31.603   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.834000V
+02-07 12:53:31.605   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.871000V
+02-07 12:53:31.608   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.610   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.632   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.632   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.632   974  1659 I LL-botpose: null
+02-07 12:53:31.632   974  1659 I LL-vis  : false
+02-07 12:53:31.632   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.632   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.634   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.721000V
+02-07 12:53:31.636   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.825000V
+02-07 12:53:31.641   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.862000V
+02-07 12:53:31.653   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.01
+02-07 12:53:31.655   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.677   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.677   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.677   974  1659 I LL-botpose: null
+02-07 12:53:31.677   974  1659 I LL-vis  : false
+02-07 12:53:31.678   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.678   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.680   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.716000V
+02-07 12:53:31.683   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.825000V
+02-07 12:53:31.686   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.844000V
+02-07 12:53:31.696   974  1659 I EncoderDriveCommand: execute: with PID output -0.00 for initial heading 0.00 and current heading 0.00
+02-07 12:53:31.698   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.717   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.718   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.718   974  1659 I LL-botpose: null
+02-07 12:53:31.718   974  1659 I LL-vis  : false
+02-07 12:53:31.718   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.718   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.721   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.707000V
+02-07 12:53:31.724   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:31.726   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.853000V
+02-07 12:53:31.737   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.01
+02-07 12:53:31.739   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.769   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.769   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.769   974  1659 I LL-botpose: null
+02-07 12:53:31.769   974  1659 I LL-vis  : false
+02-07 12:53:31.770   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.770   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.772   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.699000V
+02-07 12:53:31.774   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.808000V
+02-07 12:53:31.778   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.835000V
+02-07 12:53:31.782   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.01
+02-07 12:53:31.783   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.804   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.804   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.804   974  1659 I LL-botpose: null
+02-07 12:53:31.804   974  1659 I LL-vis  : false
+02-07 12:53:31.804   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.804   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.807   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.699000V
+02-07 12:53:31.810   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.795000V
+02-07 12:53:31.812   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.835000V
+02-07 12:53:31.817   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.01
+02-07 12:53:31.819   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.837   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.837   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.837   974  1659 I LL-botpose: null
+02-07 12:53:31.837   974  1659 I LL-vis  : false
+02-07 12:53:31.837   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.837   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.840   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.690000V
+02-07 12:53:31.843   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:31.845   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.853000V
+02-07 12:53:31.855   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.01
+02-07 12:53:31.857   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.875   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.876   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.876   974  1659 I LL-botpose: null
+02-07 12:53:31.876   974  1659 I LL-vis  : false
+02-07 12:53:31.876   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.876   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.878   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.699000V
+02-07 12:53:31.880   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:31.883   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.826000V
+02-07 12:53:31.888   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.01
+02-07 12:53:31.891   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.914   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.920   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.920   974  1659 I LL-botpose: null
+02-07 12:53:31.920   974  1659 I LL-vis  : false
+02-07 12:53:31.920   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.920   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.922   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.699000V
+02-07 12:53:31.925   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:31.928   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.844000V
+02-07 12:53:31.942   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:31.944   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:31.965   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:31.965   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:31.965   974  1659 I LL-botpose: null
+02-07 12:53:31.965   974  1659 I LL-vis  : false
+02-07 12:53:31.965   974  1659 I LL-tx   : 0.0
+02-07 12:53:31.965   974  1659 I LL-ty   : 0.0
+02-07 12:53:31.969   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.694000V
+02-07 12:53:31.971   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:31.974   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.835000V
+02-07 12:53:31.979   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:31.981   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.002   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.002   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.002   974  1659 I LL-botpose: null
+02-07 12:53:32.002   974  1659 I LL-vis  : false
+02-07 12:53:32.002   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.002   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.004   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.694000V
+02-07 12:53:32.007   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:32.009   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.853000V
+02-07 12:53:32.014   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.016   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.044   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.044   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.044   974  1659 I LL-botpose: null
+02-07 12:53:32.044   974  1659 I LL-vis  : false
+02-07 12:53:32.044   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.044   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.047   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.703000V
+02-07 12:53:32.049   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:32.051   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.826000V
+02-07 12:53:32.056   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.058   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.078   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.080   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.080   974  1659 I LL-botpose: null
+02-07 12:53:32.080   974  1659 I LL-vis  : false
+02-07 12:53:32.080   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.080   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.082   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.712000V
+02-07 12:53:32.085   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.812000V
+02-07 12:53:32.087   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.826000V
+02-07 12:53:32.093   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.094   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.113   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.113   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.113   974  1659 I LL-botpose: null
+02-07 12:53:32.114   974  1659 I LL-vis  : false
+02-07 12:53:32.114   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.114   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.116   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.699000V
+02-07 12:53:32.118   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:32.121   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.844000V
+02-07 12:53:32.126   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.128   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.148   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.149   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.149   974  1659 I LL-botpose: null
+02-07 12:53:32.149   974  1659 I LL-vis  : false
+02-07 12:53:32.149   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.149   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.152   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.699000V
+02-07 12:53:32.155   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.808000V
+02-07 12:53:32.158   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.862000V
+02-07 12:53:32.163   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.165   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.183   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.183   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.183   974  1659 I LL-botpose: null
+02-07 12:53:32.183   974  1659 I LL-vis  : false
+02-07 12:53:32.183   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.183   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.185   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.690000V
+02-07 12:53:32.188   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:32.191   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.844000V
+02-07 12:53:32.194   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.196   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.216   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.216   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.216   974  1659 I LL-botpose: null
+02-07 12:53:32.216   974  1659 I LL-vis  : false
+02-07 12:53:32.216   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.216   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.218   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.707000V
+02-07 12:53:32.220   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.808000V
+02-07 12:53:32.223   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.844000V
+02-07 12:53:32.227   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.229   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.249   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.249   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.249   974  1659 I LL-botpose: null
+02-07 12:53:32.249   974  1659 I LL-vis  : false
+02-07 12:53:32.249   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.249   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.251   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.690000V
+02-07 12:53:32.254   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:32.256   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.835000V
+02-07 12:53:32.260   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.261   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.279   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.280   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.280   974  1659 I LL-botpose: null
+02-07 12:53:32.280   974  1659 I LL-vis  : false
+02-07 12:53:32.280   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.280   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.282   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.694000V
+02-07 12:53:32.284   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.808000V
+02-07 12:53:32.286   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.826000V
+02-07 12:53:32.293   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.295   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.323   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.323   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.323   974  1659 I LL-botpose: null
+02-07 12:53:32.324   974  1659 I LL-vis  : false
+02-07 12:53:32.324   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.324   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.325   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.690000V
+02-07 12:53:32.330   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.799000V
+02-07 12:53:32.333   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.844000V
+02-07 12:53:32.341   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.342   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.362   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.363   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.363   974  1659 I LL-botpose: null
+02-07 12:53:32.363   974  1659 I LL-vis  : false
+02-07 12:53:32.363   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.363   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.365   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.703000V
+02-07 12:53:32.367   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.804000V
+02-07 12:53:32.369   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.835000V
+02-07 12:53:32.378   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.380   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.401   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.401   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.401   974  1659 I LL-botpose: null
+02-07 12:53:32.401   974  1659 I LL-vis  : false
+02-07 12:53:32.401   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.401   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.403   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.716000V
+02-07 12:53:32.405   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.812000V
+02-07 12:53:32.409   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.853000V
+02-07 12:53:32.412   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.414   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.434   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.441   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.441   974  1659 I LL-botpose: null
+02-07 12:53:32.441   974  1659 I LL-vis  : false
+02-07 12:53:32.441   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.441   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.443   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.694000V
+02-07 12:53:32.446   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.808000V
+02-07 12:53:32.448   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.826000V
+02-07 12:53:32.463   974  1659 I EncoderDriveCommand: execute: with PID output 0.00 for initial heading 0.00 and current heading 0.02
+02-07 12:53:32.474   974  1659 I EncoderDriveCommand: end: initialHeading=0.00, ending Heading=0.02
+02-07 12:53:32.476   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.480   974  1198 V Robocol : received command: CMD_INIT_OP_MODE(11558) $Stop$Robot$
+02-07 12:53:32.500   974  1659 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:32.501   974  1659 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:32.501   974  1659 I LL-botpose: null
+02-07 12:53:32.501   974  1659 I LL-vis  : false
+02-07 12:53:32.501   974  1659 I LL-tx   : 0.0
+02-07 12:53:32.501   974  1659 I LL-ty   : 0.0
+02-07 12:53:32.508   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 12.764000V
+02-07 12:53:32.509   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 0.000000V
+02-07 12:53:32.509   974  1659 I voltage : (sensor Expansion Hub Voltage Sensor): 0.000000V
+02-07 12:53:32.512   974  1659 I ll-lineup: isLinedUp / cantSeeTag:  true / true
+02-07 12:53:32.513   974  1659 I command : execute-[SequentialCommandGroup] *** com.arcrobotics.ftclib.command.SequentialCommandGroup@2dea77c
+02-07 12:53:32.513   974  1659 D RobotCore: User runOpModeMethod exited
+02-07 12:53:32.514   974  1659 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 12:53:32.519   974  1227 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+02-07 12:53:32.524   974  1227 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-Red_Far.txt ********************
+02-07 12:53:32.530   974  1227 D HardwareMap: Clearing which device instances have been retrieved
+02-07 12:53:32.530   974  1672 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-Red_Far.txt
+02-07 12:53:32.530   974  1672 I RobotCore: logging command line: exec logcat -d -T '2-7 12:53:25.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-Red_Far.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+02-07 12:53:32.532   974  1674 V RobotCore: thread: 'OpModeThread' starting...
+02-07 12:53:32.556   974  1201 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1657), attempt: 0
+02-07 12:53:32.556   974  1201 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(1658), attempt: 0

@@ -1,0 +1,56 @@
+--------- beginning of main
+02-07 13:38:04.420   964  1193 V Robocol : received command: CMD_SET_MATCH_NUMBER(11467) 0
+02-07 13:38:04.421   964  1193 V Robocol : received command: CMD_INIT_OP_MODE(11468) BlueTeleop
+02-07 13:38:04.451   964  1797 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 13:38:04.455   964  1796 I RobotCore: Attempting to switch to OpMode BlueTeleop
+02-07 13:38:04.458   964  1796 I RobotCore: ******************** START - OPMODE BlueTeleop ********************
+02-07 13:38:04.620   964  1796 D HardwareMap: Clearing which device instances have been retrieved
+02-07 13:38:04.623   964  1823 V RobotCore: thread: 'OpModeThread' starting...
+02-07 13:38:04.633   964  1204 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1649), attempt: 0
+02-07 13:38:04.672   964  1823 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+02-07 13:38:04.680   964  1823 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 13:38:04.687   964  1796 E OpModeManager: User code threw an uncaught exception
+02-07 13:38:04.689   964  1796 E OpModeManager: java.lang.IllegalArgumentException: Unable to find a hardware device with name "spindexer" and type Servo
+02-07 13:38:04.690   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.hardware.HardwareMap.get(HardwareMap.java:213)
+02-07 13:38:04.690   964  1796 E OpModeManager: 	at org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem.<init>(SpindexerSubsystem.java:26)
+02-07 13:38:04.691   964  1796 E OpModeManager: 	at org.firstinspires.ftc.teamcode.opmode.Teleop.initialize(Teleop.java:59)
+02-07 13:38:04.691   964  1796 E OpModeManager: 	at com.arcrobotics.ftclib.command.CommandOpMode.runOpMode(CommandOpMode.java:43)
+02-07 13:38:04.692   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.LinearOpMode.internalRunOpMode(LinearOpMode.java:199)
+02-07 13:38:04.693   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$1$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:184)
+02-07 13:38:04.693   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+02-07 13:38:04.694   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool.logThreadLifeCycle(ThreadPool.java:737)
+02-07 13:38:04.695   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$2$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:182)
+02-07 13:38:04.695   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+02-07 13:38:04.696   964  1796 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+02-07 13:38:04.697   964  1796 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+02-07 13:38:04.697   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool$ThreadFactoryImpl$1.run(ThreadPool.java:793)
+02-07 13:38:04.698   964  1796 E OpModeManager: 	at java.lang.Thread.run(Thread.java:761)
+02-07 13:38:04.710   964  1796 E OpModeManager: User code threw an uncaught exception
+02-07 13:38:04.711   964  1796 E OpModeManager: java.lang.IllegalArgumentException: Unable to find a hardware device with name "spindexer" and type Servo
+02-07 13:38:04.712   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.hardware.HardwareMap.get(HardwareMap.java:213)
+02-07 13:38:04.712   964  1796 E OpModeManager: 	at org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem.<init>(SpindexerSubsystem.java:26)
+02-07 13:38:04.713   964  1796 E OpModeManager: 	at org.firstinspires.ftc.teamcode.opmode.Teleop.initialize(Teleop.java:59)
+02-07 13:38:04.713   964  1796 E OpModeManager: 	at com.arcrobotics.ftclib.command.CommandOpMode.runOpMode(CommandOpMode.java:43)
+02-07 13:38:04.713   964  1204 V Robocol : sending CMD_SHOW_STACKTRACE(1651), attempt: 0
+02-07 13:38:04.714   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.LinearOpMode.internalRunOpMode(LinearOpMode.java:199)
+02-07 13:38:04.714   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$1$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:184)
+02-07 13:38:04.715   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+02-07 13:38:04.716   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool.logThreadLifeCycle(ThreadPool.java:737)
+02-07 13:38:04.716   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal.lambda$internalInit$2$com-qualcomm-robotcore-eventloop-opmode-OpModeInternal(OpModeInternal.java:182)
+02-07 13:38:04.717   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.eventloop.opmode.OpModeInternal$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+02-07 13:38:04.717   964  1796 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+02-07 13:38:04.718   964  1796 E OpModeManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+02-07 13:38:04.718   964  1796 E OpModeManager: 	at com.qualcomm.robotcore.util.ThreadPool$ThreadFactoryImpl$1.run(ThreadPool.java:793)
+02-07 13:38:04.719   964  1796 E OpModeManager: 	at java.lang.Thread.run(Thread.java:761)
+02-07 13:38:04.719   964  1796 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+02-07 13:38:04.721   964  1796 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-BlueTeleop.txt ********************
+02-07 13:38:04.727   964  1796 D HardwareMap: Clearing which device instances have been retrieved
+02-07 13:38:04.726   964  1825 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-BlueTeleop.txt
+02-07 13:38:04.727   964  1825 I RobotCore: logging command line: exec logcat -d -T '2-7 13:38:4.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-BlueTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+02-07 13:38:04.729   964  1828 V RobotCore: thread: 'OpModeThread' starting...
+02-07 13:38:04.753   964  1204 V Robocol : sending CMD_SHOW_STACKTRACE(1654), attempt: 0
+02-07 13:38:04.754   964  1204 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1659), attempt: 0
+02-07 13:38:04.763   964  1828 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 13:38:04.764   964  1796 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+02-07 13:38:04.766   964  1796 D HardwareMap: Clearing which device instances have been retrieved
+02-07 13:38:04.768   964  1831 V RobotCore: thread: 'OpModeThread' starting...

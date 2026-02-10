@@ -1,0 +1,132 @@
+--------- beginning of main
+02-07 12:53:21.001   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.882000V
+02-07 12:53:21.004   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.915000V
+02-07 12:53:21.004   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.024   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.024   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.024   974  1251 I LL-botpose: null
+02-07 12:53:21.024   974  1251 I LL-vis  : false
+02-07 12:53:21.024   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.025   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.027   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.777000V
+02-07 12:53:21.030   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.878000V
+02-07 12:53:21.035   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.915000V
+02-07 12:53:21.035   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.056   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.057   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.057   974  1251 I LL-botpose: null
+02-07 12:53:21.057   974  1251 I LL-vis  : false
+02-07 12:53:21.057   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.057   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.059   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.773000V
+02-07 12:53:21.061   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.878000V
+02-07 12:53:21.064   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.915000V
+02-07 12:53:21.064   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.085   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.085   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.085   974  1251 I LL-botpose: null
+02-07 12:53:21.085   974  1251 I LL-vis  : false
+02-07 12:53:21.085   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.085   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.087   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.769000V
+02-07 12:53:21.090   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.878000V
+02-07 12:53:21.093   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.897000V
+02-07 12:53:21.093   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.112   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.116   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.116   974  1251 I LL-botpose: null
+02-07 12:53:21.117   974  1251 I LL-vis  : false
+02-07 12:53:21.117   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.117   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.118   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.764000V
+02-07 12:53:21.121   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.869000V
+02-07 12:53:21.123   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.906000V
+02-07 12:53:21.124   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.146   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.146   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.147   974  1251 I LL-botpose: null
+02-07 12:53:21.147   974  1251 I LL-vis  : false
+02-07 12:53:21.148   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.148   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.150   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.773000V
+02-07 12:53:21.153   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.874000V
+02-07 12:53:21.155   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.906000V
+02-07 12:53:21.166   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.187   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.187   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.187   974  1251 I LL-botpose: null
+02-07 12:53:21.187   974  1251 I LL-vis  : false
+02-07 12:53:21.187   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.187   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.190   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.773000V
+02-07 12:53:21.193   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.887000V
+02-07 12:53:21.195   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.915000V
+02-07 12:53:21.196   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.216   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.216   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.216   974  1251 I LL-botpose: null
+02-07 12:53:21.216   974  1251 I LL-vis  : false
+02-07 12:53:21.216   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.216   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.218   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.769000V
+02-07 12:53:21.221   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.874000V
+02-07 12:53:21.223   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.906000V
+02-07 12:53:21.224   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.246   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.246   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.246   974  1251 I LL-botpose: null
+02-07 12:53:21.246   974  1251 I LL-vis  : false
+02-07 12:53:21.246   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.246   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.248   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.769000V
+02-07 12:53:21.251   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.869000V
+02-07 12:53:21.254   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.906000V
+02-07 12:53:21.255   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.282   974  1198 V Robocol : received command: CMD_INIT_OP_MODE(11328) $Stop$Robot$
+02-07 12:53:21.287   974  1251 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:21.287   974  1251 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:21.287   974  1251 I LL-botpose: null
+02-07 12:53:21.287   974  1251 I LL-vis  : false
+02-07 12:53:21.287   974  1251 I LL-tx   : 0.0
+02-07 12:53:21.287   974  1251 I LL-ty   : 0.0
+02-07 12:53:21.291   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.769000V
+02-07 12:53:21.296   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.865000V
+02-07 12:53:21.303   974  1251 I voltage : (sensor Expansion Hub Voltage Sensor): 12.915000V
+02-07 12:53:21.309   974  1251 I command : execute-[MecanumDriveCommand] *** org.firstinspires.ftc.teamcode.command.MecanumDriveCommand@2f744fb
+02-07 12:53:21.309   974  1251 D RobotCore: User runOpModeMethod exited
+02-07 12:53:21.310   974  1251 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 12:53:21.312   974  1227 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+02-07 12:53:21.314   974  1227 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt ********************
+02-07 12:53:21.319   974  1227 I RobotCore: Pruning old match logs: deleting Match-23-BlueTeleop.txt
+02-07 12:53:21.323   974  1227 D HardwareMap: Clearing which device instances have been retrieved
+02-07 12:53:21.323   974  1637 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt
+02-07 12:53:21.323   974  1637 I RobotCore: logging command line: exec logcat -d -T '2-7 12:52:40.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+02-07 12:53:21.325   974  1639 V RobotCore: thread: 'OpModeThread' starting...
+02-07 12:53:21.333  1638  1638 I sh      : type=1400 audit(0.0:137): avc: denied { read } for name="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+02-07 12:53:21.336  1638  1638 I sh      : type=1400 audit(0.0:138): avc: denied { open } for path="/" dev="rootfs" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+02-07 12:53:21.355   974  1201 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1400), attempt: 0
+02-07 12:53:21.356   974  1201 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(1401), attempt: 0
+02-07 12:53:21.841   974  1198 V Robocol : received command: CMD_SET_MATCH_NUMBER(11341) 0
+02-07 12:53:21.842   974  1198 V Robocol : received command: CMD_INIT_OP_MODE(11342) RedTeleop
+02-07 12:53:21.876   974  1639 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 12:53:21.880   974  1227 I RobotCore: Attempting to switch to OpMode RedTeleop
+02-07 12:53:21.883   974  1227 I RobotCore: ******************** START - OPMODE RedTeleop ********************
+02-07 12:53:21.885   974  1637 I RobotCore: Done running exec logcat -d -T '2-7 12:52:40.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+02-07 12:53:21.885   974  1637 I RobotCore: exiting match logcat for /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt
+02-07 12:53:22.065   974  1227 D HardwareMap: Clearing which device instances have been retrieved
+02-07 12:53:22.067   974  1645 V RobotCore: thread: 'OpModeThread' starting...
+02-07 12:53:22.075   974  1201 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1427), attempt: 0
+02-07 12:53:22.108   974  1645 I I2C     : Automatically initializing I2C device NavxMicroNavigationSensor (USB (embedded); module 173; bus 3; addr7=0x32)
+02-07 12:53:22.135   974  1645 V RevBlinkinLedDriver: Pattern: COLOR_WAVES_LAVA_PALETTE, 30, 0.402500
+02-07 12:53:22.142   974  1645 I Lights  : COLOR_WAVES_LAVA_PALETTE
+02-07 12:53:23.322   974  1198 V Robocol : received command: CMD_INIT_OP_MODE(11367) $Stop$Robot$
+02-07 12:53:23.352   974  1645 D RobotCore: User runOpModeMethod exited
+02-07 12:53:23.353   974  1645 V RobotCore: thread: ...terminating 'OpModeThread'
+02-07 12:53:23.358   974  1227 I RobotCore: Attempting to switch to OpMode $Stop$Robot$
+02-07 12:53:23.360   974  1227 I RobotCore: ******************** STOP - OPMODE /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt ********************
+02-07 12:53:23.366   974  1227 D HardwareMap: Clearing which device instances have been retrieved
+02-07 12:53:23.366   974  1648 I RobotCore: saving match logcat to /storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt
+02-07 12:53:23.366   974  1648 I RobotCore: logging command line: exec logcat -d -T '2-7 12:53:21.000' -f '/storage/emulated/0/FIRST/matchlogs/Match-0-RedTeleop.txt' -n4 -v threadtime UsbRequestJNI:S UsbRequest:S art:W ThreadPool:W System:W ExtendedExtractor:W OMXClient:W MediaPlayer:W dalvikvm:W  *:V
+02-07 12:53:23.369   974  1650 V RobotCore: thread: 'OpModeThread' starting...
+02-07 12:53:23.395   974  1201 V Robocol : sending CMD_NOTIFY_INIT_OP_MODE(1450), attempt: 0
+02-07 12:53:23.396   974  1201 V Robocol : sending CMD_NOTIFY_RUN_OP_MODE(1451), attempt: 0
