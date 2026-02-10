@@ -31,6 +31,7 @@ public class ObeliskCommand extends CommandBase{
     limeLightSubsystem.pipelineObelisk();
     tagAttempt = 0;
     timer.reset();
+    tag = 0;
     }
 
     @Override
@@ -59,6 +60,7 @@ public class ObeliskCommand extends CommandBase{
                 Log.i("oby", "tag " + tag);
             } else {
                 tagAttempt++;
+                Log.i("oby", "Tears");
             }
         }
     }
