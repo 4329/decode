@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.subsystem;
 
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_D;
+import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FAR_GOAL;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FF_S;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FF_V;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_I;
@@ -94,7 +95,7 @@ public class ShooterSubsystem extends SubsystemBase {
     public void changeMode(SpindexerMode newMode) {
         this.currentMode = newMode;
         if (SpindexerMode.SHOOT.equals(newMode)) {
-            shoot(1000, 1);
+            shoot(SHOOTER_FAR_GOAL, 1);
         }
         else {
             stop();
