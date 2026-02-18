@@ -115,7 +115,8 @@ public class AutoCommandFactory {
                     new WaitCommand(700)
                 ),
                 new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem),
-                new LineAlwaysStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem)
+                new LineAlwaysStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+                new IsFunishootedCommand(pushyMcPushermanSubsystem)
                 );
     }
 
