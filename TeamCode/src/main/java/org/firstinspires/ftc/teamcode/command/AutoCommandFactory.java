@@ -98,7 +98,6 @@ public class AutoCommandFactory {
     public Command tripleShotEspresso() {
         return new ParallelDeadlineGroup(
                 new DeadlinableSequentialCommandGroup(
-                    new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
                     new ReadyShootCommand(shooterSubsystem, limeLightSubsystem,telemetry),
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
                     new WaitCommand(500),
@@ -115,8 +114,10 @@ public class AutoCommandFactory {
                     new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
                     new WaitCommand(700)
                 ),
-                new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem)
-        );
+                new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem),
+                new LineAlwaysStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+                new IsFunishootedCommand(pushyMcPushermanSubsystem)
+                );
     }
 
     public Command strafeToYourLou() {
