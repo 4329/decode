@@ -14,6 +14,7 @@ import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
 import org.firstinspires.ftc.teamcode.command.ShootCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerModeeCommand;
+import org.firstinspires.ftc.teamcode.command.UnInstantCommand;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
@@ -26,6 +27,7 @@ import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.VoltageSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.LoggingUtil;
+import org.firstinspires.ftc.teamcode.util.RobotConfig;
 import org.firstinspires.ftc.teamcode.util.RobotState;
 
 public abstract class Teleop extends CommandOpMode {
@@ -99,6 +101,7 @@ public abstract class Teleop extends CommandOpMode {
         operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand(()-> blinkinSubsystem.celebration()));
       //  operator.getGamepadButton(GamepadKeys.Button.X).whileHeld(new InstantCommand(() -> shooterSubsystem.shoot(() -> limeLightSubsystem.getTargetVelocity())));
       //  operator.getGamepadButton(GamepadKeys.Button.START).whileHeld(new InstantCommand(() -> shooterSubsystem.stop()));
+        operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(new UnInstantCommand(()->shooterSubsystem.shoot(RobotConfig.SHOOTER_FAR_GOAL, 1))).whenReleased(new InstantCommand(()->shooterSubsystem.stop()));
 
         operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
         mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);

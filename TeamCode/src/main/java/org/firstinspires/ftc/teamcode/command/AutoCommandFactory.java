@@ -94,25 +94,23 @@ public class AutoCommandFactory {
                 new WaitCommand(500)
         );
     }
-
+    public Command oneShot() {
+        return new SequentialCommandGroup(
+                new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                new WaitCommand(700),
+                new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
+                new WaitCommand(700)
+                );
+    }
     public Command tripleShotEspresso() {
         return new ParallelDeadlineGroup(
                 new DeadlinableSequentialCommandGroup(
                     new ReadyShootCommand(shooterSubsystem, limeLightSubsystem,telemetry),
-                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                    new WaitCommand(500),
-                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                    new WaitCommand(700),
+                    oneShot(),
                     new SpindexerCommand(spindexerSubsystem, 1),
-                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                    new WaitCommand(500),
-                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                    new WaitCommand(700),
+                    oneShot(),
                     new SpindexerCommand(spindexerSubsystem, 1),
-                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                    new WaitCommand(500),
-                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                    new WaitCommand(700)
+                    oneShot()
                 ),
                 new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem),
                 new LineAlwaysStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
