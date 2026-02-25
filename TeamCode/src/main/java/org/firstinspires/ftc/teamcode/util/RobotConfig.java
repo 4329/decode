@@ -14,15 +14,13 @@ public class RobotConfig {
     public static double DASHBOARD_SPIN = 0;
     public static double SHOOTER_P = 0.001;
     public static double SHOOTER_I = 0.005;
+    // maybe increase
     public static double SHOOTER_D = 0.0002;
     public static double SHOOTER_FF_S = 0.01;
     public static double SHOOTER_FF_V = 0.00053;
     public static double PUSHY_UP = 0.35;
     public static double PUSHY_DOWN = 0.7;
     public static double SHOOTER_FAR_GOAL = 1700;
-//    public static double SHOOTER_FAR_PERCENT = 2.1; // 5.5 ( with poop batteries)
     public static double SHOOTER_CLOSE_GOAL = 1450;
-//    public static double SHOOTER_CLOSE_PERCENT = 1.7; // 1.9 with a bad battery
-
     public static double EXPECTED_BATTERY_VOLTAGE = 13.0;
 }
