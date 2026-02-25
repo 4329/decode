@@ -62,7 +62,7 @@ public abstract class Teleop extends CommandOpMode {
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
        // intakeSubsystem = new IntakeSubsystem(hardwareMap);
-        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap, telemetry);
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), blinkinSubsystem::tagInSight);
