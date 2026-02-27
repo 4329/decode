@@ -96,10 +96,9 @@ public class AutoCommandFactory {
     }
     public Command oneShot() {
         return new SequentialCommandGroup(
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                new WaitCommand(700),
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                new WaitCommand(700)
+                new PushyUpCommand(pushyMcPushermanSubsystem),
+                new WaitCommand(250),
+                new PushyDownCommand(pushyMcPushermanSubsystem)
                 );
     }
     public Command tripleShotEspresso() {

@@ -52,7 +52,7 @@ public abstract class OtherAuto extends CommandOpMode {
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
         shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
-        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap, telemetry);
         BlinkyguySubsystem = new BlinkinSubsystem(hardwareMap,telemetry,getAlliance());
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), BlinkyguySubsystem::tagInSight);
         voltageSubsystem = new VoltageSubsystem(hardwareMap);

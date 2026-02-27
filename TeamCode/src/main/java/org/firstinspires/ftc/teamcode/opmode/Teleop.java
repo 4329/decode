@@ -11,6 +11,8 @@ import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
 import org.firstinspires.ftc.teamcode.command.MecanumDpadCommand;
 import org.firstinspires.ftc.teamcode.command.MecanumDriveCommand;
+import org.firstinspires.ftc.teamcode.command.PushyDownCommand;
+import org.firstinspires.ftc.teamcode.command.PushyUpCommand;
 import org.firstinspires.ftc.teamcode.command.ShootCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerCommand;
 import org.firstinspires.ftc.teamcode.command.SpindexerModeeCommand;
@@ -60,7 +62,7 @@ public abstract class Teleop extends CommandOpMode {
         imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
         spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
        // intakeSubsystem = new IntakeSubsystem(hardwareMap);
-        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap);
+        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap, telemetry);
           shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
          blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, getAlliance());
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, getAlliance(), blinkinSubsystem::tagInSight);
@@ -94,8 +96,8 @@ public abstract class Teleop extends CommandOpMode {
         //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         //operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
     //    operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease(true));
-        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand(() -> pushyMcPushermanSubsystem.up()));
-        operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new InstantCommand(() -> pushyMcPushermanSubsystem.down()));
+        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new PushyUpCommand(pushyMcPushermanSubsystem));
+        operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new PushyDownCommand(pushyMcPushermanSubsystem));
         operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
         operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
         operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand(()-> blinkinSubsystem.celebration()));
