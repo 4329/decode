@@ -99,6 +99,6 @@ public class Testop extends CommandOpMode {
 
       //  operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
       //  mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-      //  register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem/*, blinkinSubsystem*/);
+        register(telemetryUpdateSubsystem, pushyMcPushermanSubsystem/* imuSubsystem, limeLightSubsystem, voltageSubsystem, blinkinSubsystem*/);
     }
 }

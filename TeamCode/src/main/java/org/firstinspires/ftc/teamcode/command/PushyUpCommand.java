@@ -10,10 +10,11 @@ public class PushyUpCommand extends CommandBase {
 
     public PushyUpCommand(PushyMcPushermanSubsystem pushyMcPushermanSubsystem) {
         this.pushyMcPushermanSubsystem = pushyMcPushermanSubsystem;
+        addRequirements(pushyMcPushermanSubsystem);
     }
 
     @Override
-    public void execute() {
+    public void initialize() {
         pushyMcPushermanSubsystem.up();
     }
 

@@ -18,8 +18,8 @@ public class RobotConfig {
     public static double SHOOTER_D = 0.0002;
     public static double SHOOTER_FF_S = 0.01;
     public static double SHOOTER_FF_V = 0.00053;
-    public static double PUSHY_UP = 0.35;
-    public static double PUSHY_DOWN = 0.7;
+    public static double PUSHY_UP = 0.38;
+    public static double PUSHY_DOWN = 0.72;
     public static double SHOOTER_FAR_GOAL = 1700;
     public static double SHOOTER_CLOSE_GOAL = 1450;
     public static double EXPECTED_BATTERY_VOLTAGE = 13.0;

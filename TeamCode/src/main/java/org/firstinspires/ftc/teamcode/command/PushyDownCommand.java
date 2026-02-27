@@ -9,9 +9,11 @@ public class PushyDownCommand extends CommandBase {
 
     public PushyDownCommand(PushyMcPushermanSubsystem pushyMcPushermanSubsystem) {
         this.pushyMcPushermanSubsystem = pushyMcPushermanSubsystem;
+        addRequirements(pushyMcPushermanSubsystem);
     }
+
     @Override
-    public void execute() {
+    public void initialize() {
         pushyMcPushermanSubsystem.down();
     }
 
