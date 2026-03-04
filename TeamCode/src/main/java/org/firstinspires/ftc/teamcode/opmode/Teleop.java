@@ -107,7 +107,7 @@ public abstract class Teleop extends CommandOpMode {
 
         operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
         mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem/*, blinkinSubsystem*/);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem, pushyMcPushermanSubsystem/*, blinkinSubsystem*/);
     }
     public abstract Alliance getAlliance();
 }
