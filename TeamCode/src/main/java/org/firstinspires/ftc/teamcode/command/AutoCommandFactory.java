@@ -96,7 +96,7 @@ public class AutoCommandFactory {
     }
     public Command oneShot() {
         return new SequentialCommandGroup(
-                new PushyUpCommand(pushyMcPushermanSubsystem).withTimeout(450),
+                new PushyUpCommand(pushyMcPushermanSubsystem).withTimeout(700),
                 new WaitCommand(250),
                 new PushyDownCommand(pushyMcPushermanSubsystem)
                 );

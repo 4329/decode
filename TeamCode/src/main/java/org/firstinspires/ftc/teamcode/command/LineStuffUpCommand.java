@@ -19,7 +19,7 @@ public class LineStuffUpCommand extends CommandBase {
     public LineStuffUpCommand(LimeLightSubsystem limeLightSubsystem, MecanumDriveSubsystem mecanumDriveSubsystem) {
         this.limeLightSubsystem = limeLightSubsystem;
         this.mecanumDriveSubsystem = mecanumDriveSubsystem;
-        this.frcPid = new FrcPidController(0.035, .00, 0.00125); //kd was 0.000075
+        this.frcPid = new FrcPidController(0.025, .00, 0.00125); //kd was 0.000075
         addRequirements(limeLightSubsystem, mecanumDriveSubsystem);
     }
 

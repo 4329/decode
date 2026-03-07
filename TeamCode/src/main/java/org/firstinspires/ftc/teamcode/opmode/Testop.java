@@ -56,12 +56,12 @@ public class Testop extends CommandOpMode {
       //  mecanumDriveSubsystem = new MecanumDriveSubsystem(hardwareMap);
         telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
 //        imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
-//        spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
+        spindexerSubsystem = new SpindexerSubsystem(hardwareMap,telemetry);
    //       blinkinSubsystem = new BlinkinSubsystem(hardwareMap, telemetry, Alliance.RED);
 //        intakeSubsystem = new IntakeSubsystem(hardwareMap);
  //       limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE, blinkinSubsystem::tagInSight);
 //        shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
-          pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap, telemetry);
+  //        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap, telemetry);
 //        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
 
         MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
@@ -89,16 +89,16 @@ public class Testop extends CommandOpMode {
         //operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand (()-> intakeSubsystem.on()));
         //operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new InstantCommand (()-> intakeSubsystem.off()));
         //    operator.getGamepadButton(GamepadKeys.Button.Y).whenHeld(autoCommandFactory.scoreThingsPlease(true));
-        operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new PushyUpCommand(pushyMcPushermanSubsystem));
-        operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new PushyDownCommand(pushyMcPushermanSubsystem));
-     //   operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
-     //   operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
+      //  operator.getGamepadButton(GamepadKeys.Button.B).whenPressed(new PushyUpCommand(pushyMcPushermanSubsystem));
+        //operator.getGamepadButton(GamepadKeys.Button.A).whenPressed(new PushyDownCommand(pushyMcPushermanSubsystem));
+        operator.getGamepadButton(GamepadKeys.Button.LEFT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,-1));
+        operator.getGamepadButton(GamepadKeys.Button.RIGHT_BUMPER).whenPressed(new SpindexerCommand(spindexerSubsystem,1));
     //    operator.getGamepadButton(GamepadKeys.Button.X).whenPressed(new InstantCommand(()-> blinkinSubsystem.celebration()));
         //  operator.getGamepadButton(GamepadKeys.Button.X).whileHeld(new InstantCommand(() -> shooterSubsystem.shoot(() -> limeLightSubsystem.getTargetVelocity())));
         //  operator.getGamepadButton(GamepadKeys.Button.START).whileHeld(new InstantCommand(() -> shooterSubsystem.stop()));
 
       //  operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
       //  mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-        register(telemetryUpdateSubsystem, pushyMcPushermanSubsystem/* imuSubsystem, limeLightSubsystem, voltageSubsystem, blinkinSubsystem*/);
+        register(telemetryUpdateSubsystem/*pushyMcPushermanSubsystem imuSubsystem, limeLightSubsystem, voltageSubsystem, blinkinSubsystem*/);
     }
 }
