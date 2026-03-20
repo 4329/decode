@@ -1,10 +1,9 @@
 package org.firstinspires.ftc.teamcode.command;
 
-import com.arcrobotics.ftclib.command.Command;
-import com.arcrobotics.ftclib.command.DeadlinableSequentialCommandGroup;
-import com.arcrobotics.ftclib.command.ParallelDeadlineGroup;
-import com.arcrobotics.ftclib.command.SequentialCommandGroup;
-import com.arcrobotics.ftclib.command.WaitCommand;
+import com.seattlesolvers.solverslib.command.Command;
+import com.seattlesolvers.solverslib.command.ParallelDeadlineGroup;
+import com.seattlesolvers.solverslib.command.SequentialCommandGroup;
+import com.seattlesolvers.solverslib.command.WaitCommand;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
@@ -80,41 +79,41 @@ public class AutoCommandFactory {
 
     public Command scoreThingsPlease(boolean stopAfterShot) {
         return new SequentialCommandGroup(
-                new ParallelDeadlineGroup(
-                    new DeadlinableSequentialCommandGroup(
-                        new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-                        new ReadyShootCommand(shooterSubsystem, limeLightSubsystem, telemetry),
-                        new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
-                        new WaitCommand(500)
-                        //and thank you
-                    ),
-                    new ShootCommand(shooterSubsystem, limeLightSubsystem, stopAfterShot, voltageSubsystem)
-                ).withTimeout(5000),
-                new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
-                new WaitCommand(500)
+            new ParallelDeadlineGroup(
+                new SequentialCommandGroup(
+                    new LineStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+                    new ReadyShootCommand(shooterSubsystem, limeLightSubsystem, telemetry),
+                    new UnInstantCommand(() -> pushyMcPushermanSubsystem.up()),
+                    new WaitCommand(500)
+                    //and thank you
+                ),
+                new ShootCommand(shooterSubsystem, limeLightSubsystem, stopAfterShot, voltageSubsystem)
+            ).withTimeout(5000),
+            new UnInstantCommand(() -> pushyMcPushermanSubsystem.down()),
+            new WaitCommand(500)
         );
     }
     public Command oneShot() {
         return new SequentialCommandGroup(
-                new PushyUpCommand(pushyMcPushermanSubsystem).withTimeout(700),
-                new WaitCommand(250),
-                new PushyDownCommand(pushyMcPushermanSubsystem)
-                );
+            new PushyUpCommand(pushyMcPushermanSubsystem).withTimeout(700),
+            new WaitCommand(250),
+            new PushyDownCommand(pushyMcPushermanSubsystem)
+        );
     }
     public Command tripleShotEspresso() {
         return new ParallelDeadlineGroup(
-                new DeadlinableSequentialCommandGroup(
-                    new ReadyShootCommand(shooterSubsystem, limeLightSubsystem,telemetry),
-                    oneShot(),
-                    new SpindexerCommand(spindexerSubsystem, 1),
-                    oneShot(),
-                    new SpindexerCommand(spindexerSubsystem, 1),
-                    oneShot()
-                ),
-                new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem),
-                new LineAlwaysStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
-                new IsFunishootedCommand(pushyMcPushermanSubsystem)
-                );
+            new SequentialCommandGroup(
+                new ReadyShootCommand(shooterSubsystem, limeLightSubsystem,telemetry),
+                oneShot(),
+                new SpindexerCommand(spindexerSubsystem, 1),
+                oneShot(),
+                new SpindexerCommand(spindexerSubsystem, 1),
+                oneShot()
+            ),
+            new ShootCommand(shooterSubsystem, limeLightSubsystem, true, voltageSubsystem),
+            new LineAlwaysStuffUpCommand(limeLightSubsystem, mecanumDriveSubsystem),
+            new IsFunishootedCommand(pushyMcPushermanSubsystem)
+        );
     }
 
     public Command strafeToYourLou() {

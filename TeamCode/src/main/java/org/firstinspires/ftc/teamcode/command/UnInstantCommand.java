@@ -1,7 +1,7 @@
 package org.firstinspires.ftc.teamcode.command;
 
-import com.arcrobotics.ftclib.command.CommandBase;
-import com.arcrobotics.ftclib.command.Subsystem;
+import com.seattlesolvers.solverslib.command.CommandBase;
+import com.seattlesolvers.solverslib.command.Subsystem;
 
 public class UnInstantCommand extends CommandBase {
     private final Runnable m_toRun;
