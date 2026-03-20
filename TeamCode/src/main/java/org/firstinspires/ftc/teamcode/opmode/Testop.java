@@ -21,6 +21,7 @@ import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.OTOSSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.PushyMcPushermanSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.SpindexerSubsystem;
@@ -46,6 +47,7 @@ public class Testop extends CommandOpMode {
     private PushyMcPushermanSubsystem pushyMcPushermanSubsystem;
     private BlinkinSubsystem blinkinSubsystem;
     private VoltageSubsystem voltageSubsystem;
+    private OTOSSubsystem otosSubsystem;
     private RobotState robotState = new RobotState();
 
 
@@ -63,9 +65,10 @@ public class Testop extends CommandOpMode {
 //        intakeSubsystem = new IntakeSubsystem(hardwareMap);
         limeLightSubsystem = new LimeLightSubsystem(hardwareMap, telemetry, Alliance.BLUE, b -> System.out.println("wow -> " + b));
         voltageSubsystem = new VoltageSubsystem(hardwareMap);
+        otosSubsystem = new OTOSSubsystem(hardwareMap, telemetry);
 //        shooterSubsystem = new ShooterSubsystem(hardwareMap, telemetry);
   //        pushyMcPushermanSubsystem = new PushyMcPushermanSubsystem(hardwareMap, telemetry);
-//        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance());
+        autoCommandFactory = new AutoCommandFactory(mecanumDriveSubsystem, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, Alliance.BLUE, voltageSubsystem);
 
         MecanumDriveCommand mecanumDriveCommand = new MecanumDriveCommand(
             mecanumDriveSubsystem,
@@ -102,6 +105,6 @@ public class Testop extends CommandOpMode {
 
       //  operator.getGamepadButton(GamepadKeys.Button.BACK).whenPressed(new SpindexerModeeCommand(spindexerSubsystem, shooterSubsystem, blinkinSubsystem, robotState));
         mecanumDriveSubsystem.setDefaultCommand(mecanumDriveCommand);
-        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem);
+        register(telemetryUpdateSubsystem, imuSubsystem, limeLightSubsystem, voltageSubsystem, otosSubsystem);
     }
 }
