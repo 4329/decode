@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode.command;
 
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.REGULAR_DRIVE_DIVISOR;
 
-import com.arcrobotics.ftclib.command.CommandBase;
+import com.seattlesolvers.solverslib.command.CommandBase;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.subsystem.MecanumDriveSubsystem;

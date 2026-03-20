@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode.util;
 
 import android.util.Log;
 
-import com.arcrobotics.ftclib.command.CommandScheduler;
+import com.seattlesolvers.solverslib.command.CommandScheduler;
 
 public class LoggingUtil {
     public static void enableCommandLogging() {

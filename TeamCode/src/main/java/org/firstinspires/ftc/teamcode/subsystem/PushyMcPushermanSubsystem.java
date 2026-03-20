@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.subsystem;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.PUSHY_DOWN;
 import static org.firstinspires.ftc.teamcode.util.RobotConfig.PUSHY_UP;
 
-import com.arcrobotics.ftclib.command.SubsystemBase;
+import com.seattlesolvers.solverslib.command.SubsystemBase;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.TouchSensor;

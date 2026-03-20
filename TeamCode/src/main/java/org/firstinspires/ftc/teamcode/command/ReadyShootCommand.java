@@ -4,7 +4,7 @@ import static org.firstinspires.ftc.teamcode.util.RobotConfig.SHOOTER_FAR_GOAL;
 
 import android.util.Log;
 
-import com.arcrobotics.ftclib.command.CommandBase;
+import com.seattlesolvers.solverslib.command.CommandBase;
 
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;

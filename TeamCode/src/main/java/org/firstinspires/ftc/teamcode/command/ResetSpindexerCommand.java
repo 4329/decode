@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode.command;
 
-import com.arcrobotics.ftclib.command.CommandBase;
+import com.seattlesolvers.solverslib.command.CommandBase;
 
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;

@@ -4,7 +4,7 @@ import static org.firstinspires.ftc.robotcore.external.BlocksOpModeCompanion.tel
 
 import android.util.Log;
 
-import com.arcrobotics.ftclib.command.SubsystemBase;
+import com.seattlesolvers.solverslib.command.SubsystemBase;
 import com.qualcomm.hardware.sparkfun.SparkFunOTOS;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 

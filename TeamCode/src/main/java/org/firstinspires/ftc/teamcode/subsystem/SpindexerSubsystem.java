@@ -4,8 +4,8 @@ import static org.firstinspires.ftc.teamcode.util.RobotConfig.DASHBOARD_SPIN;
 
 import androidx.annotation.NonNull;
 
-import com.arcrobotics.ftclib.command.CommandBase;
-import com.arcrobotics.ftclib.command.SubsystemBase;
+import com.seattlesolvers.solverslib.command.CommandBase;
+import com.seattlesolvers.solverslib.command.SubsystemBase;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 
