@@ -1,8 +1,8 @@
 package org.firstinspires.ftc.teamcode.util;
 
-import com.acmerobotics.dashboard.config.Config;
+import com.bylazar.configurables.annotations.Configurable;
 
-@Config
+@Configurable
 public class RobotConfig {
     public static double REGULAR_DRIVE_DIVISOR = 2.0;
     public static double SLOW_DRIVE_DIVISOR = 5.0;
