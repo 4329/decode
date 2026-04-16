@@ -4,6 +4,8 @@
 
 package org.firstinspires.ftc.teamcode.util;
 
+import com.pedropathing.geometry.Pose;
+
 public final class MathUtil {
     private MathUtil() {
         throw new AssertionError("utility class");
@@ -144,5 +146,21 @@ public final class MathUtil {
      */
     public static double interpolate(double startValue, double endValue, double t) {
         return startValue + (endValue - startValue) * MathUtil.clamp(t, 0, 1);
+    }
+
+    public static Pose toRedPose(double x, double y) {
+        return new Pose(x + 72.0, y);
+    }
+
+    public static double toRedRadians(double h) {
+        return Math.PI - (h % (2.0 * Math.PI));
+    }
+
+    public static Pose toRedPose(Pose pose) {
+        return new Pose(pose.getX() + 72.0,
+                           pose.getY(),
+                   Math.PI - pose.getHeading()
+                );
+
     }
 }
