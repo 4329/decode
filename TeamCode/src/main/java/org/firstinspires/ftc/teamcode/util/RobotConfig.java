@@ -22,5 +22,5 @@ public class RobotConfig {
     public static double PUSHY_DOWN = 0.78;
     public static double SHOOTER_FAR_GOAL = 1700;
     public static double SHOOTER_CLOSE_GOAL = 1450;
-    public static double EXPECTED_BATTERY_VOLTAGE = 13.0;
+    public static double EXPECTED_BATTERY_VOLTAGE = 13.0;kk
 }
