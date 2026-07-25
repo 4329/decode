@@ -149,15 +149,23 @@ public final class MathUtil {
     }
 
     public static Pose toRedPose(double x, double y) {
-        return new Pose(x + 72.0, y);
+        return new Pose(144.0 - x, y);
     }
 
     public static double toRedRadians(double h) {
         return Math.PI - (h % (2.0 * Math.PI));
     }
 
+    public static double toRedDegrees(double h) {
+        double red = h - 90.0;
+        if (red < 0) {
+            return 360.0 + red;
+        }
+        return red;
+    }
+
     public static Pose toRedPose(Pose pose) {
-        return new Pose(pose.getX() + 72.0,
+        return new Pose(144.0 - pose.getX(),
                            pose.getY(),
                    Math.PI - pose.getHeading()
                 );

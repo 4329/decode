@@ -54,61 +54,32 @@ public abstract class CloseAuto extends CommandOpMode {
 
     private void configurePaths() {
         follower = Constants.createFollower(hardwareMap);
-        follower.setStartingPose(new Pose(20.8, 121.7, Math.toRadians(-130)));
+        follower.setStartingPose(new Pose(20.8, 121.7, Math.toRadians(allianceAngle(227))));
 
-        /*
         obeliskRead = follower.pathBuilder().addPath(
                         new BezierCurve(
-                                new Pose(20.800, 121.700),
-                                new Pose(65.230, 121.785),
-                                new Pose(62.921, 107.913)
+                                alliancePose(20.800, 121.700),
+                                alliancePose(65.230, 121.785),
+                                alliancePose(62.921, 107.913)
                         )
-                ).setTangentHeadingInterpolation()
+                ).setLinearHeadingInterpolation(Math.toRadians(allianceAngle(227)), Math.toRadians(allianceAngle(180)))
                 .build();
 
         shooty = follower.pathBuilder().addPath(
                         new BezierLine(
-                                new Pose(62.921, 107.913),
-                                new Pose(61.596, 83.617)
+                                alliancePose(62.921, 107.913),
+                                alliancePose(61.596, 83.617)
                         )
-                ).setLinearHeadingInterpolation(Math.toRadians(-101), Math.toRadians(-130))
+                ).setLinearHeadingInterpolation(Math.toRadians(allianceAngle(180)), Math.toRadians(allianceAngle(227)))
                 .build();
 
         offTheLine = follower.pathBuilder().addPath(
                         new BezierCurve(
-                                new Pose(61.596, 83.617),
-                                new Pose(40.426, 103.830),
-                                new Pose(22.200, 100.100)
+                                alliancePose(61.596, 83.617),
+                                alliancePose(40.426, 103.830),
+                                alliancePose(22.200, 100.100)
                         )
-                ).setLinearHeadingInterpolation(Math.toRadians(-101), Math.toRadians(-90))
-                .build();
-         */
-
-
-        obeliskRead = follower.pathBuilder().addPath(
-                        new BezierCurve(
-                                toPose(20.800, 121.700),
-                                toPose(65.230, 121.785),
-                                toPose(62.921, 107.913)
-                        )
-                ).setTangentHeadingInterpolation()
-                .build();
-
-        shooty = follower.pathBuilder().addPath(
-                        new BezierLine(
-                                toPose(62.921, 107.913),
-                                toPose(61.596, 83.617)
-                        )
-                ).setLinearHeadingInterpolation(Math.toRadians(-101), Math.toRadians(-130))
-                .build();
-
-        offTheLine = follower.pathBuilder().addPath(
-                        new BezierCurve(
-                                toPose(61.596, 83.617),
-                                toPose(40.426, 103.830),
-                                toPose(22.200, 100.100)
-                        )
-                ).setLinearHeadingInterpolation(Math.toRadians(-101), Math.toRadians(-90))
+                ).setLinearHeadingInterpolation(Math.toRadians(allianceAngle(227)), Math.toRadians(allianceAngle(270)))
                 .build();
     }
 
@@ -154,10 +125,16 @@ public abstract class CloseAuto extends CommandOpMode {
 
     }
 
-    public Pose toPose(double x, double y) {
+    public Pose alliancePose(double x, double y) {
         return Alliance.BLUE.equals(getAlliance())
                 ? new Pose(x, y)
                 : MathUtil.toRedPose(x, y);
+    }
+
+    public double allianceAngle(double h) {
+        return Alliance.BLUE.equals(getAlliance())
+                ? h
+                : MathUtil.toRedDegrees(h);
     }
 
     public abstract Alliance getAlliance();
