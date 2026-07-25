@@ -34,7 +34,7 @@ public class PedroAuto extends CommandOpMode {
 
     private void configurePaths() {
         follower = Constants.createFollower(hardwareMap);
-        follower.setStartingPose(new Pose(20.8, 121.7, Math.toRadians(-130)));
+        follower.setStartingPose(new Pose(20.8, 121.7, Math.toRadians(227)));
 
         obeliskRead = follower.pathBuilder().addPath(
                         new BezierCurve(
@@ -42,7 +42,7 @@ public class PedroAuto extends CommandOpMode {
                                 new Pose(65.230, 121.785),
                                 new Pose(62.921, 107.913)
                         )
-                ).setTangentHeadingInterpolation()
+                ).setLinearHeadingInterpolation(Math.toRadians(227), Math.toRadians(180))
                 .build();
 
         shooty = follower.pathBuilder().addPath(
@@ -50,7 +50,7 @@ public class PedroAuto extends CommandOpMode {
                                 new Pose(62.921, 107.913),
                                 new Pose(61.596, 83.617)
                         )
-                ).setLinearHeadingInterpolation(Math.toRadians(-101), Math.toRadians(-130))
+                ).setLinearHeadingInterpolation(Math.toRadians(180), Math.toRadians(227))
                 .build();
 
         offTheLine = follower.pathBuilder().addPath(
@@ -59,7 +59,7 @@ public class PedroAuto extends CommandOpMode {
                                 new Pose(40.426, 103.830),
                                 new Pose(22.200, 100.100)
                         )
-                ).setLinearHeadingInterpolation(Math.toRadians(-101), Math.toRadians(-90))
+                ).setLinearHeadingInterpolation(Math.toRadians(227), Math.toRadians(270))
                 .build();
     }
 
