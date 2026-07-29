@@ -25,17 +25,19 @@ public class Constants {
             .leftFrontMotorDirection(DcMotorSimple.Direction.REVERSE)
             .leftRearMotorDirection(DcMotorSimple.Direction.REVERSE)
             .rightFrontMotorDirection(DcMotorSimple.Direction.REVERSE)
-            .rightRearMotorDirection(DcMotorSimple.Direction.REVERSE)
-            .yVelocity(47.745928)
-            .xVelocity(60.598);
+            .rightRearMotorDirection(DcMotorSimple.Direction.REVERSE);
+// need to retune
+//            .yVelocity(47.745928)
+//            .xVelocity(60.598);
 
 
     public static OTOSConstants otosConstants = new OTOSConstants()
             .hardwareMapName("otos")
             .linearUnit(DistanceUnit.INCH)
-            .angleUnit(AngleUnit.RADIANS)
-            .linearScalar(1.01684)
-            .angularScalar(0.99522)
+            .angleUnit(AngleUnit.DEGREES)
+// need to retune
+//            .linearScalar(1.01684)
+//            .angularScalar(0.99522)
             .offset(new SparkFunOTOS.Pose2D(0.0,0.0,0.0));
 
 
