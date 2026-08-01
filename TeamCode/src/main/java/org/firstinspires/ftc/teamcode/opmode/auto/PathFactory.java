@@ -24,7 +24,7 @@ public class PathFactory {
   }
 
   public Map<String, PathChain> getClosePaths() {
-    follower.setStartingPose(new Pose(20.8, 121.7, allianceAngle(227)));
+    follower.setStartingPose(alliancePose(20.8, 121.7, 227));
 
     PathChain obeliskRead = follower.pathBuilder().addPath(
             new BezierCurve(
@@ -71,4 +71,12 @@ public class PathFactory {
         : MathUtil.toRedDegrees(h);
   }
 
+  private Pose alliancePose(double x, double y, double h) {
+    if (Alliance.BLUE.equals(alliance)) {
+      return new Pose(x, y, h);
+    } else {
+      Pose xyPose = MathUtil.toRedPose(x, y);
+      return new Pose(xyPose.getX(), xyPose.getY(), MathUtil.toRedDegrees(h));
+    }
+  }
 }

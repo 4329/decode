@@ -8,12 +8,12 @@ import com.seattlesolvers.solverslib.pedroCommand.FollowPathCommand;
 import java.util.Map;
 
 public abstract class ThreePointCloseAuto extends PedroAuto {
-  private Map<String, PathChain> paths;
 
   @Override
   public void initialize() {
     super.initialize();
-    paths = pathFactory.getClosePaths();
+
+    Map<String, PathChain> paths = pathFactory.getClosePaths();
 
     SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
         new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OBELISK_READ), true, .5),
