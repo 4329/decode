@@ -46,21 +46,22 @@ public abstract class CloseAuto extends PedroAuto {
     AutoCommandFactory factory = new AutoCommandFactory(null, imuSubsystem, telemetry, limeLightSubsystem, pushyMcPushermanSubsystem, shooterSubsystem, spindexerSubsystem, getAlliance(), voltageSubsystem);
 
     SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
-        new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
+        //new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
         new ParallelCommandGroup(
             new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OBELISK_READ)),
             new SequentialCommandGroup(
-                new WaitCommand(100),
+                new WaitCommand(500),
                 new ObeliskCommand(limeLightSubsystem, telemetry, robotState)
             )
         ),
         new ParallelCommandGroup(
             new ObeliskSpinCommand(spindexerSubsystem, robotState),
-            new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OBELISK_READ), true)
+            new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_SHOOTY), true)
         ),
         new WaitCommand(500),
         factory.tripleShotEspresso().withTimeout(8000),
         new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OFF_LINE), true)
+
     );
 
     register(imuSubsystem, limeLightSubsystem, BlinkyguySubsystem);

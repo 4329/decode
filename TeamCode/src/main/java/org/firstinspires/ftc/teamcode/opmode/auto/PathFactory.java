@@ -73,10 +73,10 @@ public class PathFactory {
 
   private Pose alliancePose(double x, double y, double h) {
     if (Alliance.BLUE.equals(alliance)) {
-      return new Pose(x, y, h);
+      return new Pose(x, y, Math.toRadians(h));
     } else {
       Pose xyPose = MathUtil.toRedPose(x, y);
-      return new Pose(xyPose.getX(), xyPose.getY(), MathUtil.toRedDegrees(h));
+      return new Pose(xyPose.getX(), xyPose.getY(), MathUtil.toRedRadians(h));
     }
   }
 }
