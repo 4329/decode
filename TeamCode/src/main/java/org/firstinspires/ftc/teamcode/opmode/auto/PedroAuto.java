@@ -29,7 +29,7 @@ public abstract class PedroAuto extends CommandOpMode {
 
     telemetry.speak("running " + getClass().getSimpleName());
     telemetry = new JoinedTelemetry(telemetry, PanelsTelemetry.INSTANCE.getFtcTelemetry());
-    telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
+    telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry, follower);
     voltageSubsystem = new VoltageSubsystem(hardwareMap);
 
     register(telemetryUpdateSubsystem, voltageSubsystem);
