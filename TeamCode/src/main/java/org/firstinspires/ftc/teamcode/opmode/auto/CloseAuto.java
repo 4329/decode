@@ -7,9 +7,9 @@ import com.seattlesolvers.solverslib.command.WaitCommand;
 import com.seattlesolvers.solverslib.pedroCommand.FollowPathCommand;
 
 import org.firstinspires.ftc.teamcode.command.AutoCommandFactory;
-import org.firstinspires.ftc.teamcode.command.InitializeNavxCommand;
 import org.firstinspires.ftc.teamcode.command.ObeliskCommand;
 import org.firstinspires.ftc.teamcode.command.ObeliskSpinCommand;
+import org.firstinspires.ftc.teamcode.opmode.auto.PathFactory.PathName;
 import org.firstinspires.ftc.teamcode.subsystem.BlinkinSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.ImuSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.LimeLightSubsystem;
@@ -34,7 +34,7 @@ public abstract class CloseAuto extends PedroAuto {
   public void initialize() {
     super.initialize();
 
-    Map<String, PathChain> paths = pathFactory.getClosePaths();
+    Map<PathName, PathChain> paths = pathFactory.getClosePaths();
 
     imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
     spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);
@@ -48,7 +48,7 @@ public abstract class CloseAuto extends PedroAuto {
     SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
         //new InitializeNavxCommand(imuSubsystem, telemetry).withTimeout(1000),
         new ParallelCommandGroup(
-            new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OBELISK_READ)),
+            new FollowPathCommand(follower, paths.get(PathName.CLOSE_OBELISK_READ), false),
             new SequentialCommandGroup(
                 new WaitCommand(500),
                 new ObeliskCommand(limeLightSubsystem, telemetry, robotState)
@@ -56,11 +56,11 @@ public abstract class CloseAuto extends PedroAuto {
         ),
         new ParallelCommandGroup(
             new ObeliskSpinCommand(spindexerSubsystem, robotState),
-            new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_SHOOTY), true)
+            new FollowPathCommand(follower, paths.get(PathName.CLOSE_SHOOTY), true)
         ),
         new WaitCommand(500),
         factory.tripleShotEspresso().withTimeout(8000),
-        new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OFF_LINE), true)
+        new FollowPathCommand(follower, paths.get(PathName.CLOSE_OFF_LINE), true)
 
     );
 

@@ -5,6 +5,8 @@ import com.seattlesolvers.solverslib.command.SequentialCommandGroup;
 import com.seattlesolvers.solverslib.command.WaitCommand;
 import com.seattlesolvers.solverslib.pedroCommand.FollowPathCommand;
 
+import org.firstinspires.ftc.teamcode.opmode.auto.PathFactory.PathName;
+
 import java.util.Map;
 
 public abstract class ThreePointCloseAuto extends PedroAuto {
@@ -13,14 +15,14 @@ public abstract class ThreePointCloseAuto extends PedroAuto {
   public void initialize() {
     super.initialize();
 
-    Map<String, PathChain> paths = pathFactory.getClosePaths();
+    Map<PathName, PathChain> paths = pathFactory.getClosePaths();
 
     SequentialCommandGroup autoCommandGroup = new SequentialCommandGroup(
-        new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OBELISK_READ), true, .5),
+        new FollowPathCommand(follower, paths.get(PathName.CLOSE_OBELISK_READ), true, .5),
         new WaitCommand(2000),
-        new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_SHOOTY), true),
+        new FollowPathCommand(follower, paths.get(PathName.CLOSE_SHOOTY), true),
         new WaitCommand(2000),
-        new FollowPathCommand(follower, paths.get(PathFactory.CLOSE_OFF_LINE), true)
+        new FollowPathCommand(follower, paths.get(PathName.CLOSE_OFF_LINE), true)
     );
     schedule(autoCommandGroup);
   }
