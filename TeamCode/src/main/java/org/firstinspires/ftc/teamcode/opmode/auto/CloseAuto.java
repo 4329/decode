@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode.opmode.auto;
 
-import com.pedropathing.paths.PathChain;
+import com.pedropathing.paths.Path;
 import com.seattlesolvers.solverslib.command.ParallelCommandGroup;
 import com.seattlesolvers.solverslib.command.SequentialCommandGroup;
 import com.seattlesolvers.solverslib.command.WaitCommand;
@@ -34,7 +34,7 @@ public abstract class CloseAuto extends PedroAuto {
   public void initialize() {
     super.initialize();
 
-    Map<PathName, PathChain> paths = pathFactory.getClosePaths();
+    Map<PathName, Path> paths = pathFactory.getClosePaths();
 
     imuSubsystem = new ImuSubsystem(hardwareMap, telemetry);
     spindexerSubsystem = new SpindexerSubsystem(hardwareMap, telemetry);

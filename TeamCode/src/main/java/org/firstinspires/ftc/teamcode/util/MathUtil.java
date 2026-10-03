@@ -4,7 +4,7 @@
 
 package org.firstinspires.ftc.teamcode.util;
 
-import com.pedropathing.geometry.Pose;
+import com.pedropathing.math.Pose;
 
 public final class MathUtil {
   private MathUtil() {
@@ -158,10 +158,9 @@ public final class MathUtil {
   }
 
   public static Pose toRedPose(Pose pose) {
-    return new Pose(144.0 - pose.getX(),
-        pose.getY(),
-        Math.PI - pose.getHeading()
+    return new Pose(144.0 - pose.x(),
+        pose.y(),
+        Math.PI - pose.heading()
     );
-
   }
 }

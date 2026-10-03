@@ -1,9 +1,11 @@
 package org.firstinspires.ftc.teamcode.opmode.auto;
 
+import com.pedropathing.api.Paths;
 import com.pedropathing.follower.Follower;
-import com.pedropathing.geometry.BezierLine;
-import com.pedropathing.geometry.Pose;
-import com.pedropathing.paths.PathChain;
+//import com.pedropathing.geometry.BezierLine;
+import com.pedropathing.math.Pose;
+import com.pedropathing.paths.Path;
+//import com.pedropathing.paths.PathChain;
 
 import org.firstinspires.ftc.teamcode.util.Alliance;
 import org.firstinspires.ftc.teamcode.util.MathUtil;
@@ -38,23 +40,16 @@ public class PathFactory {
     closeOffTheLinePosition = alliancePose(22.200, 100.100, 270);
   }
 
-  public Map<PathName, PathChain> getClosePaths() {
-    follower.setStartingPose(closeStartingPosition);
+  public Map<PathName, Path> getClosePaths() {
+    follower.setPose(closeStartingPosition);
+    Path obeliskRead = Paths.line(closeStartingPosition, closeObeliskReadPosition)
+        .linear(closeStartingPosition, closeObeliskReadPosition);
 
-    PathChain obeliskRead = follower.pathBuilder().addPath(
-            new BezierLine(closeStartingPosition, closeObeliskReadPosition)
-        ).setLinearHeadingInterpolation(closeStartingPosition.getHeading(), closeObeliskReadPosition.getHeading())
-        .build();
+    Path shooty = Paths.line(closeObeliskReadPosition, closeShootPosition)
+        .linear(closeObeliskReadPosition, closeShootPosition);
 
-    PathChain shooty = follower.pathBuilder().addPath(
-            new BezierLine(closeObeliskReadPosition, closeShootPosition)
-        ).setLinearHeadingInterpolation(closeObeliskReadPosition.getHeading(), closeShootPosition.getHeading())
-        .build();
-
-    PathChain offTheLine = follower.pathBuilder().addPath(
-            new BezierLine(closeShootPosition, closeOffTheLinePosition)
-        ).setLinearHeadingInterpolation(closeShootPosition.getHeading(), closeOffTheLinePosition.getHeading())
-        .build();
+    Path offTheLine = Paths.line(closeShootPosition, closeOffTheLinePosition)
+        .linear(closeShootPosition, closeOffTheLinePosition);
 
     return Map.of(
         PathName.CLOSE_OBELISK_READ, obeliskRead,
@@ -74,7 +69,7 @@ public class PathFactory {
       return new Pose(x, y, Math.toRadians(h));
     } else {
       Pose xyPose = MathUtil.toRedPose(x, y);
-      return new Pose(xyPose.getX(), xyPose.getY(), MathUtil.toRedRadians(h));
+      return new Pose(xyPose.x(), xyPose.y(), MathUtil.toRedRadians(h));
     }
   }
 }

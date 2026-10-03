@@ -6,7 +6,7 @@ import com.pedropathing.follower.Follower;
 import com.seattlesolvers.solverslib.command.CommandOpMode;
 import com.seattlesolvers.solverslib.command.RunCommand;
 
-import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
+import org.firstinspires.ftc.teamcode.pedro.Constants;
 import org.firstinspires.ftc.teamcode.subsystem.TelemetryUpdateSubsystem;
 import org.firstinspires.ftc.teamcode.subsystem.VoltageSubsystem;
 import org.firstinspires.ftc.teamcode.util.Alliance;
@@ -29,7 +29,7 @@ public abstract class PedroAuto extends CommandOpMode {
 
     telemetry.speak("running " + getClass().getSimpleName());
     telemetry = new JoinedTelemetry(telemetry, PanelsTelemetry.INSTANCE.getFtcTelemetry());
-    telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry, follower);
+    telemetryUpdateSubsystem = new TelemetryUpdateSubsystem(telemetry);
     voltageSubsystem = new VoltageSubsystem(hardwareMap);
 
     register(telemetryUpdateSubsystem, voltageSubsystem);
